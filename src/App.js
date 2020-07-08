@@ -2,14 +2,14 @@ import React from 'react'
 import { Root, Head, Routes, addPrefetchExcludes } from 'react-static'
 //
 import { Link, Router } from 'components/Router'
-import Dynamic from 'containers/Dynamic'
+// import Dynamic from 'containers/Dynamic'
 
 import 'styles/app.scss'
 import Header from 'components/Header'
 import TueriProvider from 'components/Tueri'
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
-addPrefetchExcludes(['dynamic'])
+// addPrefetchExcludes(['dynamic'])
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
         <Header />
         <React.Suspense fallback={<em>Loading...</em>}>
           <Router>
-            <Dynamic path="dynamic" />
+            {/* <Dynamic path="dynamic" /> */}
             <Routes path="*" />
           </Router>
         </React.Suspense>
