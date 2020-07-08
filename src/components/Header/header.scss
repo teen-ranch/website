@@ -1,0 +1,109 @@
+@import 'styles/vars';
+@import 'hamburger';
+
+.container--header {
+    border-bottom: 1px solid #fafafa;
+    height: 100px;
+    background: #fff;
+    // background: $primary-dark;
+
+    .logo {
+        height: 60px;
+        padding-top: 20px;
+    }
+
+    nav {
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;            
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        a {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            line-height: 20px;
+            margin-top: 20px;
+            font-size: 1.6rem;
+            letter-spacing: 0.02em;
+            color: $primary-dark;
+        }
+
+        a:hover {
+            color: $primary-light;
+        }
+
+        a.ctaLink {
+            background: $primary-light;
+            border-radius: $border-radius;
+            color: $primary-white;
+            margin-left: 2.5rem;
+        }
+
+        a.ctaLink:hover {
+            background: darken($primary-light, 5);
+        }
+
+    }
+
+}
+
+@media screen and (min-width:64em) {
+    header {
+
+        .constrain {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hamburgerMenu {
+            display: none !important;
+        }
+
+    }
+
+}
+@media screen and (max-width:63.999em) {
+    
+    .container--header {
+        height: 60px;
+        .logo {
+            height: 40px;
+            padding-top: 10px;
+        }
+        ul li {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+    .menu--expanded {
+        display: block;
+    }
+
+    .header--expanded {
+        height: 100%;
+        position: fixed;
+        width: 100%;
+    }
+
+    .hamburgerMenu {
+        float: right;
+        background: none;
+        border: none;
+        appearance: none;
+        outline: none;
+        margin-right: -1rem;
+        margin-top: 1rem;
+    }
+}

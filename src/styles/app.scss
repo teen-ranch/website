@@ -1,0 +1,70 @@
+@import 'styles/vars';
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-secondary, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  // font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+//   color: $text-color-dark;
+//   background: $primary-blue;
+}
+
+a {
+  text-decoration: none;
+//   color: $secondary-blue;
+}
+
+img {
+  max-width: 100%;
+}
+
+// .container {
+
+// }
+
+.constrain {
+  padding: 0 2rem;
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.covid {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.staffTable table {
+  width: 100%;
+  border-collapse: collapse;
+  td {
+    border: 1px solid #eee;
+  }
+  th, td {
+    padding: 1rem;
+    text-align: left;
+  }
+
+  tr th:first-of-type {
+    padding: 1rem 0;
+  }
+  th {
+    color: $primary-dark;
+  }
+}
+
+@media screen and (max-width:63.999em) {
+  .staffTable {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
