@@ -16,7 +16,7 @@ export default () => {
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg' name='Trail rides'>
                     <ul>
-                        <li>Maximum { covidGroupMax } people including staff for keeping with government restrictions</li>
+                        <li>Maximum { covidGroupMax } people including staff for keeping with government restrictions </li>
                         <li>Ages 10+</li>
                         <li>One-hour in length</li>
                         <li>Walk/trot (if comfortable)</li>

@@ -18,7 +18,7 @@ export default () => (
 
 				<Button to='/programs'>Check out our currently running programs</Button>
 
-				<p><a target="_blank" href="https://website.teenranch.com">Click here to view our regular site</a></p>
+				<p><a target="_blank" href="https://website.teenranch.com">Click here to view our regular site </a></p>
 
 			</div>
 

@@ -13,7 +13,7 @@ export default () => {
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg' name='Horse programs'>
                     <ul>
-                        <li>Trail rides</li>
+                        <li>Trail rides </li>
                         <li>Riding lessons</li>
                         <li>Hunter/Jumper shows</li>
                         <li>Schooling ring rental</li>
