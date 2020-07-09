@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import './header.scss'
 import Container from 'components/Container'
-import { Link, useLocation } from 'components/Router'
+import { NavLink as Link, useLocation } from 'components/Router'
 
 import logo from './teenRanchLogo_lightBGR.svg'
 
@@ -28,8 +28,14 @@ export default function Header() {
                 <nav className={`menu ${ expanded ? 'menu--expanded' : '' }`}>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/programs ">Programs</Link></li>
+                        <li><Link to="/programs ">Programs
+                            <ul className='subNav'>
+                                <li><Link to='/programs/hockey'>Hockey</Link></li>
+                                <li><Link to='/programs/horses'>Horses</Link></li>
+                            </ul>
+                        </Link></li>
                         <li><Link to="/staff ">Staff</Link></li>
+                        {/* <li><Link to="/contact ">Contact</Link></li> */}
                         <li><a className='ctaLink' href='https://register.trmanager.com'>Sign up</a></li>
                     </ul>
                 </nav>

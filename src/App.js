@@ -23,7 +23,7 @@ function App() {
         <meta name='author' content='DS Media' />
         <meta name='wot-verification' content='2d82a7513302ee51cb53' />
       </Head>
-      <TueriProvider>
+      <TueriProvider replacements={[['https://teenranch.nyc3.digitaloceanspaces.com/website/assets/', 'https://cdn.tueri.io/68719476739/assets/']]}>
         <Header />
         <React.Suspense fallback={<em>Loading...</em>}>
           <Router>

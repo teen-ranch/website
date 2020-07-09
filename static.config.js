@@ -3,7 +3,8 @@ import axios from 'axios'
 
 export default {
   getSiteData: () => ({
-    title: 'Teen Ranch Canada'
+    title: 'Teen Ranch Canada',
+    covidGroupMax: 10
   }),
   // getRoutes: async () => {
   //   const { data: posts } = await axios.get(

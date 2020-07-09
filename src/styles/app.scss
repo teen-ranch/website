@@ -62,6 +62,11 @@ img {
   }
 }
 
+.container--body {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 @media screen and (max-width:63.999em) {
   .staffTable {
     width: 100%;

@@ -38,11 +38,14 @@
             color: $primary-light;
         }
 
+        a.active {
+            color: $primary-light;
+        }
+
         a.ctaLink {
             background: $primary-light;
             border-radius: $border-radius;
             color: $primary-white;
-            margin-left: 2.5rem;
         }
 
         a.ctaLink:hover {
@@ -64,6 +67,36 @@
 
         .hamburgerMenu {
             display: none !important;
+        }
+
+        a.ctaLink {
+            margin-left: 2.5rem;
+        }
+
+        a {
+            position: relative;
+        }
+
+        a:hover {
+            .subNav {
+                display: block;
+            }
+        }
+
+        .subNav {
+            display:none;
+            background: #fff;
+            position: absolute;
+            border-radius: $border-radius;
+            top: 4rem;
+            box-shadow: 
+                0 0 6px rgba(0,0,0,0.1)
+            ;
+            
+            a {
+                margin: 1rem 0;
+                white-space: nowrap;
+            }
         }
 
     }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
+import Button from 'components/Button'
 
 export default () => {
 
@@ -51,11 +52,9 @@ export default () => {
 
                 <p>- The Teen Ranch Staff Family</p>
 
-                <a target="_blank" href="https://zfrmz.com/WG1tZ0FvfMkgD27ur3Xr">Click here to get in touch.</a>
+                <Button href="https://zfrmz.com/WG1tZ0FvfMkgD27ur3Xr">Click here to get in touch.</Button>
 
-                <hr/>
-
-                <a target="_blank" href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/StatementOfFaith.pdf">Statement of faith</a>
+                <Button style={{ marginLeft: '2rem' }} href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/StatementOfFaith.pdf">Statement of faith</Button>
 
             </Container>
         </>
