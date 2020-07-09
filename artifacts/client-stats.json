@@ -7,9 +7,9 @@
     "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  templates/vendors~main.9caf30da.js (247 KiB)"
   ],
   "version": "4.42.1",
-  "hash": "8a42b995432b179a30f2",
-  "time": 6289,
-  "builtAt": 1594259326485,
+  "hash": "3266da24defe22d6d876",
+  "time": 3921,
+  "builtAt": 1594262099796,
   "publicPath": "/",
   "outputPath": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\dist",
   "assetsByChunkName": {
@@ -21,14 +21,14 @@
     "__react_static_root__/src/pages/index": "templates/__react_static_root__/src/pages/index.c0d7566f.js",
     "__react_static_root__/src/pages/programs/hockey/index": "templates/__react_static_root__/src/pages/programs/hockey/index.19cf9132.js",
     "__react_static_root__/src/pages/programs/horses/index": "templates/__react_static_root__/src/pages/programs/horses/index.be494630.js",
-    "__react_static_root__/src/pages/programs/index": "templates/__react_static_root__/src/pages/programs/index.9636943b.js",
+    "__react_static_root__/src/pages/programs/index": "templates/__react_static_root__/src/pages/programs/index.862593a7.js",
     "__react_static_root__/src/pages/staff": "templates/__react_static_root__/src/pages/staff.b4f97159.js",
-    "main": "main.429dc601.js",
+    "main": "main.e28d0b34.js",
     "vendors~main": "templates/vendors~main.9caf30da.js"
   },
   "assets": [
     {
-      "name": "main.429dc601.js",
+      "name": "main.e28d0b34.js",
       "size": 14503,
       "chunks": [
         7
@@ -120,8 +120,8 @@
       "emitted": true
     },
     {
-      "name": "templates/__react_static_root__/src/pages/programs/index.9636943b.js",
-      "size": 2980,
+      "name": "templates/__react_static_root__/src/pages/programs/index.862593a7.js",
+      "size": 2981,
       "chunks": [
         5
       ],
@@ -189,7 +189,7 @@
         "styles.0b67f6c0.css",
         "templates/styles.3defb0d3.js",
         "templates/vendors~main.9caf30da.js",
-        "main.429dc601.js"
+        "main.e28d0b34.js"
       ],
       "children": {},
       "childAssets": {}
@@ -206,7 +206,7 @@
         "styles.0b67f6c0.css",
         "templates/styles.3defb0d3.js",
         "templates/vendors~main.9caf30da.js",
-        "main.429dc601.js"
+        "main.e28d0b34.js"
       ],
       "children": {},
       "childAssets": {}
@@ -268,7 +268,7 @@
       "assets": [
         "styles.0b67f6c0.css",
         "templates/styles.3defb0d3.js",
-        "templates/__react_static_root__/src/pages/programs/index.9636943b.js"
+        "templates/__react_static_root__/src/pages/programs/index.862593a7.js"
       ],
       "children": {},
       "childAssets": {}
@@ -491,9 +491,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             },
             {
               "id": 139,
@@ -558,9 +558,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             },
             {
               "id": 140,
@@ -815,9 +815,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             },
             {
               "id": 139,
@@ -1150,9 +1150,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             },
             {
               "id": 140,
@@ -1217,9 +1217,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             },
             {
               "id": 139,
@@ -1284,9 +1284,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             },
             {
               "id": 140,
@@ -1590,9 +1590,9 @@
             5,
             6
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "issuerId": 58,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "issuerId": 55,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
           "issuerPath": [
             {
               "id": 60,
@@ -1610,9 +1610,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             }
           ],
           "failed": false,
@@ -1739,9 +1739,9 @@
             5,
             6
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "issuerId": 58,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "issuerId": 55,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
           "issuerPath": [
             {
               "id": 60,
@@ -1759,9 +1759,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             }
           ],
           "failed": false,
@@ -1884,7 +1884,7 @@
               "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
               "type": "harmony import specifier",
               "userRequest": "components/Button",
-              "loc": "1:1749-1755"
+              "loc": "1:1750-1756"
             },
             {
               "moduleId": 59,
@@ -2048,9 +2048,9 @@
             5,
             6
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "issuerId": 58,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "issuerId": 55,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
           "issuerPath": [
             {
               "id": 60,
@@ -2068,9 +2068,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             }
           ],
           "failed": false,
@@ -2197,9 +2197,9 @@
             5,
             6
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "issuerId": 58,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "issuerId": 55,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
           "issuerPath": [
             {
               "id": 60,
@@ -2217,9 +2217,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             }
           ],
           "failed": false,
@@ -2342,7 +2342,7 @@
               "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
               "type": "harmony import specifier",
               "userRequest": "components/Button",
-              "loc": "1:1749-1755"
+              "loc": "1:1750-1756"
             },
             {
               "moduleId": 59,
@@ -2662,9 +2662,9 @@
             5,
             6
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "issuerId": 58,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "issuerId": 55,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
           "issuerPath": [
             {
               "id": 60,
@@ -2682,9 +2682,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             }
           ],
           "failed": false,
@@ -2811,9 +2811,9 @@
             5,
             6
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "issuerId": 58,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "issuerId": 55,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
           "issuerPath": [
             {
               "id": 60,
@@ -2831,9 +2831,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             }
           ],
           "failed": false,
@@ -2956,7 +2956,7 @@
               "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
               "type": "harmony import specifier",
               "userRequest": "components/Button",
-              "loc": "1:1749-1755"
+              "loc": "1:1750-1756"
             },
             {
               "moduleId": 59,
@@ -3171,14 +3171,14 @@
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 3987,
+      "size": 3988,
       "names": [
         "__react_static_root__/src/pages/programs/index"
       ],
       "files": [
-        "templates/__react_static_root__/src/pages/programs/index.9636943b.js"
+        "templates/__react_static_root__/src/pages/programs/index.862593a7.js"
       ],
-      "hash": "78ab2a0745a7bf4020c7",
+      "hash": "090491af97dee71e50cb",
       "siblings": [
         0
       ],
@@ -3196,7 +3196,7 @@
           "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
           "index": 157,
           "index2": 157,
-          "size": 1985,
+          "size": 1986,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -3256,7 +3256,7 @@
             "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js (referenced with import(), require.resolve)"
           ],
           "depth": 3,
-          "source": "import React from'react';import Container from'components/Container';import Heading from'components/Heading';import Program from'components/Program';import Button from'components/Button';export default(function(){return/*#__PURE__*/React.createElement(React.Fragment,null,/*#__PURE__*/React.createElement(Heading,{title:\"Programs\",subtitle:/*#__PURE__*/React.createElement(React.Fragment,null,\"Due to COVID-19 Teen Ranch is running a small set of temporary programs.\",/*#__PURE__*/React.createElement(\"br\",null),\"We look forward to serving you with more activities as restrictions continue to loosen.\")}),/*#__PURE__*/React.createElement(Container,{type:\"body\"},/*#__PURE__*/React.createElement(Program,{src:\"https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg\",name:\"Horse programs\"},/*#__PURE__*/React.createElement(\"ul\",null,/*#__PURE__*/React.createElement(\"li\",null,\"Trail rides\"),/*#__PURE__*/React.createElement(\"li\",null,\"Riding lessons\"),/*#__PURE__*/React.createElement(\"li\",null,\"Hunter/Jumper shows\"),/*#__PURE__*/React.createElement(\"li\",null,\"Schooling ring rental\")),/*#__PURE__*/React.createElement(Button,{to:\"/programs/horses\"},\"View horse programs\"),/*#__PURE__*/React.createElement(\"p\",null,/*#__PURE__*/React.createElement(\"a\",{target:\"_blank\",href:\"https://teenranch.com/horse-programs\"},\"View regular horse programs\"))),/*#__PURE__*/React.createElement(Program,{src:\"https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG\",name:\"Hockey programs\",swap:true},/*#__PURE__*/React.createElement(\"ul\",null,/*#__PURE__*/React.createElement(\"li\",null,\"Pre-season skills and skating\"),/*#__PURE__*/React.createElement(\"li\",null,\"Dufferin-peel skating club\")),/*#__PURE__*/React.createElement(Button,{to:\"/programs/hockey\"},\"View hockey programs\"),/*#__PURE__*/React.createElement(\"p\",null,/*#__PURE__*/React.createElement(\"a\",{target:\"_blank\",href:\"https://teenranch.com/hockey-programs\"},\"View regular hockey programs\")))));});"
+          "source": "import React from'react';import Container from'components/Container';import Heading from'components/Heading';import Program from'components/Program';import Button from'components/Button';export default(function(){return/*#__PURE__*/React.createElement(React.Fragment,null,/*#__PURE__*/React.createElement(Heading,{title:\"Programs\",subtitle:/*#__PURE__*/React.createElement(React.Fragment,null,\"Due to COVID-19 Teen Ranch is running a small set of temporary programs.\",/*#__PURE__*/React.createElement(\"br\",null),\"We look forward to serving you with more activities as restrictions continue to loosen.\")}),/*#__PURE__*/React.createElement(Container,{type:\"body\"},/*#__PURE__*/React.createElement(Program,{src:\"https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg\",name:\"Horse programs\"},/*#__PURE__*/React.createElement(\"ul\",null,/*#__PURE__*/React.createElement(\"li\",null,\"Trail rides\"),/*#__PURE__*/React.createElement(\"li\",null,\"Riding lessons\"),/*#__PURE__*/React.createElement(\"li\",null,\"Hunter/Jumper shows\"),/*#__PURE__*/React.createElement(\"li\",null,\"Schooling ring rental\")),/*#__PURE__*/React.createElement(Button,{to:\"/programs/horses\"},\"View horse programs\"),/*#__PURE__*/React.createElement(\"p\",null,/*#__PURE__*/React.createElement(\"a\",{target:\"_blank\",href:\"https://teenranch.com/horse-programs\"},\"View regular horse programs\"))),/*#__PURE__*/React.createElement(Program,{src:\"https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG\",name:\"Hockey programs\",swap:true},/*#__PURE__*/React.createElement(\"ul\",null,/*#__PURE__*/React.createElement(\"li\",null,\"Pre-season skills and skating\"),/*#__PURE__*/React.createElement(\"li\",null,\"Dufferin-peel skating club \")),/*#__PURE__*/React.createElement(Button,{to:\"/programs/hockey\"},\"View hockey programs\"),/*#__PURE__*/React.createElement(\"p\",null,/*#__PURE__*/React.createElement(\"a\",{target:\"_blank\",href:\"https://teenranch.com/hockey-programs\"},\"View regular hockey programs\")))));});"
         },
         {
           "id": 139,
@@ -3276,9 +3276,9 @@
             5,
             6
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "issuerId": 58,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "issuerId": 55,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
           "issuerPath": [
             {
               "id": 60,
@@ -3296,9 +3296,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             }
           ],
           "failed": false,
@@ -3425,9 +3425,9 @@
             5,
             6
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "issuerId": 58,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "issuerId": 55,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
           "issuerPath": [
             {
               "id": 60,
@@ -3445,9 +3445,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             }
           ],
           "failed": false,
@@ -3570,7 +3570,7 @@
               "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
               "type": "harmony import specifier",
               "userRequest": "components/Button",
-              "loc": "1:1749-1755"
+              "loc": "1:1750-1756"
             },
             {
               "moduleId": 59,
@@ -3890,9 +3890,9 @@
             5,
             6
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "issuerId": 58,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "issuerId": 55,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
           "issuerPath": [
             {
               "id": 60,
@@ -3910,9 +3910,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             }
           ],
           "failed": false,
@@ -4039,9 +4039,9 @@
             5,
             6
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "issuerId": 58,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "issuerId": 55,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
           "issuerPath": [
             {
               "id": 60,
@@ -4059,9 +4059,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             }
           ],
           "failed": false,
@@ -4184,7 +4184,7 @@
               "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
               "type": "harmony import specifier",
               "userRequest": "components/Button",
-              "loc": "1:1749-1755"
+              "loc": "1:1750-1756"
             },
             {
               "moduleId": 59,
@@ -4248,9 +4248,9 @@
         "main"
       ],
       "files": [
-        "main.429dc601.js"
+        "main.e28d0b34.js"
       ],
-      "hash": "89609844c93089ca859b",
+      "hash": "754e5574bd01a5fb9cd9",
       "siblings": [
         0,
         8
@@ -4504,7 +4504,7 @@
           ],
           "optimizationBailout": [
             "ModuleConcatenation bailout: Cannot concat with J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/slicedToArray.js (<- Module is not an ECMAScript module)",
-            "ModuleConcatenation bailout: Cannot concat with J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Container/index.js because of J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+            "ModuleConcatenation bailout: Cannot concat with J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Container/index.js because of J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
             "ModuleConcatenation bailout: Cannot concat with J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Router.js because of J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Button/index.js",
             "ModuleConcatenation bailout: Cannot concat with J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Tueri/index.js because of J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Program/index.js",
             "ModuleConcatenation bailout: Cannot concat with ../lib/index.js (<- Module is not an ECMAScript module)",
@@ -4685,9 +4685,9 @@
           "chunks": [
             7
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "issuerId": 58,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "issuerId": 55,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
           "issuerPath": [
             {
               "id": 60,
@@ -4705,9 +4705,9 @@
               "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
             },
             {
-              "id": 58,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+              "id": 55,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
             }
           ],
           "failed": false,
@@ -7634,7 +7634,7 @@
               "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "1:1729-1734"
+              "loc": "1:1730-1735"
             },
             {
               "moduleId": 58,
@@ -7643,7 +7643,7 @@
               "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "1:1817-1822"
+              "loc": "1:1818-1823"
             },
             {
               "moduleId": 58,
@@ -7652,7 +7652,7 @@
               "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "1:1859-1864"
+              "loc": "1:1860-1865"
             },
             {
               "moduleId": 59,
@@ -12108,9 +12108,9 @@
           "chunks": [
             8
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\toConsumableArray.js",
-          "issuerId": 82,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/toConsumableArray.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\slicedToArray.js",
+          "issuerId": 3,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/slicedToArray.js",
           "issuerPath": [
             {
               "id": 60,
@@ -12128,9 +12128,9 @@
               "name": "../lib/browser/index.js"
             },
             {
-              "id": 82,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\toConsumableArray.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/toConsumableArray.js"
+              "id": 3,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\slicedToArray.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/slicedToArray.js"
             }
           ],
           "failed": false,
@@ -12179,9 +12179,9 @@
           "chunks": [
             8
           ],
-          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\arrayWithoutHoles.js",
-          "issuerId": 83,
-          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/arrayWithoutHoles.js",
+          "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\unsupportedIterableToArray.js",
+          "issuerId": 30,
+          "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js",
           "issuerPath": [
             {
               "id": 60,
@@ -12199,14 +12199,14 @@
               "name": "../lib/browser/index.js"
             },
             {
-              "id": 82,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\toConsumableArray.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/toConsumableArray.js"
+              "id": 3,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\slicedToArray.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/slicedToArray.js"
             },
             {
-              "id": 83,
-              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\arrayWithoutHoles.js",
-              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/arrayWithoutHoles.js"
+              "id": 30,
+              "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\unsupportedIterableToArray.js",
+              "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js"
             }
           ],
           "failed": false,
@@ -20502,7 +20502,7 @@
           "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "1:1729-1734"
+          "loc": "1:1730-1735"
         },
         {
           "moduleId": 58,
@@ -20511,7 +20511,7 @@
           "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "1:1817-1822"
+          "loc": "1:1818-1823"
         },
         {
           "moduleId": 58,
@@ -20520,7 +20520,7 @@
           "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "1:1859-1864"
+          "loc": "1:1860-1865"
         },
         {
           "moduleId": 59,
@@ -24550,7 +24550,7 @@
       ],
       "optimizationBailout": [
         "ModuleConcatenation bailout: Cannot concat with J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/slicedToArray.js (<- Module is not an ECMAScript module)",
-        "ModuleConcatenation bailout: Cannot concat with J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Container/index.js because of J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+        "ModuleConcatenation bailout: Cannot concat with J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Container/index.js because of J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
         "ModuleConcatenation bailout: Cannot concat with J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Router.js because of J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Button/index.js",
         "ModuleConcatenation bailout: Cannot concat with J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Tueri/index.js because of J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Program/index.js",
         "ModuleConcatenation bailout: Cannot concat with ../lib/index.js (<- Module is not an ECMAScript module)",
@@ -25213,9 +25213,9 @@
       "chunks": [
         7
       ],
-      "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-      "issuerId": 58,
-      "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+      "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+      "issuerId": 55,
+      "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
       "issuerPath": [
         {
           "id": 60,
@@ -25233,9 +25233,9 @@
           "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
         },
         {
-          "id": 58,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+          "id": 55,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
         }
       ],
       "failed": false,
@@ -25902,9 +25902,9 @@
       "chunks": [
         8
       ],
-      "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\toConsumableArray.js",
-      "issuerId": 82,
-      "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/toConsumableArray.js",
+      "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\slicedToArray.js",
+      "issuerId": 3,
+      "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/slicedToArray.js",
       "issuerPath": [
         {
           "id": 60,
@@ -25922,9 +25922,9 @@
           "name": "../lib/browser/index.js"
         },
         {
-          "id": 82,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\toConsumableArray.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/toConsumableArray.js"
+          "id": 3,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\slicedToArray.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/slicedToArray.js"
         }
       ],
       "failed": false,
@@ -25973,9 +25973,9 @@
       "chunks": [
         8
       ],
-      "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\arrayWithoutHoles.js",
-      "issuerId": 83,
-      "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/arrayWithoutHoles.js",
+      "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\unsupportedIterableToArray.js",
+      "issuerId": 30,
+      "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js",
       "issuerPath": [
         {
           "id": 60,
@@ -25993,14 +25993,14 @@
           "name": "../lib/browser/index.js"
         },
         {
-          "id": 82,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\toConsumableArray.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/toConsumableArray.js"
+          "id": 3,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\slicedToArray.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/slicedToArray.js"
         },
         {
-          "id": 83,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\arrayWithoutHoles.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/arrayWithoutHoles.js"
+          "id": 30,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\@babel\\runtime\\helpers\\unsupportedIterableToArray.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js"
         }
       ],
       "failed": false,
@@ -27925,7 +27925,7 @@
       "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
       "index": 157,
       "index2": 157,
-      "size": 1985,
+      "size": 1986,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -27985,7 +27985,7 @@
         "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js (referenced with import(), require.resolve)"
       ],
       "depth": 3,
-      "source": "import React from'react';import Container from'components/Container';import Heading from'components/Heading';import Program from'components/Program';import Button from'components/Button';export default(function(){return/*#__PURE__*/React.createElement(React.Fragment,null,/*#__PURE__*/React.createElement(Heading,{title:\"Programs\",subtitle:/*#__PURE__*/React.createElement(React.Fragment,null,\"Due to COVID-19 Teen Ranch is running a small set of temporary programs.\",/*#__PURE__*/React.createElement(\"br\",null),\"We look forward to serving you with more activities as restrictions continue to loosen.\")}),/*#__PURE__*/React.createElement(Container,{type:\"body\"},/*#__PURE__*/React.createElement(Program,{src:\"https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg\",name:\"Horse programs\"},/*#__PURE__*/React.createElement(\"ul\",null,/*#__PURE__*/React.createElement(\"li\",null,\"Trail rides\"),/*#__PURE__*/React.createElement(\"li\",null,\"Riding lessons\"),/*#__PURE__*/React.createElement(\"li\",null,\"Hunter/Jumper shows\"),/*#__PURE__*/React.createElement(\"li\",null,\"Schooling ring rental\")),/*#__PURE__*/React.createElement(Button,{to:\"/programs/horses\"},\"View horse programs\"),/*#__PURE__*/React.createElement(\"p\",null,/*#__PURE__*/React.createElement(\"a\",{target:\"_blank\",href:\"https://teenranch.com/horse-programs\"},\"View regular horse programs\"))),/*#__PURE__*/React.createElement(Program,{src:\"https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG\",name:\"Hockey programs\",swap:true},/*#__PURE__*/React.createElement(\"ul\",null,/*#__PURE__*/React.createElement(\"li\",null,\"Pre-season skills and skating\"),/*#__PURE__*/React.createElement(\"li\",null,\"Dufferin-peel skating club\")),/*#__PURE__*/React.createElement(Button,{to:\"/programs/hockey\"},\"View hockey programs\"),/*#__PURE__*/React.createElement(\"p\",null,/*#__PURE__*/React.createElement(\"a\",{target:\"_blank\",href:\"https://teenranch.com/hockey-programs\"},\"View regular hockey programs\")))));});"
+      "source": "import React from'react';import Container from'components/Container';import Heading from'components/Heading';import Program from'components/Program';import Button from'components/Button';export default(function(){return/*#__PURE__*/React.createElement(React.Fragment,null,/*#__PURE__*/React.createElement(Heading,{title:\"Programs\",subtitle:/*#__PURE__*/React.createElement(React.Fragment,null,\"Due to COVID-19 Teen Ranch is running a small set of temporary programs.\",/*#__PURE__*/React.createElement(\"br\",null),\"We look forward to serving you with more activities as restrictions continue to loosen.\")}),/*#__PURE__*/React.createElement(Container,{type:\"body\"},/*#__PURE__*/React.createElement(Program,{src:\"https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg\",name:\"Horse programs\"},/*#__PURE__*/React.createElement(\"ul\",null,/*#__PURE__*/React.createElement(\"li\",null,\"Trail rides\"),/*#__PURE__*/React.createElement(\"li\",null,\"Riding lessons\"),/*#__PURE__*/React.createElement(\"li\",null,\"Hunter/Jumper shows\"),/*#__PURE__*/React.createElement(\"li\",null,\"Schooling ring rental\")),/*#__PURE__*/React.createElement(Button,{to:\"/programs/horses\"},\"View horse programs\"),/*#__PURE__*/React.createElement(\"p\",null,/*#__PURE__*/React.createElement(\"a\",{target:\"_blank\",href:\"https://teenranch.com/horse-programs\"},\"View regular horse programs\"))),/*#__PURE__*/React.createElement(Program,{src:\"https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG\",name:\"Hockey programs\",swap:true},/*#__PURE__*/React.createElement(\"ul\",null,/*#__PURE__*/React.createElement(\"li\",null,\"Pre-season skills and skating\"),/*#__PURE__*/React.createElement(\"li\",null,\"Dufferin-peel skating club \")),/*#__PURE__*/React.createElement(Button,{to:\"/programs/hockey\"},\"View hockey programs\"),/*#__PURE__*/React.createElement(\"p\",null,/*#__PURE__*/React.createElement(\"a\",{target:\"_blank\",href:\"https://teenranch.com/hockey-programs\"},\"View regular hockey programs\")))));});"
     },
     {
       "id": 59,
@@ -33154,9 +33154,9 @@
           "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
         },
         {
-          "id": 58,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+          "id": 55,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
         },
         {
           "id": 139,
@@ -33221,9 +33221,9 @@
           "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
         },
         {
-          "id": 58,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+          "id": 55,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
         },
         {
           "id": 140,
@@ -33339,9 +33339,9 @@
         5,
         6
       ],
-      "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-      "issuerId": 58,
-      "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+      "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+      "issuerId": 55,
+      "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
       "issuerPath": [
         {
           "id": 60,
@@ -33359,9 +33359,9 @@
           "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
         },
         {
-          "id": 58,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+          "id": 55,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
         }
       ],
       "failed": false,
@@ -33488,9 +33488,9 @@
         5,
         6
       ],
-      "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-      "issuerId": 58,
-      "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
+      "issuer": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+      "issuerId": 55,
+      "issuerName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js",
       "issuerPath": [
         {
           "id": 60,
@@ -33508,9 +33508,9 @@
           "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
         },
         {
-          "id": 58,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+          "id": 55,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
         }
       ],
       "failed": false,
@@ -33633,7 +33633,7 @@
           "moduleName": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js",
           "type": "harmony import specifier",
           "userRequest": "components/Button",
-          "loc": "1:1749-1755"
+          "loc": "1:1750-1756"
         },
         {
           "moduleId": 59,
@@ -33986,9 +33986,9 @@
           "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
         },
         {
-          "id": 58,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+          "id": 55,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
         },
         {
           "id": 140,
@@ -34053,9 +34053,9 @@
           "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
         },
         {
-          "id": 58,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+          "id": 55,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
         },
         {
           "id": 140,
@@ -34254,9 +34254,9 @@
           "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
         },
         {
-          "id": 58,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+          "id": 55,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
         },
         {
           "id": 139,
@@ -34321,9 +34321,9 @@
           "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/artifacts/react-static-templates.js"
         },
         {
-          "id": 58,
-          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\programs\\index.js",
-          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/programs/index.js"
+          "id": 55,
+          "identifier": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\babel-loader\\lib\\index.js??ref--4-oneOf-1-0!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-hot-loader\\webpack.js!J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\src\\pages\\index.js",
+          "name": "J:/Websites/TeenRanch/2020/teen-ranch-website/src/pages/index.js"
         },
         {
           "id": 139,

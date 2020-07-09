@@ -1733,7 +1733,7 @@ __webpack_require__.r(__webpack_exports__);
     src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG",
     name: "Hockey programs",
     swap: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-season skills and skating"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Dufferin-peel skating club")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-season skills and skating"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Dufferin-peel skating club ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
     to: "/programs/hockey"
   }, "View hockey programs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     target: "_blank",
