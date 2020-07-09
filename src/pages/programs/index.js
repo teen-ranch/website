@@ -1,8 +1,8 @@
 import React from 'react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
-import Program from 'components/Program'
 import Button from 'components/Button'
+import Program from 'components/Program'
 
 export default () => {
 

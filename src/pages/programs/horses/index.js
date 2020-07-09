@@ -1,7 +1,7 @@
 import React from 'react'
+import { useSiteData } from 'react-static'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
-import { useSiteData } from 'react-static'
 import Button from 'components/Button'
 import Program from 'components/Program'
 

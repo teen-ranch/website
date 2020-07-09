@@ -1,13 +1,10 @@
 import React from 'react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
-import { useSiteData } from 'react-static'
 import Button from 'components/Button'
 import Program from 'components/Program'
 
 export default () => {
-
-    const { covidGroupMax } = useSiteData()
 
 	return (
         <>
