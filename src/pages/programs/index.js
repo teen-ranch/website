@@ -27,7 +27,7 @@ export default () => {
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG' name='Hockey programs' swap>
                 <ul>
                     <li>Pre-season skills and skating</li>
-                    <li>Dufferin-peel skating club</li>
+                    <li>Dufferin-peel skating club </li>
                 </ul>
 
                     <Button to='/programs/hockey'>View hockey programs</Button>

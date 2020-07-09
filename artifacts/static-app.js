@@ -110,7 +110,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 26);
+/******/ 	return __webpack_require__(__webpack_require__.s = 33);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -121,6 +121,64 @@ module.exports = require("react");
 
 /***/ }),
 /* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Button; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
+/* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(54);
+/* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_button_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function Button(_ref) {
+  var children = _ref.children,
+      style = _ref.style,
+      className = _ref.className,
+      to = _ref.to,
+      href = _ref.href,
+      onClick = _ref.onClick,
+      target = _ref.target,
+      rel = _ref.rel;
+  var defaultClassName = "button ".concat(className ? className : '');
+  var ELEMENT_TYPES = {
+    link: {
+      element: components_Router__WEBPACK_IMPORTED_MODULE_1__[/* Link */ "a"],
+      properties: {
+        style: style,
+        className: defaultClassName,
+        to: to
+      }
+    },
+    button: {
+      element: 'button',
+      properties: {
+        style: style,
+        className: defaultClassName,
+        onClick: onClick,
+        type: 'button'
+      }
+    },
+    externalLink: {
+      element: 'a',
+      properties: {
+        style: style,
+        className: defaultClassName,
+        href: href,
+        target: target,
+        rel: rel
+      }
+    }
+  };
+  var elementType = to ? ELEMENT_TYPES.link : href ? ELEMENT_TYPES.externalLink : ELEMENT_TYPES.button;
+  var El = elementType.element;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(El, elementType.properties, children);
+}
+
+/***/ }),
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -151,12 +209,6 @@ function Constrain(_ref2) {
 }
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/slicedToArray");
-
-/***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
@@ -176,12 +228,113 @@ module.exports = require("react-static");
 
 /***/ }),
 /* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NavLink; });
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["Router"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["useLocation"]; });
+
+
+
+
+
+var NavLink = function NavLink(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, props, {
+    getProps: function getProps(_ref) {
+      var isCurrent = _ref.isCurrent;
+      // the object returned here is passed to the
+      // anchor element's props
+      return {
+        className: isCurrent ? 'active' : ''
+      };
+    }
+  }));
+};
+
+/***/ }),
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Program; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_Tueri__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
+/* harmony import */ var _program_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(55);
+/* harmony import */ var _program_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_program_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function Program(_ref) {
+  var src = _ref.src,
+      name = _ref.name,
+      children = _ref.children,
+      swap = _ref.swap;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "programContainer ".concat(swap ? 'programContainer--swap' : '')
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "programImage"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Tueri__WEBPACK_IMPORTED_MODULE_1__[/* Img */ "a"], {
+    src: src,
+    alt: name
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "programBody"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, name), children));
+}
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Heading; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(53);
+/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_heading_scss__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+function Heading(_ref) {
+  var title = _ref.title,
+      subtitle = _ref.subtitle;
+
+  var _useSiteData = Object(react_static__WEBPACK_IMPORTED_MODULE_2__["useSiteData"])(),
+      siteTitle = _useSiteData.title;
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
+    type: "heading"
+  }, title && typeof title === 'string' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_2__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, title, " - ", siteTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, title), subtitle && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, subtitle));
+}
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/slicedToArray");
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof = __webpack_require__(11);
+var _typeof = __webpack_require__(16);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -220,7 +373,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(32);
+var _requireUniversalModule = __webpack_require__(39);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -235,7 +388,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(34);
+var _reportChunks = __webpack_require__(41);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -249,21 +402,21 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(16);
+var _propTypes = __webpack_require__(21);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(17);
+var _hoistNonReactStatics = __webpack_require__(22);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _vm = __webpack_require__(35);
+var _vm = __webpack_require__(42);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
-var _utils = __webpack_require__(12);
+var _utils = __webpack_require__(17);
 
-var _helpers = __webpack_require__(36);
+var _helpers = __webpack_require__(43);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -658,45 +811,16 @@ function universal(asyncModule) {
     report: _propTypes2["default"].func
   }, _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(31)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(38)(module)))
 
 /***/ }),
-/* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Heading; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(47);
-/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_heading_scss__WEBPACK_IMPORTED_MODULE_3__);
-
-
-
-
-function Heading(_ref) {
-  var title = _ref.title,
-      subtitle = _ref.subtitle;
-
-  var _useSiteData = Object(react_static__WEBPACK_IMPORTED_MODULE_2__["useSiteData"])(),
-      siteTitle = _useSiteData.title;
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
-    type: "heading"
-  }, title && typeof title === 'string' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_2__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, title, " - ", siteTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, title), subtitle && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, subtitle));
-}
-
-/***/ }),
-/* 8 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = require("@reach/router");
 
 /***/ }),
-/* 9 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -706,11 +830,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _utils = __webpack_require__(12);
+var _utils = __webpack_require__(17);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(33)("" + id);
+    return __webpack_require__(40)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -719,90 +843,113 @@ var requireById = function requireById(id) {
 exports["default"] = requireById;
 
 /***/ }),
-/* 10 */
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return '@media ' + item[2] + '{' + content + '}';
+      } else {
+        return content;
+      }
+    }).join('');
+  }; // import a list of modules into the list
+
+
+  list.i = function (modules, mediaQuery) {
+    if (typeof modules === 'string') {
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    for (var i = 0; i < this.length; i++) {
+      var id = this[i][0];
+
+      if (id != null) {
+        alreadyImportedModules[id] = true;
+      }
+    }
+
+    for (i = 0; i < modules.length; i++) {
+      var item = modules[i]; // skip already imported module
+      // this implementation is not 100% perfect for weird media query combinations
+      // when a module is imported multiple times with different media queries.
+      // I hope this will never occur (Hey this way we have smaller bundles)
+
+      if (item[0] == null || !alreadyImportedModules[item[0]]) {
+        if (mediaQuery && !item[2]) {
+          item[2] = mediaQuery;
+        } else if (mediaQuery) {
+          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';
+        }
+
+        list.push(item);
+      }
+    }
+  };
+
+  return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || '';
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
+
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
+
+
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+  return '/*# ' + data + ' */';
+}
+
+/***/ }),
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "a", function() { return /* reexport */ Img; });
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
+var slicedToArray_ = __webpack_require__(9);
+var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
 
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(0);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
-// EXTERNAL MODULE: external "react-static"
-var external_react_static_ = __webpack_require__(5);
-
-// EXTERNAL MODULE: external "@reach/router"
-var router_ = __webpack_require__(8);
-
-// CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Router.js
-
-// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/styles/app.scss
-var app = __webpack_require__(45);
-
-// EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
-var slicedToArray_ = __webpack_require__(2);
-var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
-
-// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/header.scss
-var header = __webpack_require__(46);
-
-// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Container/index.js
-var Container = __webpack_require__(1);
-
-// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/teenRanchLogo_lightBGR.svg
-var teenRanchLogo_lightBGR = __webpack_require__(24);
-var teenRanchLogo_lightBGR_default = /*#__PURE__*/__webpack_require__.n(teenRanchLogo_lightBGR);
-
-// CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/index.js
-
-
-
-
-
-
-function Header() {
-  var _useState = Object(external_react_["useState"])(),
-      _useState2 = slicedToArray_default()(_useState, 2),
-      expanded = _useState2[0],
-      setExpanded = _useState2[1];
-
-  var location = Object(router_["useLocation"])();
-  Object(external_react_["useEffect"])(function () {
-    setExpanded();
-  }, [location]);
-  return /*#__PURE__*/external_react_default.a.createElement("header", null, /*#__PURE__*/external_react_default.a.createElement(Container["a" /* default */], {
-    type: "header".concat(expanded ? ' header--expanded' : '')
-  }, /*#__PURE__*/external_react_default.a.createElement(router_["Link"], {
-    to: "/"
-  }, /*#__PURE__*/external_react_default.a.createElement("img", {
-    className: "logo",
-    src: teenRanchLogo_lightBGR_default.a,
-    alt: "Teen Ranch Logo"
-  })), /*#__PURE__*/external_react_default.a.createElement("button", {
-    className: "hamburgerMenu ".concat(expanded ? 'hamburgerMenu--active' : ''),
-    onClick: function onClick() {
-      return setExpanded(function (expanded) {
-        return !expanded;
-      });
-    },
-    "aria-label": "Navigation menu"
-  }, /*#__PURE__*/external_react_default.a.createElement("span", {
-    className: "hamburgerBox"
-  }, /*#__PURE__*/external_react_default.a.createElement("span", {
-    className: "hamburgerInner"
-  }))), /*#__PURE__*/external_react_default.a.createElement("nav", {
-    className: "menu ".concat(expanded ? 'menu--expanded' : '')
-  }, /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(router_["Link"], {
-    to: "/"
-  }, "Home")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(router_["Link"], {
-    to: "/programs "
-  }, "Programs")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(router_["Link"], {
-    to: "/staff "
-  }, "Staff")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement("a", {
-    className: "ctaLink",
-    href: "https://register.trmanager.com"
-  }, "Sign up"))))));
-}
 // CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Tueri/Provider.js
 
 
@@ -858,7 +1005,7 @@ function useTueri() {
   return Object(external_react_["useContext"])(TueriContext);
 }
 // EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
-var defineProperty_ = __webpack_require__(25);
+var defineProperty_ = __webpack_require__(32);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
 
 // CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Tueri/Img.js
@@ -1075,7 +1222,100 @@ function Img(_ref) {
 // CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Tueri/index.js
 
 
-/* harmony default export */ var Tueri = (TueriProvider);
+/* harmony default export */ var Tueri = __webpack_exports__["b"] = (TueriProvider);
+
+
+/***/ }),
+/* 15 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(0);
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// EXTERNAL MODULE: external "react-static"
+var external_react_static_ = __webpack_require__(5);
+
+// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Router.js
+var Router = __webpack_require__(6);
+
+// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/styles/app.scss
+var app = __webpack_require__(51);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
+var slicedToArray_ = __webpack_require__(9);
+var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
+
+// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/header.scss
+var header = __webpack_require__(52);
+
+// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Container/index.js
+var Container = __webpack_require__(2);
+
+// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/teenRanchLogo_lightBGR.svg
+var teenRanchLogo_lightBGR = __webpack_require__(31);
+var teenRanchLogo_lightBGR_default = /*#__PURE__*/__webpack_require__.n(teenRanchLogo_lightBGR);
+
+// CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/index.js
+
+
+
+
+
+
+function Header() {
+  var _useState = Object(external_react_["useState"])(),
+      _useState2 = slicedToArray_default()(_useState, 2),
+      expanded = _useState2[0],
+      setExpanded = _useState2[1];
+
+  var location = Object(Router["d" /* useLocation */])();
+  Object(external_react_["useEffect"])(function () {
+    setExpanded();
+  }, [location]);
+  return /*#__PURE__*/external_react_default.a.createElement("header", null, /*#__PURE__*/external_react_default.a.createElement(Container["a" /* default */], {
+    type: "header".concat(expanded ? ' header--expanded' : '')
+  }, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/"
+  }, /*#__PURE__*/external_react_default.a.createElement("img", {
+    className: "logo",
+    src: teenRanchLogo_lightBGR_default.a,
+    alt: "Teen Ranch Logo"
+  })), /*#__PURE__*/external_react_default.a.createElement("button", {
+    className: "hamburgerMenu ".concat(expanded ? 'hamburgerMenu--active' : ''),
+    onClick: function onClick() {
+      return setExpanded(function (expanded) {
+        return !expanded;
+      });
+    },
+    "aria-label": "Navigation menu"
+  }, /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "hamburgerBox"
+  }, /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "hamburgerInner"
+  }))), /*#__PURE__*/external_react_default.a.createElement("nav", {
+    className: "menu ".concat(expanded ? 'menu--expanded' : '')
+  }, /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/"
+  }, "Home")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/programs "
+  }, "Programs", /*#__PURE__*/external_react_default.a.createElement("ul", {
+    className: "subNav"
+  }, /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/programs/hockey"
+  }, "Hockey")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/programs/horses"
+  }, "Horses"))))), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/staff "
+  }, "Staff")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement("a", {
+    className: "ctaLink",
+    href: "https://register.trmanager.com"
+  }, "Sign up"))))));
+}
+// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Tueri/index.js + 2 modules
+var Tueri = __webpack_require__(14);
 
 // CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/App.js
 
@@ -1103,9 +1343,11 @@ function App() {
   }), /*#__PURE__*/external_react_default.a.createElement("meta", {
     name: "wot-verification",
     content: "2d82a7513302ee51cb53"
-  })), /*#__PURE__*/external_react_default.a.createElement(Tueri, null, /*#__PURE__*/external_react_default.a.createElement(Header, null), /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Suspense, {
+  })), /*#__PURE__*/external_react_default.a.createElement(Tueri["b" /* default */], {
+    replacements: [['https://teenranch.nyc3.digitaloceanspaces.com/website/assets/', 'https://cdn.tueri.io/68719476739/assets/']]
+  }, /*#__PURE__*/external_react_default.a.createElement(Header, null), /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Suspense, {
     fallback: /*#__PURE__*/external_react_default.a.createElement("em", null, "Loading...")
-  }, /*#__PURE__*/external_react_default.a.createElement(router_["Router"], null, /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Routes"], {
+  }, /*#__PURE__*/external_react_default.a.createElement(Router["c" /* Router */], null, /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Routes"], {
     path: "*"
   })))));
 }
@@ -1113,19 +1355,19 @@ function App() {
 /* harmony default export */ var src_App = __webpack_exports__["a"] = (App);
 
 /***/ }),
-/* 11 */
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/typeof");
 
 /***/ }),
-/* 12 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof2 = __webpack_require__(11);
+var _typeof2 = __webpack_require__(16);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1156,7 +1398,7 @@ var _react = __webpack_require__(0);
 
 var React = _interopRequireWildcard(_react);
 
-var _requireById = __webpack_require__(9);
+var _requireById = __webpack_require__(12);
 
 var _requireById2 = _interopRequireDefault(_requireById);
 
@@ -1285,122 +1527,37 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 };
 
 /***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 18 */
+/***/ (function(module, exports) {
 
-"use strict";
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-
-module.exports = function (useSourceMap) {
-  var list = []; // return the list of modules as css string
-
-  list.toString = function toString() {
-    return this.map(function (item) {
-      var content = cssWithMappingToString(item, useSourceMap);
-
-      if (item[2]) {
-        return '@media ' + item[2] + '{' + content + '}';
-      } else {
-        return content;
-      }
-    }).join('');
-  }; // import a list of modules into the list
-
-
-  list.i = function (modules, mediaQuery) {
-    if (typeof modules === 'string') {
-      modules = [[null, modules, '']];
-    }
-
-    var alreadyImportedModules = {};
-
-    for (var i = 0; i < this.length; i++) {
-      var id = this[i][0];
-
-      if (id != null) {
-        alreadyImportedModules[id] = true;
-      }
-    }
-
-    for (i = 0; i < modules.length; i++) {
-      var item = modules[i]; // skip already imported module
-      // this implementation is not 100% perfect for weird media query combinations
-      // when a module is imported multiple times with different media queries.
-      // I hope this will never occur (Hey this way we have smaller bundles)
-
-      if (item[0] == null || !alreadyImportedModules[item[0]]) {
-        if (mediaQuery && !item[2]) {
-          item[2] = mediaQuery;
-        } else if (mediaQuery) {
-          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';
-        }
-
-        list.push(item);
-      }
-    }
-  };
-
-  return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-  var content = item[1] || '';
-  var cssMapping = item[3];
-
-  if (!cssMapping) {
-    return content;
-  }
-
-  if (useSourceMap && typeof btoa === 'function') {
-    var sourceMapping = toComment(cssMapping);
-    var sourceURLs = cssMapping.sources.map(function (source) {
-      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
-    });
-    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-  }
-
-  return [content].join('\n');
-} // Adapted from convert-source-map (MIT)
-
-
-function toComment(sourceMap) {
-  // eslint-disable-next-line no-undef
-  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-  return '/*# ' + data + ' */';
-}
+module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
-/* 14 */
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 15 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = require("J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-static\\lib\\browser");
 
 /***/ }),
-/* 16 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types");
 
 /***/ }),
-/* 17 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
 
 /***/ }),
-/* 18 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1413,15 +1570,17 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 19 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1);
+
 
 
 
@@ -1431,19 +1590,128 @@ __webpack_require__.r(__webpack_exports__);
     subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Less than an hour from ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Toronto"), " in the heart of ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Caledon, Ontario"))
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
     type: "body"
-  }));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "covid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "COVID-19 Announcement"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Teen Ranch is running a small set of temporary programs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We look forward to serving you with more activities as restrictions continue to loosen."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    to: "/programs"
+  }, "Check out our currently running programs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
+    href: "https://website.teenranch.com"
+  }, "Click here to view our regular site")))));
 });
 
 /***/ }),
-/* 20 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var _useSiteData = Object(react_static__WEBPACK_IMPORTED_MODULE_3__["useSiteData"])(),
+      covidGroupMax = _useSiteData.covidGroupMax;
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    title: "Hockey programs",
+    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
+    type: "body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG",
+    name: "Pre-Season Skills and Skating"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Boys & Girls Aged 7-13"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Wednesdays 7:00 pm \u2013 7:50 pm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "July 22 \u2013 August 26, 2020"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "$170.00 +HST per person")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    href: "https://register.trmanager.com"
+  }, "Book now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/iceCorral1.jpg",
+    name: "Ice rental",
+    swap: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sharpen your skates and sharpen your skills. Rent ice or participate in a Teen Ranch hockey/figure skating program or private/semi-private lesson."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    href: "mailto:camp@teenranch.com?subject=Ice rental"
+  }, "Book now"))));
+});
+
+/***/ }),
+/* 26 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var _useSiteData = Object(react_static__WEBPACK_IMPORTED_MODULE_3__["useSiteData"])(),
+      covidGroupMax = _useSiteData.covidGroupMax;
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    title: "Horse programs",
+    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
+    type: "body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg",
+    name: "Trail rides"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Maximum ", covidGroupMax, " people including staff for keeping with government restrictions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Ages 10+"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "One-hour in length"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Walk/trot (if comfortable)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Max. participant weight of 250lbs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-booking and pre-payment required*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "$55.00 per person (Includes HST)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    href: "mailto:rachel.stevens@teenranch.com?subject=Trail ride booking inquiry"
+  }, "Book a trail ride")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse5.jpg",
+    name: "Riding lessons",
+    swap: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Western & English riding"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Beginner to advanced"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Weekdays"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "One-hour in length"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Max. participant weight of 250lbs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-booking and pre-payment required*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Private lesson - Ages 5+: $75.00 per person (Includes HST)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Semi-private lesson - Ages 7+: $60.00 per person (Includes HST)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    href: "mailto:rachel.stevens@teenranch.com?subject=Riding lessons"
+  }, "Book a riding lesson")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hunterJumper16.jpg",
+    name: "Hunter/Jumper shows"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "2020 show dates"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "June 30 - ONLINE (Finished)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "July 19 - ONLINE (Online entry open)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "July 26 - TBD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "August 9 - TBD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "August 23 - TBD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "September 13 - TBD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "September 27 - TBD")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    target: "_blank",
+    href: "https://forms.zohopublic.com/teenranch1/form/OnlineHorseShowJuly192020/formperma/8kUPL-fV-vy1KyRtGWI0k-8BYhpDFqIeEi3015OrIq0?referrername=teenranch.com"
+  }, "Enter in the July 19 online show")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/blu%20flat.jpg",
+    name: "Schooling ring rental",
+    swap: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Hunter or jumper course"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-booking and pre-payment required*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "$25.00 per horse per hour of ring time (Includes HST)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    href: "mailto:janet.stevens@teenranch.com?subject=Riding lessons"
+  }, "Rent a schooling ring"))));
+});
+
+/***/ }),
+/* 27 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1);
+
+
 
 
 
@@ -1453,19 +1721,38 @@ __webpack_require__.r(__webpack_exports__);
     subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
     type: "body"
-  }));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg",
+    name: "Horse programs"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Trail rides"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Riding lessons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Hunter/Jumper shows"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Schooling ring rental")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    to: "/programs/horses"
+  }, "View horse programs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
+    href: "https://teenranch.com/horse-programs"
+  }, "View regular horse programs"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG",
+    name: "Hockey programs",
+    swap: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-season skills and skating"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Dufferin-peel skating club")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    to: "/programs/hockey"
+  }, "View hockey programs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
+    href: "https://teenranch.com/hockey-programs"
+  }, "View regular hockey programs")))));
 });
 
 /***/ }),
-/* 21 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1);
+
 
 
 
@@ -1477,17 +1764,18 @@ __webpack_require__.r(__webpack_exports__);
     type: "body"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Hello!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "So you\u2019re interested in Teen Ranch staff. We\u2019re glad you asked! Teen Ranch is a not-for-profit, Christian summer sports camp and year-round retreat facility. Attracting campers and guests from many backgrounds, we strive to serve them with excellence and thereby earn the right to share our faith in the Lord Jesus Christ with them as God gives opportunity. The task is not an easy one, but one that requires a deep love for the Lord Jesus Christ and an earnest desire to serve Him by serving others."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Our volunteer/staff family has grown over the years to include people from the ages of 14 to 90. We represent many vocations, come from many backgrounds, and help in many capacities, including:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "staffTable"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Volunteer/Staff"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Age"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Opportunities Available"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "# Volunteer Hours"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Weekends"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "14 & up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Year-round"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "15 hours/weekend")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Summer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "15 & up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Summer (1-10 weeks)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Seasonal Staff"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post-secondary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Sep. - Dec. and/or Jan. - Jun."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Approximately 40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Co-op"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "High-school"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Sep. - Dec. and/or Jan. - Jun."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Up to 40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Internship"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post-secondary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Year-round"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Up to 40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Full-time"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post-secondary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Year-round"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Approximately 40 hours/week"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Apart from looking great on a resume, a number of past volunteer staff have received financial awards and recognition based on their accumulated high school volunteer hours, not to mention excellent on-the-job leadership training and character development established during those hours."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Whether we are privileged to have you as part of the Ranch Staff 'family' or should you be directed elsewhere, our prayer is that you will know the love of God \"that surpasses knowledge - that you may be filled to the measure of all the fullness of God.\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "- The Teen Ranch Staff Family"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Volunteer/Staff"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Age"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Opportunities Available"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "# Volunteer Hours"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Weekends"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "14 & up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Year-round"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "15 hours/weekend")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Summer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "15 & up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Summer (1-10 weeks)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Seasonal Staff"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post-secondary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Sep. - Dec. and/or Jan. - Jun."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Approximately 40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Co-op"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "High-school"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Sep. - Dec. and/or Jan. - Jun."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Up to 40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Internship"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post-secondary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Year-round"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Up to 40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Full-time"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post-secondary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Year-round"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Approximately 40 hours/week"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Apart from looking great on a resume, a number of past volunteer staff have received financial awards and recognition based on their accumulated high school volunteer hours, not to mention excellent on-the-job leadership training and character development established during those hours."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Whether we are privileged to have you as part of the Ranch Staff 'family' or should you be directed elsewhere, our prayer is that you will know the love of God \"that surpasses knowledge - that you may be filled to the measure of all the fullness of God.\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "- The Teen Ranch Staff Family"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
     href: "https://zfrmz.com/WG1tZ0FvfMkgD27ur3Xr"
-  }, "Click here to get in touch."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
+  }, "Click here to get in touch."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    style: {
+      marginLeft: '2rem'
+    },
     href: "https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/StatementOfFaith.pdf"
   }, "Statement of faith")));
 });
 
 /***/ }),
-/* 22 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1502,7 +1790,7 @@ var _react = _interopRequireDefault(__webpack_require__(0));
 
 var _reactStatic = __webpack_require__(5);
 
-var _router = __webpack_require__(8);
+var _router = __webpack_require__(11);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -1613,43 +1901,43 @@ var _default = function _default(_ref) {
 exports["default"] = _default;
 
 /***/ }),
-/* 23 */
+/* 30 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 24 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/teenRanchLogo_lightBGR.b139b961.svg";
 
 /***/ }),
-/* 25 */
+/* 32 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/defineProperty");
 
 /***/ }),
-/* 26 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(27);
-__webpack_require__(29);
-module.exports = __webpack_require__(37);
+__webpack_require__(34);
+__webpack_require__(36);
+module.exports = __webpack_require__(44);
 
 
 /***/ }),
-/* 27 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(28)["default"];
+var plugins = __webpack_require__(35)["default"];
 
-var _require = __webpack_require__(15),
+var _require = __webpack_require__(20),
     registerPlugins = _require.registerPlugins;
 
 registerPlugins(plugins);
@@ -1657,12 +1945,12 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 28 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(22);
+/* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(29);
 /* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
  // Plugins
@@ -1696,17 +1984,17 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 29 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var _require = __webpack_require__(15),
+var _require = __webpack_require__(20),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(30),
+var _require2 = __webpack_require__(37),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -1715,7 +2003,7 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 30 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1727,8 +2015,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(10);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_universal_component__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
 
 
 
@@ -1753,7 +2045,7 @@ var universalOptions = {
 var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/404.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/404 */).then(__webpack_require__.bind(null, 18))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/404 */).then(__webpack_require__.bind(null, 23))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -1761,7 +2053,7 @@ var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/404.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(18);
+    return /*require.resolve*/(23);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/404";
@@ -1771,7 +2063,7 @@ t_0.template = '__react_static_root__/src/pages/404.js';
 var t_1 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/index */).then(__webpack_require__.bind(null, 19))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/index */).then(__webpack_require__.bind(null, 24))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -1779,7 +2071,7 @@ var t_1 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(19);
+    return /*require.resolve*/(24);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/index";
@@ -1787,27 +2079,63 @@ var t_1 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
 }), universalOptions);
 t_1.template = '__react_static_root__/src/pages/index.js';
 var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
-  id: "__react_static_root__/src/pages/programs.js",
+  id: "__react_static_root__/src/pages/programs/hockey/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs */).then(__webpack_require__.bind(null, 20))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/hockey/index */).then(__webpack_require__.bind(null, 25))]).then(function (proms) {
       return proms[0];
     });
   },
   path: function path() {
-    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs.js');
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/hockey/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(20);
+    return /*require.resolve*/(25);
   },
   chunkName: function chunkName() {
-    return "__react_static_root__/src/pages/programs";
+    return "__react_static_root__/src/pages/programs/hockey/index";
   }
 }), universalOptions);
-t_2.template = '__react_static_root__/src/pages/programs.js';
+t_2.template = '__react_static_root__/src/pages/programs/hockey/index.js';
 var t_3 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "__react_static_root__/src/pages/programs/horses/index.js",
+  load: function load() {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/horses/index */).then(__webpack_require__.bind(null, 26))]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/horses/index.js');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(26);
+  },
+  chunkName: function chunkName() {
+    return "__react_static_root__/src/pages/programs/horses/index";
+  }
+}), universalOptions);
+t_3.template = '__react_static_root__/src/pages/programs/horses/index.js';
+var t_4 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "__react_static_root__/src/pages/programs/index.js",
+  load: function load() {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/index */).then(__webpack_require__.bind(null, 27))]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/index.js');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(27);
+  },
+  chunkName: function chunkName() {
+    return "__react_static_root__/src/pages/programs/index";
+  }
+}), universalOptions);
+t_4.template = '__react_static_root__/src/pages/programs/index.js';
+var t_5 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/staff.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/staff */).then(__webpack_require__.bind(null, 21))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/staff */).then(__webpack_require__.bind(null, 28))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -1815,26 +2143,28 @@ var t_3 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/staff.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(21);
+    return /*require.resolve*/(28);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/staff";
   }
 }), universalOptions);
-t_3.template = '__react_static_root__/src/pages/staff.js'; // Template Map
+t_5.template = '__react_static_root__/src/pages/staff.js'; // Template Map
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   '__react_static_root__/src/pages/404.js': t_0,
   '__react_static_root__/src/pages/index.js': t_1,
-  '__react_static_root__/src/pages/programs.js': t_2,
-  '__react_static_root__/src/pages/staff.js': t_3
+  '__react_static_root__/src/pages/programs/hockey/index.js': t_2,
+  '__react_static_root__/src/pages/programs/horses/index.js': t_3,
+  '__react_static_root__/src/pages/programs/index.js': t_4,
+  '__react_static_root__/src/pages/staff.js': t_5
 }); // Not Found Template
 
 var notFoundTemplate = "__react_static_root__/src/pages/404.js";
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 31 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -1863,7 +2193,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 32 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1890,7 +2220,7 @@ var _extends = Object.assign || function (target) {
 
 exports["default"] = requireUniversalModule;
 
-var _utils = __webpack_require__(12);
+var _utils = __webpack_require__(17);
 
 var CHUNK_NAMES = exports.CHUNK_NAMES = new Set();
 var MODULE_IDS = exports.MODULE_IDS = new Set();
@@ -2074,14 +2404,14 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 33 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	".": 9,
-	"./": 9,
-	"./index": 9,
-	"./index.js": 9
+	".": 12,
+	"./": 12,
+	"./index": 12,
+	"./index.js": 12
 };
 
 
@@ -2102,16 +2432,16 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 33;
+webpackContext.id = 40;
 
 /***/ }),
-/* 34 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof = __webpack_require__(11);
+var _typeof = __webpack_require__(16);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2139,7 +2469,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(16);
+var _propTypes = __webpack_require__(21);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -2214,13 +2544,13 @@ ReportChunks.childContextTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 35 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = require("vm");
 
 /***/ }),
-/* 36 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2231,11 +2561,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.__handleAfter = exports.__update = undefined;
 
-var _hoistNonReactStatics = __webpack_require__(17);
+var _hoistNonReactStatics = __webpack_require__(22);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _index = __webpack_require__(6);
+var _index = __webpack_require__(10);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -2287,28 +2617,28 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 37 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(38);
+var _interopRequireWildcard = __webpack_require__(45);
 
-var _interopRequireDefault = __webpack_require__(39);
+var _interopRequireDefault = __webpack_require__(46);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(40));
+var _extends2 = _interopRequireDefault(__webpack_require__(18));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(41));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(47));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(42);
+var _useStaticInfo = __webpack_require__(48);
 /* eslint-disable import/no-dynamic-require */
 
 
@@ -2329,7 +2659,7 @@ function Suspense(_ref) {
 React.Suspense = Suspense;
 React["default"].Suspense = Suspense;
 
-var App = __webpack_require__(43)["default"];
+var App = __webpack_require__(49)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -2342,48 +2672,42 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 38 */
+/* 45 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
 
 /***/ }),
-/* 39 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireDefault");
 
 /***/ }),
-/* 40 */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/extends");
-
-/***/ }),
-/* 41 */
+/* 47 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 42 */
+/* 48 */
 /***/ (function(module, exports) {
 
 module.exports = require("J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-static\\lib\\browser\\hooks\\useStaticInfo");
 
 /***/ }),
-/* 43 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23);
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(30);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(10);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
 
 
  // Your top level component
@@ -2409,10 +2733,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(44)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(50)(module)))
 
 /***/ }),
-/* 44 */
+/* 50 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -2442,7 +2766,7 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 45 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -2450,12 +2774,12 @@ exports = module.exports = __webpack_require__(13)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Radley&family=Raleway&display=swap);", ""]);
 
 // Module
-exports.push([module.i, "*{scroll-behavior:smooth}html{font-size:62.5%}body{font-family:\"Raleway\",sans-serif,\"HelveticaNeue-Light\",\"Helvetica Neue Light\",\"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif;font-size:16px;margin:0;padding:0}a{text-decoration:none}img{max-width:100%}.constrain{padding:0 2rem;max-width:140rem;margin:0 auto}.covid{text-align:center;padding:2rem 0}.staffTable table{width:100%;border-collapse:collapse}.staffTable table td{border:1px solid #eee}.staffTable table th,.staffTable table td{padding:1rem;text-align:left}.staffTable table tr th:first-of-type{padding:1rem 0}.staffTable table th{color:#002146}@media screen and (max-width: 63.999em){.staffTable{width:100%;overflow-x:auto}}\n", ""]);
+exports.push([module.i, "*{scroll-behavior:smooth}html{font-size:62.5%}body{font-family:\"Raleway\",sans-serif,\"HelveticaNeue-Light\",\"Helvetica Neue Light\",\"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif;font-size:16px;margin:0;padding:0}a{text-decoration:none}img{max-width:100%}.constrain{padding:0 2rem;max-width:140rem;margin:0 auto}.covid{text-align:center;padding:2rem 0}.staffTable table{width:100%;border-collapse:collapse}.staffTable table td{border:1px solid #eee}.staffTable table th,.staffTable table td{padding:1rem;text-align:left}.staffTable table tr th:first-of-type{padding:1rem 0}.staffTable table th{color:#002146}.container--body{padding-top:4rem;padding-bottom:4rem}@media screen and (max-width: 63.999em){.staffTable{width:100%;overflow-x:auto}}\n", ""]);
 
 
 
 /***/ }),
-/* 46 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -2463,12 +2787,12 @@ exports = module.exports = __webpack_require__(13)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Radley&family=Raleway&display=swap);", ""]);
 
 // Module
-exports.push([module.i, ".hamburgerMenu{width:44px;height:44px;display:inline-block;cursor:pointer;overflow:visible;transition-property:opacity, -webkit-filter;transition-property:opacity, filter;transition-property:opacity, filter, -webkit-filter;transition-duration:0.15s;transition-timing-function:linear}.hamburgerMenu:hover,.hamburgerMenu--active:hover{opacity:0.7}.hamburgerBox{width:24px;height:24px;display:inline-block;position:relative}.hamburgerInner{top:50%;margin-top:-1px}.hamburgerInner,.hamburgerInner::before,.hamburgerInner::after{width:18px;height:2px;background:rgba(255,255,255,0.95);position:absolute;left:3px;transition-property:transform;transition-duration:0.15s;transition-timing-function:ease}.hamburgerInner::before,.hamburgerInner::after{content:\"\";display:block}.hamburgerInner::before{top:-5px;left:0}.hamburgerInner::after{bottom:-5px;left:0}.hamburgerInner{transition-duration:0.075s;transition-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19)}.hamburgerInner::before{transition:top 0.075s 0.12s ease, opacity 0.075s ease}.hamburgerInner::after{transition:bottom 0.075s 0.12s ease,transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19)}.hamburgerMenu--active .hamburgerInner{transform:rotate(45deg);transition-delay:0.12s;transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}.hamburgerMenu--active .hamburgerInner::before{top:0;opacity:0;transition:top 0.075s ease, opacity 0.075s 0.12s ease}.hamburgerMenu--active .hamburgerInner::after{bottom:0;transform:rotate(-90deg);transition:bottom 0.075s ease,transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1)}.container--header{border-bottom:1px solid #fafafa;height:100px;background:#fff}.container--header .logo{height:60px;padding-top:20px}.container--header nav ul{list-style:none;margin:0;padding:0}.container--header nav ul li{display:inline-block}.container--header nav a{display:inline-block;padding:1.2rem 2.5rem;line-height:20px;margin-top:20px;font-size:1.6rem;letter-spacing:0.02em;color:#002146}.container--header nav a:hover{color:#0074F7}.container--header nav a.ctaLink{background:#0074F7;border-radius:4px;color:rgba(255,255,255,0.95);margin-left:2.5rem}.container--header nav a.ctaLink:hover{background:#0068de}@media screen and (min-width: 64em){header .constrain{display:flex;align-items:center;justify-content:space-between}header .hamburgerMenu{display:none !important}}@media screen and (max-width: 63.999em){.container--header{height:60px}.container--header .logo{height:40px;padding-top:10px}.container--header ul li{display:block;width:100%;text-align:center}.menu{display:none}.menu--expanded{display:block}.header--expanded{height:100%;position:fixed;width:100%}.hamburgerMenu{float:right;background:none;border:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none;margin-right:-1rem;margin-top:1rem}}\n", ""]);
+exports.push([module.i, ".hamburgerMenu{width:44px;height:44px;display:inline-block;cursor:pointer;overflow:visible;transition-property:opacity, -webkit-filter;transition-property:opacity, filter;transition-property:opacity, filter, -webkit-filter;transition-duration:0.15s;transition-timing-function:linear}.hamburgerMenu:hover,.hamburgerMenu--active:hover{opacity:0.7}.hamburgerBox{width:24px;height:24px;display:inline-block;position:relative}.hamburgerInner{top:50%;margin-top:-1px}.hamburgerInner,.hamburgerInner::before,.hamburgerInner::after{width:18px;height:2px;background:#002146;position:absolute;left:3px;transition-property:transform;transition-duration:0.15s;transition-timing-function:ease}.hamburgerInner::before,.hamburgerInner::after{content:\"\";display:block}.hamburgerInner::before{top:-5px;left:0}.hamburgerInner::after{bottom:-5px;left:0}.hamburgerInner{transition-duration:0.075s;transition-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19)}.hamburgerInner::before{transition:top 0.075s 0.12s ease, opacity 0.075s ease}.hamburgerInner::after{transition:bottom 0.075s 0.12s ease,transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19)}.hamburgerMenu--active .hamburgerInner{transform:rotate(45deg);transition-delay:0.12s;transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}.hamburgerMenu--active .hamburgerInner::before{top:0;opacity:0;transition:top 0.075s ease, opacity 0.075s 0.12s ease}.hamburgerMenu--active .hamburgerInner::after{bottom:0;transform:rotate(-90deg);transition:bottom 0.075s ease,transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1)}.container--header{border-bottom:1px solid #fafafa;height:100px;background:#fff}.container--header .logo{height:60px;padding-top:20px}.container--header nav ul{list-style:none;margin:0;padding:0}.container--header nav ul li{display:inline-block}.container--header nav a{display:inline-block;padding:1.2rem 2.5rem;line-height:20px;margin-top:20px;font-size:1.6rem;letter-spacing:0.02em;color:#002146}.container--header nav a:hover{color:#0074F7}.container--header nav a.active{color:#0074F7}.container--header nav a.ctaLink{background:#0074F7;border-radius:4px;color:rgba(255,255,255,0.95)}.container--header nav a.ctaLink:hover{background:#0068de}@media screen and (min-width: 64em){header .constrain{display:flex;align-items:center;justify-content:space-between}header .hamburgerMenu{display:none !important}header a.ctaLink{margin-left:2.5rem}header a{position:relative}header a:hover .subNav{display:block}header .subNav{display:none;background:#fff;position:absolute;border-radius:4px;top:4rem;box-shadow:0 0 6px rgba(0,0,0,0.1)}header .subNav a{margin:1rem 0;white-space:nowrap}}@media screen and (max-width: 63.999em){.container--header{height:60px}.container--header .logo{height:40px;padding-top:10px}.container--header ul li{display:block;width:100%;text-align:center}.menu{display:none}.menu--expanded{display:block}.header--expanded{height:100%;position:fixed;width:100%}.hamburgerMenu{float:right;background:none;border:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none;margin-right:-1rem;margin-top:1rem}}\n", ""]);
 
 
 
 /***/ }),
-/* 47 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -2477,6 +2801,32 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Ra
 
 // Module
 exports.push([module.i, ".container--heading{background:#fafafa;padding:6rem 0}.container--heading h1,.container--heading h2{margin:0;padding:0;font-weight:normal;text-align:center}.container--heading h1{color:#002146;font-size:6rem;margin-bottom:3rem;font-family:\"Radley\",serif;line-height:100%}.container--heading h2{color:rgba(0,0,0,0.75);font-size:1.6rem;font-family:\"Raleway\",sans-serif}\n", ""]);
+
+
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)(false);
+// Imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Radley&family=Raleway&display=swap);", ""]);
+
+// Module
+exports.push([module.i, ".button{outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;background:#0074F7;padding:1.2rem 2rem;border-radius:4px;color:rgba(255,255,255,0.95);letter-spacing:0.02em;margin:1rem 0;display:inline-block}.button:hover{background:#005cc4}\n", ""]);
+
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)(false);
+// Imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Radley&family=Raleway&display=swap);", ""]);
+
+// Module
+exports.push([module.i, ".programContainer{width:100%;margin:0 auto;margin-bottom:8rem;margin-top:4rem}.programContainer .programImage img{display:block;width:100%;border-radius:4px;box-shadow:0 12px 24px rgba(0,0,0,0.3),0 0 6px rgba(0,0,0,0.3)}@media screen and (min-width: 64em){.programContainer{display:grid;gap:4rem;grid-template-columns:1fr 1fr}.programContainer--swap{grid-template-columns:1fr 1fr}.programContainer--swap .programBody{grid-column-start:1;grid-row-start:1}}\n", ""]);
 
 
 
