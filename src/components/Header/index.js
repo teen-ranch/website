@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
+import './hamburger.scss'
 import './header.scss'
 import Container from 'components/Container'
 import { NavLink as Link, useLocation } from 'components/Router'
