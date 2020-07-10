@@ -33,7 +33,7 @@ export default function Button({ children, style, className, to, href, onClick, 
                 className: defaultClassName,
                 href,
                 target,
-                rel
+                rel: `noopener noreferrer${ rel ? ` ${rel}` : '' }`
             }
         }
     }

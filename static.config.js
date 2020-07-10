@@ -2,6 +2,7 @@ import path from 'path'
 import axios from 'axios'
 
 export default {
+  siteRoot: 'https://teenranch.com',
   getSiteData: () => ({
     title: 'Teen Ranch Canada',
     covidGroupMax: 10
@@ -34,9 +35,23 @@ export default {
         location: path.resolve('./src/pages'),
       },
     ],
-    require.resolve('react-static-plugin-reach-router'),
+    [
+      'react-static-plugin-reach-router',
+      {
+        RouterProps: {
+          className: 'router'
+        }
+      }
+    ],
     require.resolve('react-static-plugin-sitemap'),
     require.resolve('react-static-plugin-sass'),
+    [
+      'react-static-plugin-google-tag-manager',
+      {
+        id: 'GTM-WRB7H6L',
+        // debug: true,
+      },
+    ],
     [
       'react-static-plugin-favicons',
       { 

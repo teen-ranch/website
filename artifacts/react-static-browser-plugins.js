@@ -1,5 +1,6 @@
 // Imports
 import plugin0 from '__react_static_root__/node_modules/react-static-plugin-reach-router/browser.api.js'
+import plugin1 from '__react_static_root__/node_modules/react-static-plugin-google-tag-manager/dist/browser.api.js'
 
 // Plugins
 const plugins = [{
@@ -10,7 +11,7 @@ const plugins = [{
 {
         location: "__react_static_root__/node_modules/react-static-plugin-reach-router",
         plugins: [],
-        hooks: plugin0({})
+        hooks: plugin0({"RouterProps":{"className":"router"}})
       },
 {
         location: "__react_static_root__/node_modules/react-static-plugin-sitemap/dist",
@@ -21,6 +22,11 @@ const plugins = [{
         location: "__react_static_root__/node_modules/react-static-plugin-sass",
         plugins: [],
         hooks: {}
+      },
+{
+        location: "__react_static_root__/node_modules/react-static-plugin-google-tag-manager/dist",
+        plugins: [],
+        hooks: plugin1({"id":"GTM-WRB7H6L"})
       },
 {
         location: "__react_static_root__/node_modules/react-static-plugin-favicons",

@@ -29,15 +29,16 @@ export default function Header() {
                 <nav className={`menu ${ expanded ? 'menu--expanded' : '' }`}>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/programs ">Programs
+                        <li><Link to="/programs">Programs</Link>
                             <ul className='subNav'>
                                 <li><Link to='/programs/hockey'>Hockey</Link></li>
                                 <li><Link to='/programs/horses'>Horses</Link></li>
                             </ul>
-                        </Link></li>
-                        <li><Link to="/staff ">Staff</Link></li>
-                        {/* <li><Link to="/contact ">Contact</Link></li> */}
-                        <li><a className='ctaLink' href='https://register.trmanager.com'>Sign up</a></li>
+                        </li>
+                        <li><Link to="/staff">Staff</Link></li>
+                        <li><a href="https://teenranchcanada.wordpress.com/" rel='noopener noreferrer'>Blog</a></li>
+                        <li><Link to="/contact ">Contact</Link></li>
+                        <li><a className='ctaLink' rel="noopener noreferrer" href='https://register.trmanager.com'>Sign up</a></li>
                     </ul>
                 </nav>
             </Container>

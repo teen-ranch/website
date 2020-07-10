@@ -13,7 +13,7 @@ export default () => {
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG' name='Pre-Season Skills and Skating'>
                     <ul>
-                        <li>Boys & Girls Aged 7-13 </li>
+                        <li>Boys & Girls Aged 7-13</li>
                         <li>Wednesdays 7:00 pm – 7:50 pm</li>
                         <li>July 22 – August 26, 2020</li>
                         <li>$170.00 +HST per person</li>
@@ -26,7 +26,7 @@ export default () => {
                 <p>Sharpen your skates and sharpen your skills. Rent ice or participate in a Teen Ranch
                 hockey/figure skating program or private/semi-private lesson.</p>
 
-                    <Button href="mailto:camp@teenranch.com?subject=Ice rental">Book now</Button>
+                    <Button href="mailto:icecorral@teenranch.com?subject=Ice rental">Book now</Button>
                 </Program>
 
             </Container>

@@ -9,8 +9,12 @@ export default () => {
         <>
             <Heading title='Our staff' subtitle="Volunteer and full-time staff positions." />
             <Container type='body'>
+
+                <p>We are not currently hiring. We have limited volunteer opportunities potentially available on a day-to-day basis.</p>
+
+                <Button href='mailto:staff@teenranch.com?subject=Potential volunteer opportunity'>Click here to get in touch</Button>
                 
-                <p>Hello! </p>
+                {/* <p>Hello!</p>
 
                 <p>So you’re interested in Teen Ranch staff. We’re glad you asked! Teen Ranch is a not-for-profit, Christian summer sports camp and year-round retreat facility. Attracting campers and guests from many backgrounds, we strive to serve them with excellence and thereby earn the right to share our faith in the Lord Jesus Christ with them as God gives opportunity. The task is not an easy one, but one that requires a deep love for the Lord Jesus Christ and an earnest desire to serve Him by serving others.</p>
 
@@ -52,9 +56,9 @@ export default () => {
 
                 <p>- The Teen Ranch Staff Family</p>
 
-                <Button href="https://zfrmz.com/WG1tZ0FvfMkgD27ur3Xr">Click here to get in touch.</Button>
+                <Button href="https://zfrmz.com/WG1tZ0FvfMkgD27ur3Xr">Click here to get in touch</Button>
 
-                <Button style={{ marginLeft: '2rem' }} href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/StatementOfFaith.pdf">Statement of faith</Button>
+                <Button style={{ marginLeft: '2rem' }} href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/StatementOfFaith.pdf">Statement of faith</Button> */}
 
             </Container>
         </>

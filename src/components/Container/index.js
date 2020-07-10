@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Container({ type = 'body', constrain = true, children }) {
+export default function Container({ type = 'body', constrain = true, style, children }) {
 
     return (
-        <div className={`container ${ type ? ` container--${ type }` : ''  }`}>
+        <div className={`container ${ type ? ` container--${ type }` : ''  }`} style={ style }>
             <Constrain constrain={ constrain }>
                 {
                     children

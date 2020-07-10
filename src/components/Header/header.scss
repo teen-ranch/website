@@ -72,11 +72,11 @@
             margin-left: 2.5rem;
         }
 
-        a {
+        li {
             position: relative;
         }
 
-        a:hover {
+        li:hover {
             .subNav {
                 display: block;
             }
@@ -87,7 +87,7 @@
             background: #fff;
             position: absolute;
             border-radius: $border-radius;
-            top: 4rem;
+            top: 6rem;
             box-shadow: 
                 0 0 6px rgba(0,0,0,0.1)
             ;
@@ -127,6 +127,7 @@
         height: 100%;
         position: fixed;
         width: 100%;
+        z-index: 1;
     }
 
     .hamburgerMenu {

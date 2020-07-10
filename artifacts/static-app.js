@@ -99,7 +99,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "https://teenranch.com/";
 /******/
 /******/ 	// uncaught error handler for webpack runtime
 /******/ 	__webpack_require__.oe = function(err) {
@@ -110,7 +110,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 33);
+/******/ 	return __webpack_require__(__webpack_require__.s = 35);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -124,11 +124,79 @@ module.exports = require("react");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Container; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function Container(_ref) {
+  var _ref$type = _ref.type,
+      type = _ref$type === void 0 ? 'body' : _ref$type,
+      _ref$constrain = _ref.constrain,
+      constrain = _ref$constrain === void 0 ? true : _ref$constrain,
+      style = _ref.style,
+      children = _ref.children;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container ".concat(type ? " container--".concat(type) : ''),
+    style: style
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Constrain, {
+    constrain: constrain
+  }, children));
+}
+
+function Constrain(_ref2) {
+  var constrain = _ref2.constrain,
+      children = _ref2.children;
+  if (!constrain) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, children);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "constrain"
+  }, children);
+}
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NavLink; });
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["Router"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["useLocation"]; });
+
+
+
+
+
+var NavLink = function NavLink(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, props, {
+    getProps: function getProps(_ref) {
+      var isCurrent = _ref.isCurrent;
+      // the object returned here is passed to the
+      // anchor element's props
+      return {
+        className: isCurrent ? 'active' : ''
+      };
+    }
+  }));
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Button; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
-/* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(55);
+/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(61);
 /* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_button_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -168,7 +236,7 @@ function Button(_ref) {
         className: defaultClassName,
         href: href,
         target: target,
-        rel: rel
+        rel: "noopener noreferrer".concat(rel ? " ".concat(rel) : '')
       }
     }
   };
@@ -178,85 +246,48 @@ function Button(_ref) {
 }
 
 /***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Container; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-function Container(_ref) {
-  var _ref$type = _ref.type,
-      type = _ref$type === void 0 ? 'body' : _ref$type,
-      _ref$constrain = _ref.constrain,
-      constrain = _ref$constrain === void 0 ? true : _ref$constrain,
-      children = _ref.children;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container ".concat(type ? " container--".concat(type) : '')
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Constrain, {
-    constrain: constrain
-  }, children));
-}
-
-function Constrain(_ref2) {
-  var constrain = _ref2.constrain,
-      children = _ref2.children;
-  if (!constrain) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, children);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "constrain"
-  }, children);
-}
-
-/***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 module.exports = require("path");
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-plugin-universal-import/universalImport");
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NavLink; });
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["Router"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["useLocation"]; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Heading; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(59);
+/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_heading_scss__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
 
+function Heading(_ref) {
+  var title = _ref.title,
+      subtitle = _ref.subtitle;
 
-var NavLink = function NavLink(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, props, {
-    getProps: function getProps(_ref) {
-      var isCurrent = _ref.isCurrent;
-      // the object returned here is passed to the
-      // anchor element's props
-      return {
-        className: isCurrent ? 'active' : ''
-      };
-    }
-  }));
-};
+  var _useSiteData = Object(react_static__WEBPACK_IMPORTED_MODULE_2__["useSiteData"])(),
+      siteTitle = _useSiteData.title;
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
+    type: "heading"
+  }, title && typeof title === 'string' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_2__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, title, " - ", siteTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, title), subtitle && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, subtitle));
+}
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -264,7 +295,7 @@ var NavLink = function NavLink(props) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var components_Tueri__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
-/* harmony import */ var _program_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(56);
+/* harmony import */ var _program_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(62);
 /* harmony import */ var _program_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_program_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -287,35 +318,6 @@ function Program(_ref) {
 }
 
 /***/ }),
-/* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Heading; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(54);
-/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_heading_scss__WEBPACK_IMPORTED_MODULE_3__);
-
-
-
-
-function Heading(_ref) {
-  var title = _ref.title,
-      subtitle = _ref.subtitle;
-
-  var _useSiteData = Object(react_static__WEBPACK_IMPORTED_MODULE_2__["useSiteData"])(),
-      siteTitle = _useSiteData.title;
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
-    type: "heading"
-  }, title && typeof title === 'string' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_2__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, title, " - ", siteTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, title), subtitle && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, subtitle));
-}
-
-/***/ }),
 /* 8 */
 /***/ (function(module, exports) {
 
@@ -323,12 +325,6 @@ module.exports = require("react-static");
 
 /***/ }),
 /* 9 */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/slicedToArray");
-
-/***/ }),
-/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -373,7 +369,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(39);
+var _requireUniversalModule = __webpack_require__(42);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -388,7 +384,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(41);
+var _reportChunks = __webpack_require__(44);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -410,13 +406,13 @@ var _hoistNonReactStatics = __webpack_require__(22);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _vm = __webpack_require__(42);
+var _vm = __webpack_require__(45);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
 var _utils = __webpack_require__(17);
 
-var _helpers = __webpack_require__(43);
+var _helpers = __webpack_require__(46);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -811,16 +807,10 @@ function universal(asyncModule) {
     report: _propTypes2["default"].func
   }, _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(38)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(41)(module)))
 
 /***/ }),
-/* 11 */
-/***/ (function(module, exports) {
-
-module.exports = require("@reach/router");
-
-/***/ }),
-/* 12 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -911,6 +901,18 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/slicedToArray");
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+module.exports = require("@reach/router");
+
+/***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -925,7 +927,7 @@ var _utils = __webpack_require__(17);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(40)("" + id);
+    return __webpack_require__(43)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -943,7 +945,7 @@ exports["default"] = requireById;
 __webpack_require__.d(__webpack_exports__, "a", function() { return /* reexport */ Img; });
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
-var slicedToArray_ = __webpack_require__(9);
+var slicedToArray_ = __webpack_require__(11);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
 
 // EXTERNAL MODULE: external "react"
@@ -1005,7 +1007,7 @@ function useTueri() {
   return Object(external_react_["useContext"])(TueriContext);
 }
 // EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
-var defineProperty_ = __webpack_require__(32);
+var defineProperty_ = __webpack_require__(34);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
 
 // CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Tueri/Img.js
@@ -1239,26 +1241,64 @@ var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_)
 var external_react_static_ = __webpack_require__(8);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Router.js
-var Router = __webpack_require__(5);
+var Router = __webpack_require__(2);
 
+// CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/hooks/analytics.js
+
+
+var analytics_useAnalytics = function useAnalytics() {
+  var location = Object(Router["d" /* useLocation */])();
+  Object(external_react_["useEffect"])(function () {
+    if (typeof window !== 'undefined' && typeof window.gtag !== 'undefined') {
+      window.gtag('config', 'UA-9222619-11', {
+        'page_path': location.pathname
+      });
+    }
+  }, [location]);
+};
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/styles/app.scss
-var app = __webpack_require__(51);
+var app = __webpack_require__(54);
 
+// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Loader/loader.scss
+var loader = __webpack_require__(55);
+
+// CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Loader/index.js
+
+
+function Loader() {
+  return /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "loaderContainer"
+  }, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "loader"
+  }, /*#__PURE__*/external_react_default.a.createElement("svg", {
+    className: "foreground",
+    viewBox: "0 0 15 17",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/external_react_default.a.createElement("path", {
+    d: "M7.43971 0L6.14026 2.53663C5.99283 2.8123 5.72865 2.78672 5.46446 2.63274L4.52361 2.12289L5.22484 6.01908C5.37228 6.7309 4.89922 6.7309 4.6657 6.42311L3.02388 4.49944L2.75731 5.47632C2.72659 5.60461 2.59145 5.73935 2.38866 5.70726L0.31252 5.2504L0.857807 7.32532C0.974569 7.78699 1.06559 7.97816 0.739963 8.09991L0 8.46392L3.57392 11.5022C3.71537 11.6171 3.78688 11.8238 3.73649 12.011L3.42369 13.0853C4.65426 12.9368 5.75751 12.804 6.98805 12.6557C7.0974 12.6543 7.2787 12.7515 7.27793 12.8833L7.11492 16.8192H7.71322L7.61903 12.8918C7.61828 12.7599 7.7827 12.6543 7.89205 12.6557C9.12259 12.8039 10.2258 12.9368 11.4564 13.0853L11.1436 12.011C11.0932 11.8238 11.1647 11.6171 11.3062 11.5022L14.8801 8.46392L14.1401 8.09992C13.8145 7.97815 13.9055 7.78699 14.0223 7.32532L14.5676 5.25041L12.4914 5.70727C12.2887 5.73935 12.1535 5.60461 12.1228 5.47633L11.8562 4.49945L10.2144 6.42311C9.98086 6.73089 9.50781 6.73089 9.65525 6.01908L10.3565 2.1229L9.41564 2.63274C9.15145 2.78673 8.88728 2.8123 8.73984 2.53663"
+  })), /*#__PURE__*/external_react_default.a.createElement("svg", {
+    className: "background",
+    viewBox: "0 0 15 17",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/external_react_default.a.createElement("path", {
+    d: "M7.43971 0L6.14026 2.53663C5.99283 2.8123 5.72865 2.78672 5.46446 2.63274L4.52361 2.12289L5.22484 6.01908C5.37228 6.7309 4.89922 6.7309 4.6657 6.42311L3.02388 4.49944L2.75731 5.47632C2.72659 5.60461 2.59145 5.73935 2.38866 5.70726L0.31252 5.2504L0.857807 7.32532C0.974569 7.78699 1.06559 7.97816 0.739963 8.09991L0 8.46392L3.57392 11.5022C3.71537 11.6171 3.78688 11.8238 3.73649 12.011L3.42369 13.0853C4.65426 12.9368 5.75751 12.804 6.98805 12.6557C7.0974 12.6543 7.2787 12.7515 7.27793 12.8833L7.11492 16.8192H7.71322L7.61903 12.8918C7.61828 12.7599 7.7827 12.6543 7.89205 12.6557C9.12259 12.8039 10.2258 12.9368 11.4564 13.0853L11.1436 12.011C11.0932 11.8238 11.1647 11.6171 11.3062 11.5022L14.8801 8.46392L14.1401 8.09992C13.8145 7.97815 13.9055 7.78699 14.0223 7.32532L14.5676 5.25041L12.4914 5.70727C12.2887 5.73935 12.1535 5.60461 12.1228 5.47633L11.8562 4.49945L10.2144 6.42311C9.98086 6.73089 9.50781 6.73089 9.65525 6.01908L10.3565 2.1229L9.41564 2.63274C9.15145 2.78673 8.88728 2.8123 8.73984 2.53663"
+  }))));
+}
 // EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
-var slicedToArray_ = __webpack_require__(9);
+var slicedToArray_ = __webpack_require__(11);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/hamburger.scss
-var hamburger = __webpack_require__(52);
+var hamburger = __webpack_require__(56);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/header.scss
-var header = __webpack_require__(53);
+var header = __webpack_require__(57);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Container/index.js
-var Container = __webpack_require__(2);
+var Container = __webpack_require__(1);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/teenRanchLogo_lightBGR.svg
-var teenRanchLogo_lightBGR = __webpack_require__(31);
+var teenRanchLogo_lightBGR = __webpack_require__(33);
 var teenRanchLogo_lightBGR_default = /*#__PURE__*/__webpack_require__.n(teenRanchLogo_lightBGR);
 
 // CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/index.js
@@ -1304,28 +1344,54 @@ function Header() {
   }, /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
     to: "/"
   }, "Home")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
-    to: "/programs "
-  }, "Programs", /*#__PURE__*/external_react_default.a.createElement("ul", {
+    to: "/programs"
+  }, "Programs"), /*#__PURE__*/external_react_default.a.createElement("ul", {
     className: "subNav"
   }, /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
     to: "/programs/hockey"
   }, "Hockey")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
     to: "/programs/horses"
-  }, "Horses"))))), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
-    to: "/staff "
+  }, "Horses")))), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/staff"
   }, "Staff")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "https://teenranchcanada.wordpress.com/",
+    rel: "noopener noreferrer"
+  }, "Blog")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/contact "
+  }, "Contact")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement("a", {
     className: "ctaLink",
+    rel: "noopener noreferrer",
     href: "https://register.trmanager.com"
   }, "Sign up"))))));
 }
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Tueri/index.js + 2 modules
 var Tueri = __webpack_require__(14);
 
+// EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/CovidBanner/covid.scss
+var covid = __webpack_require__(58);
+
+// CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/CovidBanner/index.js
+
+
+
+function Covid() {
+  return /*#__PURE__*/external_react_default.a.createElement(Container["a" /* default */], {
+    type: "covid"
+  }, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/external_react_default.a.createElement("br", null), /*#__PURE__*/external_react_default.a.createElement("a", {
+    target: "_blank",
+    rel: "noopener noreferrer",
+    href: "https://website.teenranch.com"
+  }, "Click here to view our regular programs."));
+}
 // CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/App.js
 
  //
 
  // import Dynamic from 'containers/Dynamic'
+
+
+
+
 
 
 
@@ -1347,13 +1413,26 @@ function App() {
   }), /*#__PURE__*/external_react_default.a.createElement("meta", {
     name: "wot-verification",
     content: "2d82a7513302ee51cb53"
-  })), /*#__PURE__*/external_react_default.a.createElement(Tueri["b" /* default */], {
+  })), /*#__PURE__*/external_react_default.a.createElement(Analytics, null), /*#__PURE__*/external_react_default.a.createElement(Tueri["b" /* default */], {
     replacements: [['https://teenranch.nyc3.digitaloceanspaces.com/website/assets/', 'https://cdn.tueri.io/68719476739/assets/']]
-  }, /*#__PURE__*/external_react_default.a.createElement(Header, null), /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Suspense, {
-    fallback: /*#__PURE__*/external_react_default.a.createElement("em", null, "Loading...")
+  }, /*#__PURE__*/external_react_default.a.createElement(Covid, null), /*#__PURE__*/external_react_default.a.createElement(Header, null), /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Suspense, {
+    fallback: /*#__PURE__*/external_react_default.a.createElement(Container["a" /* default */], {
+      type: "body",
+      constrain: false,
+      style: {
+        flexGrow: 1,
+        display: 'flex',
+        flexDirection: 'column'
+      }
+    }, /*#__PURE__*/external_react_default.a.createElement(Loader, null))
   }, /*#__PURE__*/external_react_default.a.createElement(Router["c" /* Router */], null, /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Routes"], {
     path: "*"
   })))));
+}
+
+function Analytics() {
+  analytics_useAnalytics();
+  return null;
 }
 
 /* harmony default export */ var src_App = __webpack_exports__["a"] = (App);
@@ -1568,9 +1647,164 @@ module.exports = require("hoist-non-react-statics");
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
+/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2);
+/* harmony import */ var _404_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(60);
+/* harmony import */ var _404_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_404_scss__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "404 - Oh no's! We couldn't find that page :("));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    title: '404 Not found',
+    subtitle: 'Uh-oh! Looks like the page you were looking for doesn\'t exist.'
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
+    type: "body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    style: {
+      textAlign: 'center'
+    }
+  }, "Temporary programs (COVID-19)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "fourOhFourGrid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Hockey"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_3__[/* Link */ "a"], {
+    to: "/programs/hockey"
+  }, "Pre-season skills and skating")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_3__[/* Link */ "a"], {
+    to: "/programs/hockey"
+  }, "Ice rental")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Horses"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_3__[/* Link */ "a"], {
+    to: "/programs/horses"
+  }, "Trail rides")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_3__[/* Link */ "a"], {
+    to: "/programs/horses"
+  }, "Riding lessons")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_3__[/* Link */ "a"], {
+    to: "/programs/horses"
+  }, "Hunter/Jumper shows")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Router__WEBPACK_IMPORTED_MODULE_3__[/* Link */ "a"], {
+    to: "/programs/horses"
+  }, "Schooling ring rental"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    style: {
+      textAlign: 'center'
+    }
+  }, "Regular programs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "fourOhFourGrid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Summer camp"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    href: "https://website.teenranch.com/summer-camp"
+  }, "Summer camp overview")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    href: "https://website.teenranch.com/summer-camp/hockey-camp"
+  }, "Hockey camp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    href: "https://website.teenranch.com/summer-camp/instar-athletics-figure-skating"
+  }, "Instar athletics figure skating")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    href: "https://website.teenranch.com/summer-camp/ninja-warrior-camp"
+  }, "Ninja warrior camp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    href: "https://website.teenranch.com/summer-camp/horse-camp"
+  }, "Horse camp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    href: "https://website.teenranch.com/summer-camp/adventure-camp"
+  }, "Adventure camp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    href: "https://website.teenranch.com/summer-camp/bmx-dirt-camp"
+  }, "BMX Dirt camp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    href: "https://website.teenranch.com/summer-camp/soccer-camp"
+  }, "Soccer camp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    href: "https://website.teenranch.com/summer-camp/wham-week"
+  }, "WHAM camp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    href: "https://website.teenranch.com/summer-camp/summer-day-camp"
+  }, "Summer day camp")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Hockey"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs"
+  }, "Hockey programs overview")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs/pre-tryout-skills-skating-development"
+  }, "Pre-tryout skills & skating")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs/pre-season-skills-skating-development"
+  }, "Pre-season skills & skating")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs/learn-to-skate"
+  }, "Learn to skate")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs/skills-development"
+  }, "Skills development")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs/skating-development"
+  }, "Skating development")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs/pond-hockey"
+  }, "Pond hockey")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs/spring-hockey-league"
+  }, "Spring hockey league")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs/public-skating"
+  }, "Public skating")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs/mens-hockey-league"
+  }, "Men's hockey league")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs/3-on-3-hockey"
+  }, "3 on 3 hockey")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/hockey-programs/adult-hockey-skills-development"
+  }, "Adult hockey skills development")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://www.sk8dpsc.ca/"
+  }, "Dufferin-peel skating club")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Horses"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/horse-programs"
+  }, "Horse programs overview")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/horse-programs/hunter-jumper-horse-shows"
+  }, "Hunter/Jumper horse shows")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/horse-programs/trail-rides"
+  }, "Trail rides")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/horse-programs/cha-instructor-clinic"
+  }, "CHA instructor clinic")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Day camps"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/day-camp/pa-day-camp"
+  }, "PA day camp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/day-camp/christmas-day-camp"
+  }, "Christmas day camp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/day-camp/school-closure-day-camp"
+  }, "School closure day camp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/day-camp/march-break-day-camp"
+  }, "March break day camp")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Year-round"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/school-programs"
+  }, "School programs")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/retreat-programs"
+  }, "Retreat programs")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Events"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/events/family-day"
+  }, "Family day")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/events/easter"
+  }, "Easter round up")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/events/spring-classic-golf-tournament"
+  }, "Spring classic golf tournament")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/events/camp-for-a-weekend"
+  }, "March break camp for a weekend")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/events/mother-daughter-equine-escape"
+  }, "Mother/daughter equine escape")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: "noopener noreferrer",
+    to: "https://website.teenranch.com/events/family-camp"
+  }, "Family camp")))))));
 });
 
 /***/ }),
@@ -1581,27 +1815,26 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
-/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
-    title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Canada\u2019s premier sports resort", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "and retreat centre"),
-    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Less than an hour from ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Toronto"), " in the heart of ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Caledon, Ontario"))
+    title: "Contact us",
+    subtitle: "Due to staffing restrictions, wait times may be longer than usual."
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
     type: "body"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "covid"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "COVID-19 Announcement"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Teen Ranch is running a small set of temporary programs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We look forward to serving you with more activities as restrictions continue to loosen."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
-    to: "/programs"
-  }, "Check out our currently running programs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    href: "https://website.teenranch.com"
-  }, "Click here to view our regular site")))));
+    className: "fourOhFourGrid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Phone"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "tel:5199414501"
+  }, "(519) 941-4501"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Fax"), "(519) 941-0500"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Mailing address"), "PO Box 77", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Caledon Village, Ontario", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "L7K 3L3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Physical address"), "20682 Hurontario Street", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Caledon, Ontario", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "L7K 1X1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "mailto:camp@teenranch.com"
+  }, "camp@teenranch.com")))));
 });
 
 /***/ }),
@@ -1612,10 +1845,38 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
-/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1);
-/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "A premier sports resort", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "and retreat centre since 1967"),
+    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Less than an hour from ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Toronto"), " in the heart of ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Caledon, Ontario"))
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
+    type: "body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "covid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "COVID-19 Announcement"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Teen Ranch is running a small set of temporary programs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We look forward to serving you with more activities as restrictions continue to loosen."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    to: "/programs"
+  }, "Check out our currently running programs"))));
+});
+
+/***/ }),
+/* 26 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
 
 
 
@@ -1637,12 +1898,12 @@ __webpack_require__.r(__webpack_exports__);
     name: "Ice rental",
     swap: true
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sharpen your skates and sharpen your skills. Rent ice or participate in a Teen Ranch hockey/figure skating program or private/semi-private lesson."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
-    href: "mailto:camp@teenranch.com?subject=Ice rental"
+    href: "mailto:icecorral@teenranch.com?subject=Ice rental"
   }, "Book now"))));
 });
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1651,10 +1912,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
-/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7);
-/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1);
-/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
 
 
 
@@ -1692,51 +1953,8 @@ __webpack_require__.r(__webpack_exports__);
     name: "Schooling ring rental",
     swap: true
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Hunter or jumper course"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-booking and pre-payment required*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "$25.00 per horse per hour of ring time (Includes HST)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
-    href: "mailto:janet.stevens@teenranch.com?subject=Riding lessons"
+    href: "mailto:janet.stevens@teenranch.com?subject=Schooling ring rental"
   }, "Rent a schooling ring"))));
-});
-
-/***/ }),
-/* 27 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
-/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1);
-/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
-    title: "Programs",
-    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
-    type: "body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
-    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg",
-    name: "Horse programs"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Trail rides"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Riding lessons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Hunter/Jumper shows"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Schooling ring rental")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
-    to: "/programs/horses"
-  }, "View horse programs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    href: "https://teenranch.com/horse-programs"
-  }, "View regular horse programs"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
-    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG",
-    name: "Hockey programs",
-    swap: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-season skills and skating"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Dufferin-peel skating club ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
-    to: "/programs/hockey"
-  }, "View hockey programs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    target: "_blank",
-    href: "https://teenranch.com/hockey-programs"
-  }, "View regular hockey programs")))));
 });
 
 /***/ }),
@@ -1745,11 +1963,49 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Programs; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
-/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
+
+
+
+
+
+function Programs() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    title: "Programs",
+    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
+    type: "body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG",
+    name: "Hockey programs"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-season skills and skating"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Dufferin-peel skating club ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    to: "/programs/hockey"
+  }, "View hockey programs")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg",
+    name: "Horse programs",
+    swap: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Trail rides"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Riding lessons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Hunter/Jumper shows"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Schooling ring rental")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    to: "/programs/horses"
+  }, "View horse programs"))));
+}
+
+/***/ }),
+/* 29 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
 
 
 
@@ -1760,20 +2016,13 @@ __webpack_require__.r(__webpack_exports__);
     subtitle: "Volunteer and full-time staff positions."
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
     type: "body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Hello!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "So you\u2019re interested in Teen Ranch staff. We\u2019re glad you asked! Teen Ranch is a not-for-profit, Christian summer sports camp and year-round retreat facility. Attracting campers and guests from many backgrounds, we strive to serve them with excellence and thereby earn the right to share our faith in the Lord Jesus Christ with them as God gives opportunity. The task is not an easy one, but one that requires a deep love for the Lord Jesus Christ and an earnest desire to serve Him by serving others."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Our volunteer/staff family has grown over the years to include people from the ages of 14 to 90. We represent many vocations, come from many backgrounds, and help in many capacities, including:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "staffTable"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Volunteer/Staff"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Age"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Opportunities Available"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "# Volunteer Hours"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Weekends"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "14 & up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Year-round"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "15 hours/weekend")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Summer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "15 & up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Summer (1-10 weeks)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Seasonal Staff"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post-secondary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Sep. - Dec. and/or Jan. - Jun."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Approximately 40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Co-op"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "High-school"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Sep. - Dec. and/or Jan. - Jun."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Up to 40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Internship"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post-secondary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Year-round"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Up to 40 hours/week")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Full-time"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Post-secondary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Year-round"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Approximately 40 hours/week"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Apart from looking great on a resume, a number of past volunteer staff have received financial awards and recognition based on their accumulated high school volunteer hours, not to mention excellent on-the-job leadership training and character development established during those hours."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Whether we are privileged to have you as part of the Ranch Staff 'family' or should you be directed elsewhere, our prayer is that you will know the love of God \"that surpasses knowledge - that you may be filled to the measure of all the fullness of God.\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "- The Teen Ranch Staff Family"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
-    href: "https://zfrmz.com/WG1tZ0FvfMkgD27ur3Xr"
-  }, "Click here to get in touch."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
-    style: {
-      marginLeft: '2rem'
-    },
-    href: "https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/StatementOfFaith.pdf"
-  }, "Statement of faith")));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We are not currently hiring. We have limited volunteer opportunities potentially available on a day-to-day basis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    href: "mailto:staff@teenranch.com?subject=Potential volunteer opportunity"
+  }, "Click here to get in touch")));
 });
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1788,7 +2037,7 @@ var _react = _interopRequireDefault(__webpack_require__(0));
 
 var _reactStatic = __webpack_require__(8);
 
-var _router = __webpack_require__(11);
+var _router = __webpack_require__(12);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -1899,41 +2148,99 @@ var _default = function _default(_ref) {
 exports["default"] = _default;
 
 /***/ }),
-/* 30 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-hot-loader");
-
-/***/ }),
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/teenRanchLogo_lightBGR.b139b961.svg";
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(0));
+
+var _helpers = __webpack_require__(38);
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+var gtmPlugin = function gtmPlugin(_ref) {
+  var id = _ref.id,
+      _ref$debug = _ref.debug,
+      debug = _ref$debug === void 0 ? false : _ref$debug,
+      cookieRestriction = _ref.cookieRestriction;
+  var idExists = typeof id === 'string';
+  return {
+    Root: function Root(_Root) {
+      return function (props) {
+        if (debug && idExists && (0, _helpers.checkCookieRestriction)(cookieRestriction)) {
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+              'gtm.start': new Date().getTime(),
+              event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : ''; //@ts-ignore
+
+            j.async = true; //@ts-ignore
+
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', id);
+        }
+
+        return _react["default"].createElement(_Root, props);
+      };
+    }
+  };
+};
+
+var _default = gtmPlugin;
+exports["default"] = _default;
 
 /***/ }),
 /* 32 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/defineProperty");
+module.exports = require("react-hot-loader");
 
 /***/ }),
 /* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(34);
-__webpack_require__(36);
-module.exports = __webpack_require__(44);
-
+module.exports = __webpack_require__.p + "static/teenRanchLogo_lightBGR.b139b961.svg";
 
 /***/ }),
 /* 34 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/defineProperty");
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(36);
+__webpack_require__(39);
+module.exports = __webpack_require__(47);
+
+
+/***/ }),
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(35)["default"];
+var plugins = __webpack_require__(37)["default"];
 
 var _require = __webpack_require__(20),
     registerPlugins = _require.registerPlugins;
@@ -1943,14 +2250,17 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(29);
+/* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(30);
 /* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _react_static_root_node_modules_react_static_plugin_google_tag_manager_dist_browser_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
+/* harmony import */ var _react_static_root_node_modules_react_static_plugin_google_tag_manager_dist_browser_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_react_static_root_node_modules_react_static_plugin_google_tag_manager_dist_browser_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
+
  // Plugins
 
 var plugins = [{
@@ -1960,7 +2270,11 @@ var plugins = [{
 }, {
   location: "__react_static_root__/node_modules/react-static-plugin-reach-router",
   plugins: [],
-  hooks: _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0___default()({})
+  hooks: _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0___default()({
+    "RouterProps": {
+      "className": "router"
+    }
+  })
 }, {
   location: "__react_static_root__/node_modules/react-static-plugin-sitemap/dist",
   plugins: [],
@@ -1969,6 +2283,12 @@ var plugins = [{
   location: "__react_static_root__/node_modules/react-static-plugin-sass",
   plugins: [],
   hooks: {}
+}, {
+  location: "__react_static_root__/node_modules/react-static-plugin-google-tag-manager/dist",
+  plugins: [],
+  hooks: _react_static_root_node_modules_react_static_plugin_google_tag_manager_dist_browser_api_js__WEBPACK_IMPORTED_MODULE_1___default()({
+    "id": "GTM-WRB7H6L"
+  })
 }, {
   location: "__react_static_root__/node_modules/react-static-plugin-favicons",
   plugins: [],
@@ -1982,7 +2302,35 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 36 */
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getCookie = exports.checkCookieRestriction = void 0;
+
+var checkCookieRestriction = function checkCookieRestriction(restriction) {
+  if (!restriction) {
+    return true;
+  }
+
+  return typeof document !== 'undefined' && getCookie(restriction.cookieName) === restriction.value;
+};
+
+exports.checkCookieRestriction = checkCookieRestriction;
+
+var getCookie = function getCookie(cookieName) {
+  if (false) { var parts, value; }
+};
+
+exports.getCookie = getCookie;
+
+/***/ }),
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1992,7 +2340,7 @@ var plugins = [{
 var _require = __webpack_require__(20),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(37),
+var _require2 = __webpack_require__(40),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -2001,20 +2349,22 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 37 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "notFoundTemplate", function() { return notFoundTemplate; });
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
+/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(10);
+/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_universal_component__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 
@@ -2059,9 +2409,27 @@ var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
 }), universalOptions);
 t_0.template = '__react_static_root__/src/pages/404.js';
 var t_1 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "__react_static_root__/src/pages/contact/index.js",
+  load: function load() {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/contact/index */).then(__webpack_require__.bind(null, 24))]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/contact/index.js');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(24);
+  },
+  chunkName: function chunkName() {
+    return "__react_static_root__/src/pages/contact/index";
+  }
+}), universalOptions);
+t_1.template = '__react_static_root__/src/pages/contact/index.js';
+var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/index */).then(__webpack_require__.bind(null, 24))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/index */).then(__webpack_require__.bind(null, 25))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -2069,17 +2437,17 @@ var t_1 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(24);
+    return /*require.resolve*/(25);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/index";
   }
 }), universalOptions);
-t_1.template = '__react_static_root__/src/pages/index.js';
-var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+t_2.template = '__react_static_root__/src/pages/index.js';
+var t_3 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/programs/hockey/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/hockey/index */).then(__webpack_require__.bind(null, 25))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/hockey/index */).then(__webpack_require__.bind(null, 26))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -2087,17 +2455,17 @@ var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/hockey/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(25);
+    return /*require.resolve*/(26);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/programs/hockey/index";
   }
 }), universalOptions);
-t_2.template = '__react_static_root__/src/pages/programs/hockey/index.js';
-var t_3 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+t_3.template = '__react_static_root__/src/pages/programs/hockey/index.js';
+var t_4 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/programs/horses/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/horses/index */).then(__webpack_require__.bind(null, 26))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/horses/index */).then(__webpack_require__.bind(null, 27))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -2105,17 +2473,17 @@ var t_3 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/horses/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(26);
+    return /*require.resolve*/(27);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/programs/horses/index";
   }
 }), universalOptions);
-t_3.template = '__react_static_root__/src/pages/programs/horses/index.js';
-var t_4 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+t_4.template = '__react_static_root__/src/pages/programs/horses/index.js';
+var t_5 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/programs/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/index */).then(__webpack_require__.bind(null, 27))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/index */).then(__webpack_require__.bind(null, 28))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -2123,46 +2491,47 @@ var t_4 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(27);
+    return /*require.resolve*/(28);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/programs/index";
   }
 }), universalOptions);
-t_4.template = '__react_static_root__/src/pages/programs/index.js';
-var t_5 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
-  id: "__react_static_root__/src/pages/staff.js",
+t_5.template = '__react_static_root__/src/pages/programs/index.js';
+var t_6 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "__react_static_root__/src/pages/staff/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/staff */).then(__webpack_require__.bind(null, 28))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/staff/index */).then(__webpack_require__.bind(null, 29))]).then(function (proms) {
       return proms[0];
     });
   },
   path: function path() {
-    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/staff.js');
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/staff/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(28);
+    return /*require.resolve*/(29);
   },
   chunkName: function chunkName() {
-    return "__react_static_root__/src/pages/staff";
+    return "__react_static_root__/src/pages/staff/index";
   }
 }), universalOptions);
-t_5.template = '__react_static_root__/src/pages/staff.js'; // Template Map
+t_6.template = '__react_static_root__/src/pages/staff/index.js'; // Template Map
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   '__react_static_root__/src/pages/404.js': t_0,
-  '__react_static_root__/src/pages/index.js': t_1,
-  '__react_static_root__/src/pages/programs/hockey/index.js': t_2,
-  '__react_static_root__/src/pages/programs/horses/index.js': t_3,
-  '__react_static_root__/src/pages/programs/index.js': t_4,
-  '__react_static_root__/src/pages/staff.js': t_5
+  '__react_static_root__/src/pages/contact/index.js': t_1,
+  '__react_static_root__/src/pages/index.js': t_2,
+  '__react_static_root__/src/pages/programs/hockey/index.js': t_3,
+  '__react_static_root__/src/pages/programs/horses/index.js': t_4,
+  '__react_static_root__/src/pages/programs/index.js': t_5,
+  '__react_static_root__/src/pages/staff/index.js': t_6
 }); // Not Found Template
 
 var notFoundTemplate = "__react_static_root__/src/pages/404.js";
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 38 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -2191,7 +2560,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 39 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2402,7 +2771,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 40 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -2430,10 +2799,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 40;
+webpackContext.id = 43;
 
 /***/ }),
-/* 41 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2542,13 +2911,13 @@ ReportChunks.childContextTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 42 */
+/* 45 */
 /***/ (function(module, exports) {
 
 module.exports = require("vm");
 
 /***/ }),
-/* 43 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2563,7 +2932,7 @@ var _hoistNonReactStatics = __webpack_require__(22);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _index = __webpack_require__(10);
+var _index = __webpack_require__(9);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -2615,15 +2984,15 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 44 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(45);
+var _interopRequireWildcard = __webpack_require__(48);
 
-var _interopRequireDefault = __webpack_require__(46);
+var _interopRequireDefault = __webpack_require__(49);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2632,11 +3001,11 @@ exports["default"] = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(18));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(47));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(50));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(48);
+var _useStaticInfo = __webpack_require__(51);
 /* eslint-disable import/no-dynamic-require */
 
 
@@ -2657,7 +3026,7 @@ function Suspense(_ref) {
 React.Suspense = Suspense;
 React["default"].Suspense = Suspense;
 
-var App = __webpack_require__(49)["default"];
+var App = __webpack_require__(52)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -2670,31 +3039,31 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 45 */
+/* 48 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
 
 /***/ }),
-/* 46 */
+/* 49 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireDefault");
 
 /***/ }),
-/* 47 */
+/* 50 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 48 */
+/* 51 */
 /***/ (function(module, exports) {
 
 module.exports = require("J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-static\\lib\\browser\\hooks\\useStaticInfo");
 
 /***/ }),
-/* 49 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2703,7 +3072,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(30);
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(32);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
 
@@ -2731,10 +3100,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(50)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(53)(module)))
 
 /***/ }),
-/* 50 */
+/* 53 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -2764,42 +3133,12 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(12)(false);
-// Module
-exports.push([module.i, "*{scroll-behavior:smooth}html{font-size:62.5%}body{font-family:sans-serif,\"HelveticaNeue-Light\",\"Helvetica Neue Light\",\"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif;font-size:16px;margin:0;padding:0}a{text-decoration:none}img{max-width:100%}.constrain{padding:0 2rem;max-width:140rem;margin:0 auto}.covid{text-align:center;padding:2rem 0}.staffTable table{width:100%;border-collapse:collapse}.staffTable table td{border:1px solid #eee}.staffTable table th,.staffTable table td{padding:1rem;text-align:left}.staffTable table tr th:first-of-type{padding:1rem 0}.staffTable table th{color:#002146}.container--body{padding-top:4rem;padding-bottom:4rem}@media screen and (max-width: 63.999em){.staffTable{width:100%;overflow-x:auto}}\n", ""]);
-
-
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(12)(false);
-// Module
-exports.push([module.i, ".hamburgerMenu{width:44px;height:44px;display:inline-block;cursor:pointer;overflow:visible;transition-property:opacity, -webkit-filter;transition-property:opacity, filter;transition-property:opacity, filter, -webkit-filter;transition-duration:0.15s;transition-timing-function:linear}.hamburgerMenu:hover,.hamburgerMenu--active:hover{opacity:0.7}.hamburgerBox{width:24px;height:24px;display:inline-block;position:relative}.hamburgerInner{top:50%;margin-top:-1px}.hamburgerInner,.hamburgerInner::before,.hamburgerInner::after{width:18px;height:2px;background:#002146;position:absolute;left:3px;transition-property:transform;transition-duration:0.15s;transition-timing-function:ease}.hamburgerInner::before,.hamburgerInner::after{content:\"\";display:block}.hamburgerInner::before{top:-5px;left:0}.hamburgerInner::after{bottom:-5px;left:0}.hamburgerInner{transition-duration:0.075s;transition-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19)}.hamburgerInner::before{transition:top 0.075s 0.12s ease, opacity 0.075s ease}.hamburgerInner::after{transition:bottom 0.075s 0.12s ease,transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19)}.hamburgerMenu--active .hamburgerInner{transform:rotate(45deg);transition-delay:0.12s;transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}.hamburgerMenu--active .hamburgerInner::before{top:0;opacity:0;transition:top 0.075s ease, opacity 0.075s 0.12s ease}.hamburgerMenu--active .hamburgerInner::after{bottom:0;transform:rotate(-90deg);transition:bottom 0.075s ease,transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1)}\n", ""]);
-
-
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(12)(false);
-// Module
-exports.push([module.i, ".container--header{border-bottom:1px solid #fafafa;height:100px;background:#fff}.container--header .logo{height:60px;padding-top:20px}.container--header nav ul{list-style:none;margin:0;padding:0}.container--header nav ul li{display:inline-block}.container--header nav a{display:inline-block;padding:1.2rem 2.5rem;line-height:20px;margin-top:20px;font-size:1.6rem;letter-spacing:0.02em;color:#002146}.container--header nav a:hover{color:#0074F7}.container--header nav a.active{color:#0074F7}.container--header nav a.ctaLink{background:#0074F7;border-radius:4px;color:rgba(255,255,255,0.95)}.container--header nav a.ctaLink:hover{background:#0068de}@media screen and (min-width: 64em){header .constrain{display:flex;align-items:center;justify-content:space-between}header .hamburgerMenu{display:none !important}header a.ctaLink{margin-left:2.5rem}header a{position:relative}header a:hover .subNav{display:block}header .subNav{display:none;background:#fff;position:absolute;border-radius:4px;top:4rem;box-shadow:0 0 6px rgba(0,0,0,0.1)}header .subNav a{margin:1rem 0;white-space:nowrap}}@media screen and (max-width: 63.999em){.container--header{height:60px}.container--header .logo{height:40px;padding-top:10px}.container--header ul li{display:block;width:100%;text-align:center}.menu{display:none}.menu--expanded{display:block}.header--expanded{height:100%;position:fixed;width:100%}.hamburgerMenu{float:right;background:none;border:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none;margin-right:-1rem;margin-top:1rem}}\n", ""]);
-
-
-
-/***/ }),
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(12)(false);
+exports = module.exports = __webpack_require__(10)(false);
 // Module
-exports.push([module.i, ".container--heading{background:#fafafa;padding:6rem 0}.container--heading h1,.container--heading h2{margin:0;padding:0;font-weight:normal;text-align:center}.container--heading h1{color:#002146;font-size:6rem;margin-bottom:3rem;font-family:serif;line-height:100%}.container--heading h2{color:rgba(0,0,0,0.75);font-size:1.6rem;font-family:sans-serif}\n", ""]);
+exports.push([module.i, "*{scroll-behavior:smooth}html{font-size:62.5%;height:100%}body{font-family:sans-serif,\"HelveticaNeue-Light\",\"Helvetica Neue Light\",\"Helvetica Neue\",Helvetica,Arial,\"Lucida Grande\",sans-serif;font-size:16px;margin:0;padding:0;height:100%}a{text-decoration:none;color:#0074F7}a:hover{color:#004491}#root,.router{display:flex;flex-direction:column;min-height:100vh}.container--body a:not(.button){text-decoration:underline}img{max-width:100%}.constrain{padding:0 2rem;max-width:140rem;margin:0 auto}.staffTable table{width:100%;border-collapse:collapse}.staffTable table td{border:1px solid #eee}.staffTable table th,.staffTable table td{padding:1rem;text-align:left}.staffTable table tr th:first-of-type{padding:1rem 0}.staffTable table th{color:#002146}.container--body{padding-top:4rem;padding-bottom:4rem}@media screen and (max-width: 63.999em){.staffTable{width:100%;overflow-x:auto}}\n", ""]);
 
 
 
@@ -2807,9 +3146,9 @@ exports.push([module.i, ".container--heading{background:#fafafa;padding:6rem 0}.
 /* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(12)(false);
+exports = module.exports = __webpack_require__(10)(false);
 // Module
-exports.push([module.i, ".button{outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;background:#0074F7;padding:1.2rem 2rem;border-radius:4px;color:rgba(255,255,255,0.95);letter-spacing:0.02em;margin:1rem 0;display:inline-block}.button:hover{background:#005cc4}\n", ""]);
+exports.push([module.i, ".loaderContainer{display:flex;justify-content:center;align-items:center;flex-grow:1}.loader{height:60px;width:60px;position:relative}.loader .foreground,.loader .background{height:60px;position:absolute;transform:translate(-50%, -50%);left:50%;top:50%}.loader .foreground{fill:rgba(0,0,0,0.2);z-index:1}.loader .background{fill:rgba(0,0,0,0.4);-webkit-animation-name:pulse;animation-name:pulse;-webkit-animation-duration:900ms;animation-duration:900ms;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear}@-webkit-keyframes pulse{0%{height:60px;opacity:1}100%{height:100px;opacity:0}}@keyframes pulse{0%{height:60px;opacity:1}100%{height:100px;opacity:0}}\n", ""]);
 
 
 
@@ -2817,7 +3156,67 @@ exports.push([module.i, ".button{outline:none;-webkit-appearance:none;-moz-appea
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(12)(false);
+exports = module.exports = __webpack_require__(10)(false);
+// Module
+exports.push([module.i, ".hamburgerMenu{width:44px;height:44px;display:inline-block;cursor:pointer;overflow:visible;transition-property:opacity, -webkit-filter;transition-property:opacity, filter;transition-property:opacity, filter, -webkit-filter;transition-duration:0.15s;transition-timing-function:linear}.hamburgerMenu:hover,.hamburgerMenu--active:hover{opacity:0.7}.hamburgerBox{width:24px;height:24px;display:inline-block;position:relative}.hamburgerInner{top:50%;margin-top:-1px}.hamburgerInner,.hamburgerInner::before,.hamburgerInner::after{width:18px;height:2px;background:#002146;position:absolute;left:3px;transition-property:transform;transition-duration:0.15s;transition-timing-function:ease}.hamburgerInner::before,.hamburgerInner::after{content:\"\";display:block}.hamburgerInner::before{top:-5px;left:0}.hamburgerInner::after{bottom:-5px;left:0}.hamburgerInner{transition-duration:0.075s;transition-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19)}.hamburgerInner::before{transition:top 0.075s 0.12s ease, opacity 0.075s ease}.hamburgerInner::after{transition:bottom 0.075s 0.12s ease,transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19)}.hamburgerMenu--active .hamburgerInner{transform:rotate(45deg);transition-delay:0.12s;transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}.hamburgerMenu--active .hamburgerInner::before{top:0;opacity:0;transition:top 0.075s ease, opacity 0.075s 0.12s ease}.hamburgerMenu--active .hamburgerInner::after{bottom:0;transform:rotate(-90deg);transition:bottom 0.075s ease,transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1)}\n", ""]);
+
+
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// Module
+exports.push([module.i, ".container--header{border-bottom:1px solid #fafafa;height:100px;background:#fff}.container--header .logo{height:60px;padding-top:20px}.container--header nav ul{list-style:none;margin:0;padding:0}.container--header nav ul li{display:inline-block}.container--header nav a{display:inline-block;padding:1.2rem 2.5rem;line-height:20px;margin-top:20px;font-size:1.6rem;letter-spacing:0.02em;color:#002146}.container--header nav a:hover{color:#0074F7}.container--header nav a.active{color:#0074F7}.container--header nav a.ctaLink{background:#0074F7;border-radius:4px;color:rgba(255,255,255,0.95)}.container--header nav a.ctaLink:hover{background:#0068de}@media screen and (min-width: 64em){header .constrain{display:flex;align-items:center;justify-content:space-between}header .hamburgerMenu{display:none !important}header a.ctaLink{margin-left:2.5rem}header li{position:relative}header li:hover .subNav{display:block}header .subNav{display:none;background:#fff;position:absolute;border-radius:4px;top:6rem;box-shadow:0 0 6px rgba(0,0,0,0.1)}header .subNav a{margin:1rem 0;white-space:nowrap}}@media screen and (max-width: 63.999em){.container--header{height:60px}.container--header .logo{height:40px;padding-top:10px}.container--header ul li{display:block;width:100%;text-align:center}.menu{display:none}.menu--expanded{display:block}.header--expanded{height:100%;position:fixed;width:100%;z-index:1}.hamburgerMenu{float:right;background:none;border:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none;margin-right:-1rem;margin-top:1rem}}\n", ""]);
+
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// Module
+exports.push([module.i, ".covid{text-align:center;padding:2rem 0}.container--covid{text-align:center;background:#002146;color:rgba(255,255,255,0.95);padding:1rem 0;font-size:1.4rem}.container--covid a{display:inline-block;text-decoration:underline;color:#91c5ff;margin-top:1rem}.container--covid a:hover{color:rgba(255,255,255,0.95)}\n", ""]);
+
+
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// Module
+exports.push([module.i, ".container--heading{background:#fafafa;padding:6rem 0}.container--heading h1,.container--heading h2{margin:0;padding:0;font-weight:normal;text-align:center}.container--heading h1{color:#002146;font-size:6rem;margin-bottom:3rem;font-family:serif;line-height:100%}.container--heading h2{color:rgba(0,0,0,0.75);font-size:1.6rem;font-family:sans-serif}\n", ""]);
+
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// Module
+exports.push([module.i, "@media screen and (min-width: 64em){.fourOhFourGrid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:2rem}}\n", ""]);
+
+
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// Module
+exports.push([module.i, ".button{outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;background:#0074F7;padding:1.2rem 2rem;border-radius:4px;color:rgba(255,255,255,0.95);letter-spacing:0.02em;margin:1rem 0;display:inline-block}.button:hover{background:#005cc4;color:rgba(255,255,255,0.95)}\n", ""]);
+
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
 // Module
 exports.push([module.i, ".programContainer{width:100%;margin:0 auto;margin-bottom:8rem;margin-top:4rem}.programContainer .programImage img{display:block;width:100%;border-radius:4px;box-shadow:0 12px 24px rgba(0,0,0,0.3),0 0 6px rgba(0,0,0,0.3)}@media screen and (min-width: 64em){.programContainer{display:grid;gap:4rem;grid-template-columns:1fr 1fr}.programContainer--swap{grid-template-columns:1fr 1fr}.programContainer--swap .programBody{grid-column-start:1;grid-row-start:1}}\n", ""]);
 
