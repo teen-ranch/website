@@ -110,7 +110,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 35);
+/******/ 	return __webpack_require__(__webpack_require__.s = 40);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -125,6 +125,7 @@ module.exports = require("react");
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Container; });
+/* unused harmony export Constrain */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -142,7 +143,6 @@ function Container(_ref) {
     constrain: constrain
   }, children));
 }
-
 function Constrain(_ref2) {
   var constrain = _ref2.constrain,
       children = _ref2.children;
@@ -157,46 +157,11 @@ function Constrain(_ref2) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NavLink; });
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["Router"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["useLocation"]; });
-
-
-
-
-
-var NavLink = function NavLink(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, props, {
-    getProps: function getProps(_ref) {
-      var isCurrent = _ref.isCurrent;
-      // the object returned here is passed to the
-      // anchor element's props
-      return {
-        className: isCurrent ? 'active' : ''
-      };
-    }
-  }));
-};
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Button; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(61);
+/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
+/* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(65);
 /* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_button_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -246,6 +211,12 @@ function Button(_ref) {
 }
 
 /***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-static");
+
+/***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
@@ -266,9 +237,9 @@ module.exports = require("babel-plugin-universal-import/universalImport");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(59);
+/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(63);
 /* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_heading_scss__WEBPACK_IMPORTED_MODULE_3__);
 
 
@@ -291,11 +262,46 @@ function Heading(_ref) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NavLink; });
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["Router"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _reach_router__WEBPACK_IMPORTED_MODULE_2__["useLocation"]; });
+
+
+
+
+
+var NavLink = function NavLink(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, props, {
+    getProps: function getProps(_ref) {
+      var isCurrent = _ref.isCurrent;
+      // the object returned here is passed to the
+      // anchor element's props
+      return {
+        className: isCurrent ? 'active' : ''
+      };
+    }
+  }));
+};
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Program; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var components_Tueri__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
-/* harmony import */ var _program_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(62);
+/* harmony import */ var _program_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(66);
 /* harmony import */ var _program_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_program_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -316,12 +322,6 @@ function Program(_ref) {
     className: "programBody"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, name), children));
 }
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-static");
 
 /***/ }),
 /* 9 */
@@ -369,7 +369,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(42);
+var _requireUniversalModule = __webpack_require__(46);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -384,7 +384,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(44);
+var _reportChunks = __webpack_require__(48);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -406,13 +406,13 @@ var _hoistNonReactStatics = __webpack_require__(22);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _vm = __webpack_require__(45);
+var _vm = __webpack_require__(49);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
 var _utils = __webpack_require__(17);
 
-var _helpers = __webpack_require__(46);
+var _helpers = __webpack_require__(50);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -807,7 +807,7 @@ function universal(asyncModule) {
     report: _propTypes2["default"].func
   }, _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(41)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(45)(module)))
 
 /***/ }),
 /* 10 */
@@ -927,7 +927,7 @@ var _utils = __webpack_require__(17);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(43)("" + id);
+    return __webpack_require__(47)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -1007,7 +1007,7 @@ function useTueri() {
   return Object(external_react_["useContext"])(TueriContext);
 }
 // EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
-var defineProperty_ = __webpack_require__(34);
+var defineProperty_ = __webpack_require__(39);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
 
 // CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Tueri/Img.js
@@ -1238,29 +1238,16 @@ var external_react_ = __webpack_require__(0);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
 // EXTERNAL MODULE: external "react-static"
-var external_react_static_ = __webpack_require__(8);
+var external_react_static_ = __webpack_require__(3);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Router.js
-var Router = __webpack_require__(2);
+var Router = __webpack_require__(7);
 
-// CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/hooks/analytics.js
-
-
-var analytics_useAnalytics = function useAnalytics() {
-  var location = Object(Router["d" /* useLocation */])();
-  Object(external_react_["useEffect"])(function () {
-    if (typeof window !== 'undefined' && typeof window.gtag !== 'undefined') {
-      window.gtag('config', 'UA-9222619-11', {
-        'page_path': location.pathname
-      });
-    }
-  }, [location]);
-};
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/styles/app.scss
-var app = __webpack_require__(54);
+var app = __webpack_require__(58);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Loader/loader.scss
-var loader = __webpack_require__(55);
+var loader = __webpack_require__(59);
 
 // CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Loader/index.js
 
@@ -1289,16 +1276,16 @@ var slicedToArray_ = __webpack_require__(11);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/hamburger.scss
-var hamburger = __webpack_require__(56);
+var hamburger = __webpack_require__(60);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/header.scss
-var header = __webpack_require__(57);
+var header = __webpack_require__(61);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Container/index.js
 var Container = __webpack_require__(1);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/teenRanchLogo_lightBGR.svg
-var teenRanchLogo_lightBGR = __webpack_require__(33);
+var teenRanchLogo_lightBGR = __webpack_require__(38);
 var teenRanchLogo_lightBGR_default = /*#__PURE__*/__webpack_require__.n(teenRanchLogo_lightBGR);
 
 // CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/Header/index.js
@@ -1344,20 +1331,36 @@ function Header() {
   }, /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
     to: "/"
   }, "Home")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
-    to: "/programs"
+    to: "/programs/"
   }, "Programs"), /*#__PURE__*/external_react_default.a.createElement("ul", {
     className: "subNav"
   }, /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
-    to: "/programs/hockey"
-  }, "Hockey")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
-    to: "/programs/horses"
-  }, "Horses")))), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
-    to: "/staff"
+    to: "/programs/hockey/"
+  }, "Hockey programs"), /*#__PURE__*/external_react_default.a.createElement("ul", {
+    className: "subSubNav"
+  }, /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/programs/hockey/pre-season-skills-and-skating/"
+  }, "Pre-season skills & skating")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/programs/hockey/ice-rental/"
+  }, "Ice rental")))), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/programs/horses/"
+  }, "Horse programs"), /*#__PURE__*/external_react_default.a.createElement("ul", {
+    className: "subSubNav"
+  }, /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/programs/horses/trail-rides/"
+  }, "Trail rides")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/programs/horses/riding-lessons/"
+  }, "Riding lessons")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/programs/horses/hunter-jumper-shows/"
+  }, "Hunter / Jumper shows")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/programs/horses/schooling-ring-rental/"
+  }, "Schooling ring rental")))))), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
+    to: "/staff/"
   }, "Staff")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement("a", {
     href: "https://teenranchcanada.wordpress.com/",
     rel: "noopener noreferrer"
   }, "Blog")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement(Router["b" /* NavLink */], {
-    to: "/contact "
+    to: "/contact/ "
   }, "Contact")), /*#__PURE__*/external_react_default.a.createElement("li", null, /*#__PURE__*/external_react_default.a.createElement("a", {
     className: "ctaLink",
     rel: "noopener noreferrer",
@@ -1368,7 +1371,7 @@ function Header() {
 var Tueri = __webpack_require__(14);
 
 // EXTERNAL MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/CovidBanner/covid.scss
-var covid = __webpack_require__(58);
+var covid = __webpack_require__(62);
 
 // CONCATENATED MODULE: J:/Websites/TeenRanch/2020/teen-ranch-website/src/components/CovidBanner/index.js
 
@@ -1388,7 +1391,7 @@ function Covid() {
  //
 
  // import Dynamic from 'containers/Dynamic'
-
+// import { useAnalytics } from 'hooks/analytics'
 
 
 
@@ -1399,21 +1402,7 @@ function Covid() {
 // addPrefetchExcludes(['dynamic'])
 
 function App() {
-  return /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Root"], null, /*#__PURE__*/external_react_default.a.createElement("noscript", null, "Please enable JavaScript to view this page."), /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Head"], null, /*#__PURE__*/external_react_default.a.createElement("meta", {
-    charSet: "UTF-8"
-  }), /*#__PURE__*/external_react_default.a.createElement("title", null, "Home - Teen Ranch Canada"), /*#__PURE__*/external_react_default.a.createElement("meta", {
-    name: "description",
-    content: "Canada's Premier Sports Resort and Retreat Centre: Hockey, Horses, Soccer, Adventure, Figure Skating, BMX Dirt & Day Camps"
-  }), /*#__PURE__*/external_react_default.a.createElement("meta", {
-    name: "keywords",
-    content: "Summer Camp, Conference Centre, Weekend Retreats, hockey camp, horse camp, rock climing, bmx camp, soccer camp, ice rental"
-  }), /*#__PURE__*/external_react_default.a.createElement("meta", {
-    name: "author",
-    content: "DS Media"
-  }), /*#__PURE__*/external_react_default.a.createElement("meta", {
-    name: "wot-verification",
-    content: "2d82a7513302ee51cb53"
-  })), /*#__PURE__*/external_react_default.a.createElement(Analytics, null), /*#__PURE__*/external_react_default.a.createElement(Tueri["b" /* default */], {
+  return /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Root"], null, /*#__PURE__*/external_react_default.a.createElement("noscript", null, "Please enable JavaScript to view this page."), /*#__PURE__*/external_react_default.a.createElement(Tueri["b" /* default */], {
     replacements: [['https://teenranch.nyc3.digitaloceanspaces.com/website/assets/', 'https://cdn.tueri.io/68719476739/assets/']]
   }, /*#__PURE__*/external_react_default.a.createElement(Covid, null), /*#__PURE__*/external_react_default.a.createElement(Header, null), /*#__PURE__*/external_react_default.a.createElement(external_react_default.a.Suspense, {
     fallback: /*#__PURE__*/external_react_default.a.createElement(Container["a" /* default */], {
@@ -1428,12 +1417,11 @@ function App() {
   }, /*#__PURE__*/external_react_default.a.createElement(Router["c" /* Router */], null, /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Routes"], {
     path: "*"
   })))));
-}
+} // function Analytics() {
+//   useAnalytics()
+//   return null
+// }
 
-function Analytics() {
-  analytics_useAnalytics();
-  return null;
-}
 
 /* harmony default export */ var src_App = __webpack_exports__["a"] = (App);
 
@@ -1649,8 +1637,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
-/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2);
-/* harmony import */ var _404_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(60);
+/* harmony import */ var components_Router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7);
+/* harmony import */ var _404_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(64);
 /* harmony import */ var _404_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_404_scss__WEBPACK_IMPORTED_MODULE_4__);
 
 
@@ -1815,18 +1803,25 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
-/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "description",
+    content: "Get in touch! We would love to hear from you!"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "keywords",
+    content: "teen ranch canada, teen ranch caledon ontario canada, summer camp caledon ontario"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
     title: "Contact us",
     subtitle: "Due to staffing restrictions, wait times may be longer than usual."
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
     type: "body"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "fourOhFourGrid"
@@ -1847,7 +1842,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
-/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2);
 
 
 
@@ -1873,31 +1868,35 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
-/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
+
 
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
-    title: "Hockey programs",
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "description",
+    content: "Rent our olympic-size ice hockey arena."
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "keywords",
+    content: "ice rental, ice hockey rental, hockey arena rental, summer ice rental"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    title: "Ice rental",
     subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
     type: "body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
-    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG",
-    name: "Pre-Season Skills and Skating"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Boys & Girls Aged 7-13"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Wednesdays 7:00 pm \u2013 7:50 pm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "July 22 \u2013 August 26, 2020"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "$170.00 +HST per person")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
-    href: "https://register.trmanager.com"
-  }, "Book now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
     src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/iceCorral1.jpg",
     name: "Ice rental",
     swap: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sharpen your skates and sharpen your skills. Rent ice or participate in a Teen Ranch hockey/figure skating program or private/semi-private lesson."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sharpen your skates and sharpen your skills. Rent ice or participate in a Teen Ranch hockey/figure skating program or private/semi-private lesson."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
     href: "mailto:icecorral@teenranch.com?subject=Ice rental"
   }, "Book now"))));
 });
@@ -1910,12 +1909,158 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
-/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3);
-/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "description",
+    content: "Hockey programs and leagues for all ages."
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "keywords",
+    content: "skating development, power skating, stick handling school, hockey school, hockey school caledon ontario"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    title: "Hockey programs",
+    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    type: "body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG",
+    name: "Pre-Season Skills and Skating"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Boys & Girls Aged 7-13"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Wednesdays 7:00 pm \u2013 7:50 pm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "July 22 \u2013 August 26, 2020")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    href: "https://register.trmanager.com"
+  }, "Book now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/iceCorral1.jpg",
+    name: "Ice rental",
+    swap: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sharpen your skates and sharpen your skills. Rent ice or participate in a Teen Ranch hockey/figure skating program or private/semi-private lesson."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    href: "mailto:icecorral@teenranch.com?subject=Ice rental"
+  }, "Book now"))));
+});
+
+/***/ }),
+/* 28 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "description",
+    content: "Develop your stick handling and skating and get ready for next season!"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "keywords",
+    content: "hockey season preparation, stick handling, power skating"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    title: "Pre-season skills & skating",
+    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    type: "body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG",
+    name: "Pre-Season skills & skating"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Boys & Girls Aged 7-13"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Wednesdays 7:00 pm \u2013 7:50 pm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "July 22 \u2013 August 26, 2020")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    href: "https://register.trmanager.com"
+  }, "Book now"))));
+});
+
+/***/ }),
+/* 29 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
+/* harmony import */ var _horses_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(67);
+/* harmony import */ var _horses_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_horses_scss__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "description",
+    content: "Professional courses and divisions offered for every level from first-time competitors to those schooling before their A Shows."
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "keywords",
+    content: "horse shows, schooling horse shows, horse show orangeville ontario, horse show caledon ontario, gta horse show"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    title: "Hunter / Jumper shows",
+    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    type: "body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hunterJumper16.jpg",
+    name: "Hunter/Jumper shows"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "2020 show dates"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "June 30 - ONLINE (Finished)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "July 19 - ONLINE (Online entry open)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "July 26 - ON-SITE (Online entry open)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "August 9 - TBD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "August 23 - TBD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "September 13 - TBD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "September 27 - TBD"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "staffTable"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Show date"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Location"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Entries"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "June 30"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Online Show"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Entries closed")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "July 19"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Online Show"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    target: "_blank",
+    href: "https://forms.zohopublic.com/teenranch1/form/OnlineHorseShowJuly192020/formperma/8kUPL-fV-vy1KyRtGWI0k-8BYhpDFqIeEi3015OrIq0?referrername=teenranch.com"
+  }, "July 19 entry form"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "July 26"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Teen Ranch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    target: "_blank",
+    href: "https://forms.zohopublic.com/teenranch1/form/HorseShowJuly262020/formperma/HFsaEt0XldzBrxJkVPVVjhGMJq1nf7M_RcN6LFLhkp0?referrername=teenranch.com"
+  }, "July 26 entry form"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "August 9"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Teen Ranch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Opening soon")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "August 23"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Teen Ranch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Opening soon")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "September 13"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Teen Ranch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Opening soon")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "September 27"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Teen Ranch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Opening soon"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "2020 On-site show policy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "All persons coming on site must arrive with their signed COVID-19 screening questionnaire form in hand."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Maximum of 10 named persons per trailer."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    target: "_blank",
+    href: "https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hunterJumperCovidScreeningQuestionnaire.pdf"
+  }, "COVID-19 screening questionnaire"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    target: "_blank",
+    href: "https://forms.zohopublic.com/teenranch1/form/HorseShowTrailerattendanceform/formperma/DEwzNZW9ELI1kqyesFU_NnAgWbLfs0_war7M-wQRXEU"
+  }, "Trailer attendance form"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Divisions and classes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "hunter-jumper-class-grid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Ring #1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Novice Hack Division"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Intermediate Hunters 2'3\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Novice Equitation Division 2'"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Green Hunter Division 2'"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Short Stirrup Division 1'6\""))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Ring #3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Open Hack Division"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "2' Hunter Division"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "2'3\" Hunter Division"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Open Equitation Division 2'3\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "High/Low Hunter Division 2'9\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Jumper Division (.75m)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Jumper Division (.9m)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Ring #4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Leadline Division"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Beginner Division"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Rookie Division")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    target: "_blank",
+    href: "https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2020.pdf"
+  }, "View class descriptions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Year-end banquet"), "We are hoping that by September, the Year End Banquet will be a possibility, but if not, we will still be awarding prizes to our winners.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Rules and awards"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "ASTM approved helmets mandatory for all riders. Proper show attire required."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Back number must be worn and visible at all times while on horseback."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Please read class descriptions to see rules on cross-entering."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "All Riders MUST have a Day or Annual Teen Ranch H/J Membership to compete."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Hunter Classes - Flash nose bands and running or german martingales are not permitted. Leg protection may be worn on horse in warm-up and inclement weather only when approved by judge."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Champion/Reserve Champions at each show are calculated as follows: 7,5,4,3,2,1."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Year-End Awards \u2013 Must show in at least 3 shows in the division to qualify. Points are awarded to horses in hunter/jumper divisions, the rider in equitation/lead line divisions and horse/rider combinations for the beginner, rookie, and short stirrup divisions. Points are calculated as follows: 7xentries, 5xentries, 4xentries, 3xentries, 2xentries, 1xentries."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Fall of horse or rider = elimination. Rider must exit ring before re-mounting."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Teen Ranch accepts no responsibility for damage, theft, loss, accident, death or injury."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "EQUINE CANADA RULES APPLY. Please check your bit and equipment if questionable.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "COVID-19 policy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "All entries will be made by the Monday before the show. Entry booth will be closed. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Please bring a mask for when 2m distance is not possible."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "A max of 10 people can come with each trailer. For some of the bigger farms, you must set up cohorts of 10 people including a coach and they may not mix with your other cohorts. Guests are asked to leave as soon as possible after they are done showing."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "A list of all attendees from each barn will be handed in with entries. Only those on the list will be allowed to enter show grounds."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Covid Screening Form must be printed out and brought with you on show morning. No admittance without this signed form. Your temperature will be taken upon arrival."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Only screened Teen Ranch Staff will be allowed to touch gates or jumps."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Only a max of 10 competitors will be allowed in each ring at a time for flat classes."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "No spectators. Max of one guardian per competitor allowed to attend, plus coach."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Max of one assistant/guardian per competitor allowed at gate."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Additional gates are being installed at rings to allow for one direction travel for entry and exit from rings."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Warm-ups done immediately before their competition round. One rider in the ring at a time. 5 riders allowed in the warm up area at a time."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "When not warming up or showing, all guests to remain at their trailer (with the exception of going to the food truck)."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Ribbons will only be ordered at the end of the season for those that request it to comply with contactless showing. Prize money will not be offered in 2020. Prizes will be available for pick up."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Wash room will have an attendant to disinfect regularly. Hand sanitizer will be provided as well."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Food truck will be in attendance\u2026social distancing must be respected here."))));
+});
+
+/***/ }),
+/* 30 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
 
 
 
@@ -1926,7 +2071,13 @@ __webpack_require__.r(__webpack_exports__);
   var _useSiteData = Object(react_static__WEBPACK_IMPORTED_MODULE_1__["useSiteData"])(),
       covidGroupMax = _useSiteData.covidGroupMax;
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "description",
+    content: "Trail rides, riding lessons, hunter / jumper horse shows and more!"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "keywords",
+    content: "trail rides, riding lessons, hunter jumper horse shows, schooling ring rental"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
     title: "Horse programs",
     subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
@@ -1946,9 +2097,8 @@ __webpack_require__.r(__webpack_exports__);
     src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hunterJumper16.jpg",
     name: "Hunter/Jumper shows"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "2020 show dates"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "June 30 - ONLINE (Finished)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "July 19 - ONLINE (Online entry open)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "July 26 - TBD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "August 9 - TBD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "August 23 - TBD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "September 13 - TBD"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "September 27 - TBD")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
-    target: "_blank",
-    href: "https://forms.zohopublic.com/teenranch1/form/OnlineHorseShowJuly192020/formperma/8kUPL-fV-vy1KyRtGWI0k-8BYhpDFqIeEi3015OrIq0?referrername=teenranch.com"
-  }, "Enter in the July 19 online show")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    to: "/programs/horses/hunter-jumper-shows/"
+  }, "Learn more")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
     src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/blu%20flat.jpg",
     name: "Schooling ring rental",
     swap: true
@@ -1958,7 +2108,130 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 28 */
+/* 31 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "description",
+    content: "Private and semi-private riding lessons in Caledon, Ontario."
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "keywords",
+    content: "riding lessons, horseback riding lessons, riding lessons caledon ontario, horseback riding caledon ontario"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    title: "Riding lessons",
+    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    type: "body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse5.jpg",
+    name: "Riding lessons"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Western & English riding"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Beginner to advanced"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Weekdays"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "One-hour in length"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Max. participant weight of 250lbs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-booking and pre-payment required*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Private lesson - Ages 5+: $75.00 per person (Includes HST)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Semi-private lesson - Ages 7+: $60.00 per person (Includes HST)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    href: "mailto:rachel.stevens@teenranch.com?subject=Riding lessons"
+  }, "Book a riding lesson"))));
+});
+
+/***/ }),
+/* 32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "description",
+    content: "Outdoor horseback riding arenas for rent."
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "keywords",
+    content: "riding arena rental, horseback riding facilities, horseback riding arena caledon ontario"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    title: "Schooling ring rental",
+    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    type: "body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/blu%20flat.jpg",
+    name: "Schooling ring rental"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Hunter or jumper course"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-booking and pre-payment required*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "$25.00 per horse per hour of ring time (Includes HST)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    href: "mailto:janet.stevens@teenranch.com?subject=Schooling ring rental"
+  }, "Rent a schooling ring"))));
+});
+
+/***/ }),
+/* 33 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8);
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var _useSiteData = Object(react_static__WEBPACK_IMPORTED_MODULE_1__["useSiteData"])(),
+      covidGroupMax = _useSiteData.covidGroupMax;
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Head"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "description",
+    content: "Trail rides through the beautiful Headwaters region in Caledon, Ontario."
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "keywords",
+    content: "trail rides, horseback riding, horse back riding in caledon, horse back riding in orangeville"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Heading__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    title: "Trail rides",
+    subtitle: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Due to COVID-19 Teen Ranch is running a small set of temporary programs.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "We look forward to serving you with more activities as restrictions continue to loosen.")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Container__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    type: "body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Program__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
+    src: "https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg",
+    name: "Trail rides"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Maximum ", covidGroupMax, " people including staff for keeping with government restrictions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Ages 10+"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "One-hour in length"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Walk/trot (if comfortable)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Max. participant weight of 250lbs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Pre-booking and pre-payment required*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "$55.00 per person (Includes HST)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(components_Button__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
+    href: "mailto:rachel.stevens@teenranch.com?subject=Trail ride booking inquiry"
+  }, "Book a trail ride"))));
+});
+
+/***/ }),
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1968,8 +2241,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
-/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2);
+/* harmony import */ var components_Program__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8);
 
 
 
@@ -1996,7 +2269,7 @@ function Programs() {
 }
 
 /***/ }),
-/* 29 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2005,7 +2278,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var components_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var components_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
-/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+/* harmony import */ var components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2);
 
 
 
@@ -2022,7 +2295,7 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 30 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2035,7 +2308,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-var _reactStatic = __webpack_require__(8);
+var _reactStatic = __webpack_require__(3);
 
 var _router = __webpack_require__(12);
 
@@ -2148,99 +2421,41 @@ var _default = function _default(_ref) {
 exports["default"] = _default;
 
 /***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireDefault(__webpack_require__(0));
-
-var _helpers = __webpack_require__(38);
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-
-var gtmPlugin = function gtmPlugin(_ref) {
-  var id = _ref.id,
-      _ref$debug = _ref.debug,
-      debug = _ref$debug === void 0 ? false : _ref$debug,
-      cookieRestriction = _ref.cookieRestriction;
-  var idExists = typeof id === 'string';
-  return {
-    Root: function Root(_Root) {
-      return function (props) {
-        if (debug && idExists && (0, _helpers.checkCookieRestriction)(cookieRestriction)) {
-          (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-              'gtm.start': new Date().getTime(),
-              event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : ''; //@ts-ignore
-
-            j.async = true; //@ts-ignore
-
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-          })(window, document, 'script', 'dataLayer', id);
-        }
-
-        return _react["default"].createElement(_Root, props);
-      };
-    }
-  };
-};
-
-var _default = gtmPlugin;
-exports["default"] = _default;
-
-/***/ }),
-/* 32 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 33 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/teenRanchLogo_lightBGR.b139b961.svg";
 
 /***/ }),
-/* 34 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/defineProperty");
 
 /***/ }),
-/* 35 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(36);
-__webpack_require__(39);
-module.exports = __webpack_require__(47);
+__webpack_require__(41);
+__webpack_require__(43);
+module.exports = __webpack_require__(51);
 
 
 /***/ }),
-/* 36 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(37)["default"];
+var plugins = __webpack_require__(42)["default"];
 
 var _require = __webpack_require__(20),
     registerPlugins = _require.registerPlugins;
@@ -2250,17 +2465,14 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 37 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(30);
+/* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36);
 /* harmony import */ var _react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_react_static_root_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _react_static_root_node_modules_react_static_plugin_google_tag_manager_dist_browser_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
-/* harmony import */ var _react_static_root_node_modules_react_static_plugin_google_tag_manager_dist_browser_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_react_static_root_node_modules_react_static_plugin_google_tag_manager_dist_browser_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
-
  // Plugins
 
 var plugins = [{
@@ -2284,12 +2496,6 @@ var plugins = [{
   plugins: [],
   hooks: {}
 }, {
-  location: "__react_static_root__/node_modules/react-static-plugin-google-tag-manager/dist",
-  plugins: [],
-  hooks: _react_static_root_node_modules_react_static_plugin_google_tag_manager_dist_browser_api_js__WEBPACK_IMPORTED_MODULE_1___default()({
-    "id": "GTM-WRB7H6L"
-  })
-}, {
   location: "__react_static_root__/node_modules/react-static-plugin-favicons",
   plugins: [],
   hooks: {}
@@ -2302,35 +2508,7 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getCookie = exports.checkCookieRestriction = void 0;
-
-var checkCookieRestriction = function checkCookieRestriction(restriction) {
-  if (!restriction) {
-    return true;
-  }
-
-  return typeof document !== 'undefined' && getCookie(restriction.cookieName) === restriction.value;
-};
-
-exports.checkCookieRestriction = checkCookieRestriction;
-
-var getCookie = function getCookie(cookieName) {
-  if (false) { var parts, value; }
-};
-
-exports.getCookie = getCookie;
-
-/***/ }),
-/* 39 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2340,7 +2518,7 @@ exports.getCookie = getCookie;
 var _require = __webpack_require__(20),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(40),
+var _require2 = __webpack_require__(44),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -2349,7 +2527,7 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 40 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2363,6 +2541,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_universal_component__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2445,9 +2635,27 @@ var t_2 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
 }), universalOptions);
 t_2.template = '__react_static_root__/src/pages/index.js';
 var t_3 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "__react_static_root__/src/pages/programs/hockey/ice-rental.js",
+  load: function load() {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/hockey/ice-rental */).then(__webpack_require__.bind(null, 26))]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/hockey/ice-rental.js');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(26);
+  },
+  chunkName: function chunkName() {
+    return "__react_static_root__/src/pages/programs/hockey/ice-rental";
+  }
+}), universalOptions);
+t_3.template = '__react_static_root__/src/pages/programs/hockey/ice-rental.js';
+var t_4 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/programs/hockey/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/hockey/index */).then(__webpack_require__.bind(null, 26))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/hockey/index */).then(__webpack_require__.bind(null, 27))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -2455,17 +2663,53 @@ var t_3 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/hockey/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(26);
+    return /*require.resolve*/(27);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/programs/hockey/index";
   }
 }), universalOptions);
-t_3.template = '__react_static_root__/src/pages/programs/hockey/index.js';
-var t_4 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+t_4.template = '__react_static_root__/src/pages/programs/hockey/index.js';
+var t_5 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "__react_static_root__/src/pages/programs/hockey/pre-season-skills-and-skating.js",
+  load: function load() {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/hockey/pre-season-skills-and-skating */).then(__webpack_require__.bind(null, 28))]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/hockey/pre-season-skills-and-skating.js');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(28);
+  },
+  chunkName: function chunkName() {
+    return "__react_static_root__/src/pages/programs/hockey/pre-season-skills-and-skating";
+  }
+}), universalOptions);
+t_5.template = '__react_static_root__/src/pages/programs/hockey/pre-season-skills-and-skating.js';
+var t_6 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "__react_static_root__/src/pages/programs/horses/hunter-jumper-shows.js",
+  load: function load() {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/horses/hunter-jumper-shows */).then(__webpack_require__.bind(null, 29))]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/horses/hunter-jumper-shows.js');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(29);
+  },
+  chunkName: function chunkName() {
+    return "__react_static_root__/src/pages/programs/horses/hunter-jumper-shows";
+  }
+}), universalOptions);
+t_6.template = '__react_static_root__/src/pages/programs/horses/hunter-jumper-shows.js';
+var t_7 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/programs/horses/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/horses/index */).then(__webpack_require__.bind(null, 27))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/horses/index */).then(__webpack_require__.bind(null, 30))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -2473,17 +2717,71 @@ var t_4 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/horses/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(27);
+    return /*require.resolve*/(30);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/programs/horses/index";
   }
 }), universalOptions);
-t_4.template = '__react_static_root__/src/pages/programs/horses/index.js';
-var t_5 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+t_7.template = '__react_static_root__/src/pages/programs/horses/index.js';
+var t_8 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "__react_static_root__/src/pages/programs/horses/riding-lessons.js",
+  load: function load() {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/horses/riding-lessons */).then(__webpack_require__.bind(null, 31))]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/horses/riding-lessons.js');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(31);
+  },
+  chunkName: function chunkName() {
+    return "__react_static_root__/src/pages/programs/horses/riding-lessons";
+  }
+}), universalOptions);
+t_8.template = '__react_static_root__/src/pages/programs/horses/riding-lessons.js';
+var t_9 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "__react_static_root__/src/pages/programs/horses/schooling-ring-rental.js",
+  load: function load() {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/horses/schooling-ring-rental */).then(__webpack_require__.bind(null, 32))]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/horses/schooling-ring-rental.js');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(32);
+  },
+  chunkName: function chunkName() {
+    return "__react_static_root__/src/pages/programs/horses/schooling-ring-rental";
+  }
+}), universalOptions);
+t_9.template = '__react_static_root__/src/pages/programs/horses/schooling-ring-rental.js';
+var t_10 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "__react_static_root__/src/pages/programs/horses/trail-rides.js",
+  load: function load() {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/horses/trail-rides */).then(__webpack_require__.bind(null, 33))]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/horses/trail-rides.js');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(33);
+  },
+  chunkName: function chunkName() {
+    return "__react_static_root__/src/pages/programs/horses/trail-rides";
+  }
+}), universalOptions);
+t_10.template = '__react_static_root__/src/pages/programs/horses/trail-rides.js';
+var t_11 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/programs/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/index */).then(__webpack_require__.bind(null, 28))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/programs/index */).then(__webpack_require__.bind(null, 34))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -2491,17 +2789,17 @@ var t_5 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/programs/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(28);
+    return /*require.resolve*/(34);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/programs/index";
   }
 }), universalOptions);
-t_5.template = '__react_static_root__/src/pages/programs/index.js';
-var t_6 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+t_11.template = '__react_static_root__/src/pages/programs/index.js';
+var t_12 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/src/pages/staff/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/staff/index */).then(__webpack_require__.bind(null, 29))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | __react_static_root__/src/pages/staff/index */).then(__webpack_require__.bind(null, 35))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -2509,29 +2807,35 @@ var t_6 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/src/pages/staff/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(29);
+    return /*require.resolve*/(35);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/src/pages/staff/index";
   }
 }), universalOptions);
-t_6.template = '__react_static_root__/src/pages/staff/index.js'; // Template Map
+t_12.template = '__react_static_root__/src/pages/staff/index.js'; // Template Map
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   '__react_static_root__/src/pages/404.js': t_0,
   '__react_static_root__/src/pages/contact/index.js': t_1,
   '__react_static_root__/src/pages/index.js': t_2,
-  '__react_static_root__/src/pages/programs/hockey/index.js': t_3,
-  '__react_static_root__/src/pages/programs/horses/index.js': t_4,
-  '__react_static_root__/src/pages/programs/index.js': t_5,
-  '__react_static_root__/src/pages/staff/index.js': t_6
+  '__react_static_root__/src/pages/programs/hockey/ice-rental.js': t_3,
+  '__react_static_root__/src/pages/programs/hockey/index.js': t_4,
+  '__react_static_root__/src/pages/programs/hockey/pre-season-skills-and-skating.js': t_5,
+  '__react_static_root__/src/pages/programs/horses/hunter-jumper-shows.js': t_6,
+  '__react_static_root__/src/pages/programs/horses/index.js': t_7,
+  '__react_static_root__/src/pages/programs/horses/riding-lessons.js': t_8,
+  '__react_static_root__/src/pages/programs/horses/schooling-ring-rental.js': t_9,
+  '__react_static_root__/src/pages/programs/horses/trail-rides.js': t_10,
+  '__react_static_root__/src/pages/programs/index.js': t_11,
+  '__react_static_root__/src/pages/staff/index.js': t_12
 }); // Not Found Template
 
 var notFoundTemplate = "__react_static_root__/src/pages/404.js";
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 41 */
+/* 45 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -2560,7 +2864,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 42 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2771,7 +3075,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 43 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -2799,10 +3103,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 43;
+webpackContext.id = 47;
 
 /***/ }),
-/* 44 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2911,13 +3215,13 @@ ReportChunks.childContextTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 45 */
+/* 49 */
 /***/ (function(module, exports) {
 
 module.exports = require("vm");
 
 /***/ }),
-/* 46 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2984,15 +3288,15 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 47 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(48);
+var _interopRequireWildcard = __webpack_require__(52);
 
-var _interopRequireDefault = __webpack_require__(49);
+var _interopRequireDefault = __webpack_require__(53);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -3001,11 +3305,11 @@ exports["default"] = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(18));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(50));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(54));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(51);
+var _useStaticInfo = __webpack_require__(55);
 /* eslint-disable import/no-dynamic-require */
 
 
@@ -3026,7 +3330,7 @@ function Suspense(_ref) {
 React.Suspense = Suspense;
 React["default"].Suspense = Suspense;
 
-var App = __webpack_require__(52)["default"];
+var App = __webpack_require__(56)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -3039,31 +3343,31 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 48 */
+/* 52 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
 
 /***/ }),
-/* 49 */
+/* 53 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireDefault");
 
 /***/ }),
-/* 50 */
+/* 54 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 51 */
+/* 55 */
 /***/ (function(module, exports) {
 
 module.exports = require("J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-static\\lib\\browser\\hooks\\useStaticInfo");
 
 /***/ }),
-/* 52 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3072,7 +3376,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(32);
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(37);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
 
@@ -3100,10 +3404,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(53)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(57)(module)))
 
 /***/ }),
-/* 53 */
+/* 57 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -3133,7 +3437,7 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 54 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(10)(false);
@@ -3143,7 +3447,7 @@ exports.push([module.i, "*{scroll-behavior:smooth}html{font-size:62.5%;height:10
 
 
 /***/ }),
-/* 55 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(10)(false);
@@ -3153,7 +3457,7 @@ exports.push([module.i, ".loaderContainer{display:flex;justify-content:center;al
 
 
 /***/ }),
-/* 56 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(10)(false);
@@ -3163,52 +3467,12 @@ exports.push([module.i, ".hamburgerMenu{width:44px;height:44px;display:inline-bl
 
 
 /***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(10)(false);
-// Module
-exports.push([module.i, ".container--header{border-bottom:1px solid #fafafa;height:100px;background:#fff}.container--header .logo{height:60px;padding-top:20px}.container--header nav ul{list-style:none;margin:0;padding:0}.container--header nav ul li{display:inline-block}.container--header nav a{display:inline-block;padding:1.2rem 2.5rem;line-height:20px;margin-top:20px;font-size:1.6rem;letter-spacing:0.02em;color:#002146}.container--header nav a:hover{color:#0074F7}.container--header nav a.active{color:#0074F7}.container--header nav a.ctaLink{background:#0074F7;border-radius:4px;color:rgba(255,255,255,0.95)}.container--header nav a.ctaLink:hover{background:#0068de}@media screen and (min-width: 64em){header .constrain{display:flex;align-items:center;justify-content:space-between}header .hamburgerMenu{display:none !important}header a.ctaLink{margin-left:2.5rem}header li{position:relative}header li:hover .subNav{display:block}header .subNav{display:none;background:#fff;position:absolute;border-radius:4px;top:6rem;box-shadow:0 0 6px rgba(0,0,0,0.1)}header .subNav a{margin:1rem 0;white-space:nowrap}}@media screen and (max-width: 63.999em){.container--header{height:60px}.container--header .logo{height:40px;padding-top:10px}.container--header ul li{display:block;width:100%;text-align:center}.menu{display:none}.menu--expanded{display:block}.header--expanded{height:100%;position:fixed;width:100%;z-index:1}.hamburgerMenu{float:right;background:none;border:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none;margin-right:-1rem;margin-top:1rem}}\n", ""]);
-
-
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(10)(false);
-// Module
-exports.push([module.i, ".covid{text-align:center;padding:2rem 0}.container--covid{text-align:center;background:#002146;color:rgba(255,255,255,0.95);padding:1rem 0;font-size:1.4rem}.container--covid a{display:inline-block;text-decoration:underline;color:#91c5ff;margin-top:1rem}.container--covid a:hover{color:rgba(255,255,255,0.95)}\n", ""]);
-
-
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(10)(false);
-// Module
-exports.push([module.i, ".container--heading{background:#fafafa;padding:6rem 0}.container--heading h1,.container--heading h2{margin:0;padding:0;font-weight:normal;text-align:center}.container--heading h1{color:#002146;font-size:6rem;margin-bottom:3rem;font-family:serif;line-height:100%}.container--heading h2{color:rgba(0,0,0,0.75);font-size:1.6rem;font-family:sans-serif}\n", ""]);
-
-
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(10)(false);
-// Module
-exports.push([module.i, "@media screen and (min-width: 64em){.fourOhFourGrid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:2rem}}\n", ""]);
-
-
-
-/***/ }),
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(10)(false);
 // Module
-exports.push([module.i, ".button{outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;background:#0074F7;padding:1.2rem 2rem;border-radius:4px;color:rgba(255,255,255,0.95);letter-spacing:0.02em;margin:1rem 0;display:inline-block}.button:hover{background:#005cc4;color:rgba(255,255,255,0.95)}\n", ""]);
+exports.push([module.i, ".container--header{border-bottom:1px solid #fafafa;height:100px;background:#fff}.container--header .logo{height:60px;padding-top:20px}.container--header nav ul{list-style:none;margin:0;padding:0}.container--header nav ul li{display:inline-block}.container--header nav a{display:inline-block;padding:1.2rem 2.5rem;line-height:20px;font-size:1.6rem;letter-spacing:0.02em;color:#002146;cursor:pointer}.container--header nav a:hover{color:#0074F7}.container--header nav a.active{color:#0074F7}.container--header nav a.ctaLink{background:#0074F7;border-radius:4px;color:rgba(255,255,255,0.95)}.container--header nav a.ctaLink:hover{background:#0068de}@media screen and (min-width: 64em){header{position:relative}header .constrain{display:flex;align-items:center;justify-content:space-between}header .hamburgerMenu{display:none !important}header li{height:100px;position:relative}header li a{margin-top:25px}header a.ctaLink{margin-left:2.5rem}header li:hover .subNav{display:flex}header .subNav{background:#fff;position:absolute;display:none;border-radius:4px;box-shadow:0 3px 6px rgba(0,0,0,0.2);padding:4rem;left:50%;top:8rem;transform:translateX(-50%)}header .subNav li{height:auto;padding:2rem 4rem}header .subNav a{font-size:2rem;margin:0;padding:1rem 0;white-space:nowrap}header .subNav .subSubNav li{display:block;height:auto;padding:0}header .subNav .subSubNav li a{margin:0;font-size:1.6rem}}@media screen and (max-width: 63.999em){.container--header{height:60px}.container--header .logo{height:40px;padding-top:10px}.container--header ul li{display:block;width:100%}.container--header ul.subSubNav li{padding-left:2rem}.menu{display:none}.menu--expanded{display:block;padding-bottom:2rem}.header--expanded{height:100%;position:fixed;width:100%;z-index:1;bottom:0;top:0;overflow-y:scroll}.hamburgerMenu{float:right;background:none;border:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none;margin-right:-1rem;margin-top:1rem}}\n", ""]);
 
 
 
@@ -3218,7 +3482,57 @@ exports.push([module.i, ".button{outline:none;-webkit-appearance:none;-moz-appea
 
 exports = module.exports = __webpack_require__(10)(false);
 // Module
+exports.push([module.i, ".covid{text-align:center;padding:2rem 0}.container--covid{text-align:center;background:#002146;color:rgba(255,255,255,0.95);padding:1rem 0;font-size:1.4rem}.container--covid a{display:inline-block;text-decoration:underline;color:#91c5ff;margin-top:1rem}.container--covid a:hover{color:rgba(255,255,255,0.95)}\n", ""]);
+
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// Module
+exports.push([module.i, ".container--heading{background:#fafafa;padding:6rem 0}.container--heading h1,.container--heading h2{margin:0;padding:0;font-weight:normal;text-align:center}.container--heading h1{color:#002146;font-size:6rem;margin-bottom:3rem;font-family:serif;line-height:100%}.container--heading h2{color:rgba(0,0,0,0.75);font-size:1.6rem;font-family:sans-serif}\n", ""]);
+
+
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// Module
+exports.push([module.i, "@media screen and (min-width: 64em){.fourOhFourGrid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:2rem}}\n", ""]);
+
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// Module
+exports.push([module.i, ".button{outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;background:#0074F7;padding:1.2rem 2rem;border-radius:4px;color:rgba(255,255,255,0.95);letter-spacing:0.02em;margin:1rem 0;display:inline-block}.button:hover{background:#005cc4;color:rgba(255,255,255,0.95)}\n", ""]);
+
+
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// Module
 exports.push([module.i, ".programContainer{width:100%;margin:0 auto;margin-bottom:8rem;margin-top:4rem}.programContainer .programImage img{display:block;width:100%;border-radius:4px;box-shadow:0 12px 24px rgba(0,0,0,0.3),0 0 6px rgba(0,0,0,0.3)}@media screen and (min-width: 64em){.programContainer{display:grid;gap:4rem;grid-template-columns:1fr 1fr}.programContainer--swap{grid-template-columns:1fr 1fr}.programContainer--swap .programBody{grid-column-start:1;grid-row-start:1}}\n", ""]);
+
+
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// Module
+exports.push([module.i, "@media screen and (min-width: 64em){.hunter-jumper-class-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem}}\n", ""]);
 
 
 

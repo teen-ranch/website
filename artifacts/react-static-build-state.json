@@ -33,12 +33,6 @@
     "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
     "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\node_modules\\react-static-plugin-sass\\node.api.js",
     [
-      "react-static-plugin-google-tag-manager",
-      {
-        "id": "GTM-WRB7H6L"
-      }
-    ],
-    [
       "react-static-plugin-favicons",
       {
         "inputFile": "J:\\Websites\\TeenRanch\\2020\\teen-ranch-website\\icon.svg",

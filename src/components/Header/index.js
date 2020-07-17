@@ -29,15 +29,27 @@ export default function Header() {
                 <nav className={`menu ${ expanded ? 'menu--expanded' : '' }`}>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/programs">Programs</Link>
+                        <li><Link to="/programs/">Programs</Link>
                             <ul className='subNav'>
-                                <li><Link to='/programs/hockey'>Hockey</Link></li>
-                                <li><Link to='/programs/horses'>Horses</Link></li>
+                                <li><Link to='/programs/hockey/'>Hockey programs</Link>
+                                    <ul className='subSubNav'>
+                                        <li><Link to='/programs/hockey/pre-season-skills-and-skating/'>Pre-season skills & skating</Link></li>
+                                        <li><Link to='/programs/hockey/ice-rental/'>Ice rental</Link></li>
+                                    </ul>
+                                </li>
+                                <li><Link to='/programs/horses/'>Horse programs</Link>
+                                    <ul className='subSubNav'>
+                                        <li><Link to='/programs/horses/trail-rides/'>Trail rides</Link></li>
+                                        <li><Link to='/programs/horses/riding-lessons/'>Riding lessons</Link></li>
+                                        <li><Link to='/programs/horses/hunter-jumper-shows/'>Hunter / Jumper shows</Link></li>
+                                        <li><Link to='/programs/horses/schooling-ring-rental/'>Schooling ring rental</Link></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
-                        <li><Link to="/staff">Staff</Link></li>
+                        <li><Link to="/staff/">Staff</Link></li>
                         <li><a href="https://teenranchcanada.wordpress.com/" rel='noopener noreferrer'>Blog</a></li>
-                        <li><Link to="/contact ">Contact</Link></li>
+                        <li><Link to="/contact/ ">Contact</Link></li>
                         <li><a className='ctaLink' rel="noopener noreferrer" href='https://register.trmanager.com'>Sign up</a></li>
                     </ul>
                 </nav>

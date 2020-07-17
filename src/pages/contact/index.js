@@ -1,12 +1,17 @@
 import React from 'react'
+import { Head } from 'react-static'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
-import Button from 'components/Button'
 
 export default () => {
 
 	return (
         <>
+            <Head>
+                <meta name='description' content={`Get in touch! We would love to hear from you!`} />
+                <meta name='keywords' content='teen ranch canada, teen ranch caledon ontario canada, summer camp caledon ontario' />
+            </Head>
+
             <Heading title='Contact us' subtitle='Due to staffing restrictions, wait times may be longer than usual.' />
             <Container type='body'>
 

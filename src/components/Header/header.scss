@@ -27,10 +27,10 @@
             display: inline-block;
             padding: 1.2rem 2.5rem;
             line-height: 20px;
-            margin-top: 20px;
             font-size: 1.6rem;
             letter-spacing: 0.02em;
             color: $primary-dark;
+            cursor: pointer;
         }
 
         a:hover {
@@ -58,6 +58,7 @@
 @media screen and (min-width:64em) {
     header {
 
+        position: relative;
         .constrain {
             display: flex;
             align-items: center;
@@ -68,35 +69,59 @@
             display: none !important;
         }
 
+        li {
+            height: 100px;
+            position: relative;
+            a {
+                margin-top: 25px;
+            }
+        }
+
         a.ctaLink {
             margin-left: 2.5rem;
         }
 
-        li {
-            position: relative;
-        }
-
         li:hover {
             .subNav {
-                display: block;
+                display: flex;
+            }
+        }
+        .subNav {
+            background: #fff;
+            position: absolute;
+            display: none;
+            border-radius: $border-radius;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            padding: 4rem;
+            left: 50%;
+            top: 8rem;
+            transform: translateX(-50%);
+
+            li {
+                height: auto;
+                padding: 2rem 4rem;
+            }
+            
+            a {
+                font-size: 2rem;
+                margin: 0;
+                padding: 1rem 0;
+                white-space: nowrap;
+            }
+            
+            .subSubNav {
+                li {
+                    display: block;
+                    height: auto;
+                    padding: 0;
+                    a {
+                        margin: 0;
+                        font-size: 1.6rem;
+                    }
+                }
             }
         }
 
-        .subNav {
-            display:none;
-            background: #fff;
-            position: absolute;
-            border-radius: $border-radius;
-            top: 6rem;
-            box-shadow: 
-                0 0 6px rgba(0,0,0,0.1)
-            ;
-            
-            a {
-                margin: 1rem 0;
-                white-space: nowrap;
-            }
-        }
 
     }
 
@@ -112,8 +137,15 @@
         ul li {
             display: block;
             width: 100%;
-            text-align: center;
+            // text-align: center;
         }
+
+        ul.subSubNav {
+            li {
+                padding-left: 2rem;
+            }
+        }
+
     }
 
     .menu {
@@ -121,6 +153,7 @@
     }
     .menu--expanded {
         display: block;
+        padding-bottom: 2rem;
     }
 
     .header--expanded {
@@ -128,6 +161,9 @@
         position: fixed;
         width: 100%;
         z-index: 1;
+        bottom: 0;
+        top: 0;
+        overflow-y: scroll;
     }
 
     .hamburgerMenu {

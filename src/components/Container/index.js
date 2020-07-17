@@ -14,7 +14,7 @@ export default function Container({ type = 'body', constrain = true, style, chil
 
 }
 
-function Constrain({ constrain, children }) {
+export function Constrain({ constrain, children }) {
     if (!constrain) return <>{ children }</>
     return (
         <div className='constrain'>{ children }</div>

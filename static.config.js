@@ -1,5 +1,6 @@
+import React from 'react'
 import path from 'path'
-import axios from 'axios'
+// import axios from 'axios'
 
 export default {
   siteRoot: 'https://teenranch.com',
@@ -7,6 +8,27 @@ export default {
     title: 'Teen Ranch Canada',
     covidGroupMax: 10
   }),
+  Document: ({
+    Html,
+    Head,
+    Body,
+    children,
+    state: { siteData, renderMeta }
+  }) => (
+    <Html lang="en-CA">
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Home - Teen Ranch Canada</title>
+        <meta name='description' content={`Canada's Premier Sports Resort and Retreat Centre: Hockey, Horses, Soccer, Adventure, Figure Skating, BMX Dirt & Day Camps`} />
+        <meta name='keywords' content='Summer Camp, Conference Centre, Weekend Retreats, hockey camp, horse camp, rock climing, bmx camp, soccer camp, ice rental' />
+        <meta name='author' content='DS Media' />
+        <meta name='wot-verification' content='2d82a7513302ee51cb53' />
+        <script async defer data-domain="teenranch.com" src="https://stats.teenranch.com/js/index.js"></script>
+      </Head>
+      <Body>{ children }</Body>
+    </Html>
+  ),
   // getRoutes: async () => {
   //   const { data: posts } = await axios.get(
   //     'https://jsonplaceholder.typicode.com/posts'
@@ -45,13 +67,13 @@ export default {
     ],
     require.resolve('react-static-plugin-sitemap'),
     require.resolve('react-static-plugin-sass'),
-    [
-      'react-static-plugin-google-tag-manager',
-      {
-        id: 'GTM-WRB7H6L',
-        // debug: true,
-      },
-    ],
+    // [
+    //   'react-static-plugin-google-tag-manager',
+    //   {
+    //     id: 'GTM-WRB7H6L',
+    //     // debug: true,
+    //   },
+    // ],
     [
       'react-static-plugin-favicons',
       { 

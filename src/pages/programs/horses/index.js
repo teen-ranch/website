@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSiteData } from 'react-static'
+import { useSiteData, Head } from 'react-static'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
@@ -11,6 +11,10 @@ export default () => {
 
 	return (
         <>
+            <Head>
+                <meta name='description' content={`Trail rides, riding lessons, hunter / jumper horse shows and more!`} />
+                <meta name='keywords' content='trail rides, riding lessons, hunter jumper horse shows, schooling ring rental' />
+            </Head>
             <Heading title='Horse programs' subtitle={<>Due to COVID-19 Teen Ranch is running a small set of temporary programs.<br/>We look forward to serving you with more activities as restrictions continue to loosen.</>} />
             <Container type='body'>
 
@@ -59,7 +63,7 @@ export default () => {
                         <li>September 27 - TBD</li>
                     </ul>
 
-                    <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/OnlineHorseShowJuly192020/formperma/8kUPL-fV-vy1KyRtGWI0k-8BYhpDFqIeEi3015OrIq0?referrername=teenranch.com">Enter in the July 19 online show</Button>
+                    <Button to='/programs/horses/hunter-jumper-shows/'>Learn more</Button>
 
                 </Program>
 
