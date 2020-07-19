@@ -8,7 +8,7 @@
 
     .logo {
         height: 60px;
-        padding-top: 20px;
+        // padding-top: 20px;
     }
 
     nav {
@@ -96,6 +96,7 @@
             left: 50%;
             top: 8rem;
             transform: translateX(-50%);
+            z-index: 1;
 
             li {
                 height: auto;

@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { useTueri } from './Provider'
+import { withOrientationChange } from 'react-device-detect'
 
-export default function Img({ src, options = {}, buffer = 2, alt }) {
+function Img({ src, ratio, options = {}, buffer = 2, alt, isPortrait }) {
 
     const { browserSupport, replacements } = useTueri()
 
@@ -145,6 +146,16 @@ export default function Img({ src, options = {}, buffer = 2, alt }) {
 
     // If width is specified, otherwise use auto-detected width
     options['w'] = options['w'] || width
+    if (ratio) {
+        if (isPortrait) {
+            const [ height, width ] = ratio.split(':')
+            options['h'] = options['w'] / width * height
+        }
+        else {
+            const [ width, height ] = ratio.split(':')
+            options['h'] = options['w'] / width * height
+        }
+    }
 
     // If a format has not been specified, detect webp support
     if (!options['fm'] && browserSupport.webp) {
@@ -201,3 +212,5 @@ export default function Img({ src, options = {}, buffer = 2, alt }) {
     )
 
 }
+
+export default withOrientationChange(Img)

@@ -1,22 +1,20 @@
 import React from 'react'
 import Container from 'components/Container'
-
-import { Head, useSiteData } from 'react-static'
+import { Img } from 'components/Tueri'
 
 import './heading.scss'
 
-export default function Heading({ title, subtitle }) {
+export default function Heading({ title, src, alt, subtitle }) {
 
-    const { title: siteTitle } = useSiteData()
     return (
-        <Container type='heading'>
-            {title && typeof title === 'string' && (
-                <Head>
-                    <title>{ title } - { siteTitle }</title>
-                </Head>
-            )}
-            <h1>{ title }</h1>
-            { subtitle && <h2>{ subtitle }</h2> }
+        <Container type='heading' constrain={false}>
+            { src && <Img src={ src } alt={ alt || title } ratio='16:9' /> }
+            <div className='overlayContainer'>
+                <div className='overlay'>
+                    <h1>{ title }</h1>
+                    { subtitle && <h2>{ subtitle }</h2> }
+                </div>
+            </div>
         </Container>
     )
 }

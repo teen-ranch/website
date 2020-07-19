@@ -22,7 +22,7 @@ function App() {
     <Root>
       <noscript>Please enable JavaScript to view this page.</noscript>
       <TueriProvider replacements={[['https://teenranch.nyc3.digitaloceanspaces.com/website/assets/', 'https://cdn.tueri.io/68719476739/assets/']]}>
-        <CovidBanner />
+        {/* <CovidBanner /> */}
         <Header />
         <React.Suspense fallback={<Container type='body' constrain={ false } style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}><Loader /></Container>}>
           <Router>
