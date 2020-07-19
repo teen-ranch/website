@@ -40,7 +40,7 @@ export default () => {
                         </thead>
                         <tbody>
                             <tr><td>June 30</td><td>Online Show</td><td>Entries closed</td></tr>
-                            <tr><td>July 19</td><td>Online Show</td><td><Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/OnlineHorseShowJuly192020/formperma/8kUPL-fV-vy1KyRtGWI0k-8BYhpDFqIeEi3015OrIq0?referrername=teenranch.com">July 19 entry form</Button></td></tr>
+                            <tr><td>July 19</td><td>Online Show</td><td>Entries closed</td></tr>
                             <tr><td>July 26</td><td>Teen Ranch</td><td><Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly262020/formperma/HFsaEt0XldzBrxJkVPVVjhGMJq1nf7M_RcN6LFLhkp0?referrername=teenranch.com">July 26 entry form</Button></td></tr>
                             <tr><td>August 9</td><td>Teen Ranch</td><td>Opening soon</td></tr>
                             <tr><td>August 23</td><td>Teen Ranch</td><td>Opening soon</td></tr>
