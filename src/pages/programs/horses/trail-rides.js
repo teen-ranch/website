@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSiteData, Head } from 'react-static'
+import { useSiteData } from 'react-static'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
@@ -11,11 +11,13 @@ export default () => {
 
 	return (
         <>
-            <Head>
-                <meta name='description' content={`Trail rides through the beautiful Headwaters region in Caledon, Ontario.`} />
-                <meta name='keywords' content='trail rides, horseback riding, horse back riding in caledon, horse back riding in orangeville' />
-            </Head>
-            <Heading title='Trail rides' subtitle={<>Due to COVID-19 Teen Ranch is running a small set of temporary programs.<br/>We look forward to serving you with more activities as restrictions continue to loosen.</>} />
+
+            <Heading
+				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide3.jpg'
+				title={<>Trail rides</>} 
+                subtitle={<>Horseback riding through the beautiful Headwaters region in Caledon, Ontario.k</>}
+                keywords='trail rides, horseback riding, horse back riding in caledon, horse back riding in orangeville'
+			/>
             <Container type='body'>
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg' name='Trail rides'>

@@ -15,15 +15,17 @@ export default {
     children,
     state: { siteData, renderMeta }
   }) => (
-    <Html lang="en-CA">
+    <Html lang="en-CA" prefix="og: http://ogp.me/ns#">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Home - Teen Ranch Canada</title>
-        <meta name='description' content={`Canada's Premier Sports Resort and Retreat Centre: Hockey, Horses, Soccer, Adventure, Figure Skating, BMX Dirt & Day Camps`} />
+        <title>Teen Ranch Canada</title>
+        <meta name='description' content={`A Premier Sports Resort and Retreat Centre: Hockey, Horses, Soccer, Adventure, Figure Skating, BMX Dirt & Day Camps`} />
         <meta name='keywords' content='Summer Camp, Conference Centre, Weekend Retreats, hockey camp, horse camp, rock climing, bmx camp, soccer camp, ice rental' />
         <meta name='author' content='DS Media' />
         <meta name='wot-verification' content='2d82a7513302ee51cb53' />
+        <meta property="og:type" content="website" />
+        <meta property='twitter:card' content='summary_large_image' />
         <script async defer data-domain="teenranch.com" src="https://stats.teenranch.com/js/index.js"></script>
       </Head>
       <Body>{ children }</Body>

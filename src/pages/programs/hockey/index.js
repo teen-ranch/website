@@ -1,5 +1,4 @@
 import React from 'react'
-import { Head } from 'react-static'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
@@ -9,11 +8,12 @@ export default () => {
 
 	return (
         <>
-            <Head>
-                <meta name='description' content={`Hockey programs and leagues for all ages.`} />
-                <meta name='keywords' content='skating development, power skating, stick handling school, hockey school, hockey school caledon ontario' />
-            </Head>
-            <Heading title='Hockey programs' subtitle={<>Due to COVID-19 Teen Ranch is running a small set of temporary programs.<br/>We look forward to serving you with more activities as restrictions continue to loosen.</>} />
+            <Heading
+				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+				title={<>Hockey programs</>} 
+                subtitle={<>Hockey programs and leagues for all ages</>}
+                keywords='skating development, power skating, stick handling school, hockey school, hockey school caledon ontario'
+			/>
             <Container type='body'>
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG' name='Pre-Season Skills and Skating'>

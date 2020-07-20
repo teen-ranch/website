@@ -16,6 +16,7 @@
     "react": "^16.13.1",
     "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
+    "react-element-to-string": "^1.0.2",
     "react-static": "^7.4.2",
     "react-static-plugin-google-tag-manager": "^1.2.0",
     "react-static-plugin-reach-router": "^7.4.2",

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Head } from 'react-static'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
@@ -9,11 +8,13 @@ export default () => {
 
 	return (
         <>
-            <Head>
-                <meta name='description' content={`Private and semi-private riding lessons in Caledon, Ontario.`} />
-                <meta name='keywords' content='riding lessons, horseback riding lessons, riding lessons caledon ontario, horseback riding caledon ontario' />
-            </Head>
-            <Heading title='Riding lessons' subtitle={<>Due to COVID-19 Teen Ranch is running a small set of temporary programs.<br/>We look forward to serving you with more activities as restrictions continue to loosen.</>} />
+            <Heading
+				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse5.jpg'
+				title={<>Riding lessons</>} 
+                subtitle={<>Private and semi-private riding lessons for beginner to advanced riders</>}
+                description='Private and semi-private riding lessons in Caledon, Ontario.'
+                keywords='riding lessons, horseback riding lessons, riding lessons caledon ontario, horseback riding caledon ontario'
+			/>
             <Container type='body'>                   
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse5.jpg' name='Riding lessons'>
