@@ -9,7 +9,8 @@ export default () => {
         <>
 
             <Heading
-				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/staff2.jpg'
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/staff2.jpg'
+                alt='Teen Ranch staff group photo'
 				title={<>Our staff</>} 
                 subtitle={<>Volunteer and full-time staff positions.</>}
                 keywords='volunteer ministry opportunity, summer camp staff, christian summer camp employment'

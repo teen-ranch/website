@@ -9,7 +9,8 @@ export default () => {
 	return (
         <>
             <Heading
-				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG'
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG'
+                alt='Smiling kids playing hockey'
 				title={<>Pre-season skills & skating</>} 
                 subtitle={<>Develop your stick handling and skating and get ready for next season!</>}
                 keywords='hockey season preparation, stick handling, power skating'

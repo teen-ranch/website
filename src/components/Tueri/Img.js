@@ -2,9 +2,11 @@ import React, { useState, useRef, useEffect } from 'react'
 import { useTueri } from './Provider'
 import { withOrientationChange } from 'react-device-detect'
 
-function Img({ src, ratio, options = {}, buffer = 2, alt, isPortrait }) {
+function Img({ src, ratio, portraitRatio, options = {}, buffer = 2, alt, isPortrait }) {
 
     const { browserSupport, replacements } = useTueri()
+    // const browserSupport = 'false'
+    // const replacements = []
 
     const [ isInViewport, setIsInViewport ] = useState(false)
     const [ params, setParams ] = useState({ width: 0, height: 0 })
@@ -147,11 +149,15 @@ function Img({ src, ratio, options = {}, buffer = 2, alt, isPortrait }) {
     // If width is specified, otherwise use auto-detected width
     options['w'] = options['w'] || width
     if (ratio) {
+        if (isPortrait && portraitRatio) {
+            const [ width, height ] = ratio.split(':')
+            options['h'] = options['w'] / width * height
+        }
         if (isPortrait) {
             const [ height, width ] = ratio.split(':')
             options['h'] = options['w'] / width * height
         }
-        else {
+        if (!isPortrait) {
             const [ width, height ] = ratio.split(':')
             options['h'] = options['w'] / width * height
         }

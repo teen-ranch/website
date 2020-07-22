@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSiteData } from 'react-static'
+import { useSiteData } from 'hooks/siteData'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
@@ -12,7 +12,8 @@ export default () => {
 	return (
         <>
             <Heading
-				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse19.jpg'
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse19.jpg'
+                alt='Equitation on the flat'
 				title={<>Horse programs</>} 
                 subtitle={<>Riding lessons, trail rides and hunter / jumper shows and more!</>}
                 keywords='trail rides, riding lessons, hunter jumper horse shows, schooling ring rental'

@@ -10,7 +10,8 @@ export default function Programs() {
         <>
 
             <Heading
-				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/giantSwing3.jpg'
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/giantSwing3.jpg'
+                alt='Girl screaming on giant swing'
 				title={<>Programs</>} 
                 subtitle={<>Due to COVID-19 Teen Ranch is running a small set of temporary programs.<br/>We look forward to serving you with more activities as restrictions continue to loosen.</>}
                 keywords='hockey programs, horse programs, adventure programs, bmx dirt programs'
@@ -23,7 +24,7 @@ export default function Programs() {
                         <li>Dufferin-peel skating club </li>
                     </ul>
 
-                    <Button to='/programs/hockey'>View hockey programs</Button>
+                    <Button to='/programs/hockey/'>View hockey programs</Button>
                 </Program>
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg' name='Horse programs' swap>
@@ -34,7 +35,7 @@ export default function Programs() {
                         <li>Schooling ring rental</li>
                     </ul>
 
-                    <Button to='/programs/horses'>View horse programs</Button>
+                    <Button to='/programs/horses/'>View horse programs</Button>
                 </Program>                
 
             </Container>

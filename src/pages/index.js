@@ -25,6 +25,7 @@ export default () => {
 
 			<Heading
 				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse19.jpg'
+				alt='Equitation on the flat'
 				title={<>A premier sports resort<br/>and retreat centre since 1967</>}
 				subtitle={<>Less than an hour from <strong>Toronto</strong> in the heart of <strong>Caledon, Ontario</strong></>}
 			/>

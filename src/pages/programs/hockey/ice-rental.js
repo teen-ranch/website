@@ -9,7 +9,8 @@ export default () => {
 	return (
         <>
             <Heading
-				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+                alt='Hockey skater stopping at blue line'
 				title={<>Ice rental</>} 
                 subtitle={<>Rent our olympic-size ice hockey arena.</>}
                 keywords='ice rental, ice hockey rental, hockey arena rental, summer ice rental'

@@ -9,7 +9,8 @@ export default () => {
 	return (
         <>
             <Heading
-				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+                alt='Hockey player stopping at blue line'
 				title={<>Hockey programs</>} 
                 subtitle={<>Hockey programs and leagues for all ages</>}
                 keywords='skating development, power skating, stick handling school, hockey school, hockey school caledon ontario'

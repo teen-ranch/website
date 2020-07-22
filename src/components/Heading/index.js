@@ -1,23 +1,27 @@
 import React from 'react'
-import { Head, useSiteData } from 'react-static'
 import Container from 'components/Container'
 import { Img } from 'components/Tueri'
 import jsxToString from 'react-element-to-string'
-import { useLocation } from 'components/Router'
+import { useLocation } from '@reach/router'
+import { Helmet } from 'react-helmet'
+import { withOrientationChange } from 'react-device-detect'
+import { useSiteData } from 'hooks/siteData'
 
 import './heading.scss'
 
-export default function Heading({ title, src, alt, subtitle, description, keywords }) {
+function Heading({ title, src, alt, subtitle, description, keywords, isPortrait }) {
 
-    const { title: siteTitle } = useSiteData()
-    const { href } = useLocation()
+    const { pathname } = useLocation()
+    const { url, title: siteTitle } = useSiteData()
 
     const pageTitle = jsxToString(title).replace(/<\/?[^>]+(>|$)/g, " ")
     const pageDescription = jsxToString(subtitle).replace(/<\/?[^>]+(>|$)/g, " ")
 
+    const padding = isPortrait ? '177.5%' : '56.25%'
+
     return (
         <>
-            <Head>
+            <Helmet>
                 <title>{`${ pageTitle } - ${ siteTitle }`}</title>
                 <meta property='og:title' content={`${ pageTitle } - ${ siteTitle }`} />
                 <meta property='twitter:title' content={`${ pageTitle } - ${ siteTitle }`} />
@@ -25,14 +29,14 @@ export default function Heading({ title, src, alt, subtitle, description, keywor
                 <meta property='og:image:secure_url' content={ src + '?w=1200&h=1200' } />
                 <meta property='og:image:alt' content={ alt } />
                 <meta property='twitter:image:src' content={ src + '?w=1200&h=1200' } />
-                <meta property='og:url' content={ href } />
+                <meta property='og:url' content={ url + pathname } />
                 <meta name='description' content={ description || pageDescription  } />
                 <meta property='og:description' content={ description || pageDescription } />
                 <meta name='keywords' content={ keywords } />
-            </Head>
+            </Helmet>
 
             <Container type='heading' constrain={false}>
-                { src && <Img src={ src } alt={ alt || title } ratio='16:9' /> }
+                <div style={{ paddingBottom: padding, height: "0" }}>{ src && <Img src={ src } alt={ alt || title } ratio='16:9' portraitRatio='4:5' /> }</div>
                 <div className='overlayContainer'>
                     <div className='overlay'>
                         <h1>{ title }</h1>
@@ -43,3 +47,5 @@ export default function Heading({ title, src, alt, subtitle, description, keywor
         </>
     )
 }
+
+export default withOrientationChange(Heading)
