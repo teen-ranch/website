@@ -1,9 +1,14 @@
 @import 'styles/vars';
-
+header {
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
 .container--header {
     border-bottom: 1px solid #fafafa;
     height: 100px;
     background: #fff;
+   
     // background: $primary-dark;
 
     .logo {
@@ -58,7 +63,10 @@
 @media screen and (min-width:64em) {
     header {
 
-        position: relative;
+        // position: relative;
+        // position: sticky;
+        // top:0;
+        // z-index: 1;
         .constrain {
             display: flex;
             align-items: center;
