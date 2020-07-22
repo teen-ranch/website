@@ -2,7 +2,10 @@
 
 .covid {
     text-align: center;
-    padding: 2rem 0;
+    color: lighten($primary-light, 20);
+    p {
+        color: $primary-white;
+    }
 }
 
 .container--covid {

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import './hamburger.scss'
 import './header.scss'
 import Container from 'components/Container'
-import { NavLink as Link, useLocation } from 'components/Router'
+import { Link as RouterLink, useLocation } from '@reach/router'
 
 import logo from './teenRanchLogo_lightBGR.svg'
 
@@ -58,3 +58,16 @@ export default function Header() {
     )
 
 }
+
+export const Link = props => (
+    <RouterLink
+      {...props}
+      getProps={({ isCurrent }) => {
+        // the object returned here is passed to the
+        // anchor element's props
+        return {
+          className: isCurrent ? 'active' : ''
+        };
+      }}
+    />
+  );

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Head } from 'react-static'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
@@ -11,11 +10,13 @@ export default () => {
 
 	return (
         <>
-            <Head>
-                <meta name='description' content={`Professional courses and divisions offered for every level from first-time competitors to those schooling before their A Shows.`} />
-                <meta name='keywords' content='horse shows, schooling horse shows, horse show orangeville ontario, horse show caledon ontario, gta horse show' />
-            </Head>
-            <Heading title='Hunter / Jumper shows' subtitle={<>Due to COVID-19 Teen Ranch is running a small set of temporary programs.<br/>We look forward to serving you with more activities as restrictions continue to loosen.</>} />
+            <Heading
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse14.jpg'
+                alt='Rider and horse jumping at Teen Ranch'
+				title={<>Hunter / Jumper shows</>} 
+                subtitle={<>Professional courses and divisions for first-time competitors to those schooling before their A Shows.</>}
+                keywords='horse shows, schooling horse shows, horse show orangeville ontario, horse show caledon ontario, gta horse show'
+			/>
             <Container type='body'>
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hunterJumper16.jpg' name='Hunter/Jumper shows'>
@@ -24,10 +25,10 @@ export default () => {
                         <li>June 30 - ONLINE (Finished)</li>
                         <li>July 19 - ONLINE (Online entry open)</li>
                         <li>July 26 - ON-SITE (Online entry open)</li>
-                        <li>August 9 - TBD</li>
-                        <li>August 23 - TBD</li>
-                        <li>September 13 - TBD</li>
-                        <li>September 27 - TBD</li>
+                        <li>August 9 - ON-SITE</li>
+                        <li>August 23 - ON-SITE</li>
+                        <li>September 13 - ON-SITE</li>
+                        <li>September 27 - ON-SITE</li>
                     </ul>
                 </Program>
 
@@ -41,7 +42,10 @@ export default () => {
                         <tbody>
                             <tr><td>June 30</td><td>Online Show</td><td>Entries closed</td></tr>
                             <tr><td>July 19</td><td>Online Show</td><td>Entries closed</td></tr>
-                            <tr><td>July 26</td><td>Teen Ranch</td><td><Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly262020/formperma/HFsaEt0XldzBrxJkVPVVjhGMJq1nf7M_RcN6LFLhkp0?referrername=teenranch.com">July 26 entry form</Button></td></tr>
+                            <tr><td>July 26</td><td>Teen Ranch</td><td>
+                                Entries closed
+                                {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly262020/formperma/HFsaEt0XldzBrxJkVPVVjhGMJq1nf7M_RcN6LFLhkp0?referrername=teenranch.com">July 26 entry form</Button> */}
+                            </td></tr>
                             <tr><td>August 9</td><td>Teen Ranch</td><td>Opening soon</td></tr>
                             <tr><td>August 23</td><td>Teen Ranch</td><td>Opening soon</td></tr>
                             <tr><td>September 13</td><td>Teen Ranch</td><td>Opening soon</td></tr>
@@ -109,7 +113,6 @@ export default () => {
                     <li>ASTM approved helmets mandatory for all riders. Proper show attire required.</li>
                     <li>Back number must be worn and visible at all times while on horseback.</li>
                     <li>Please read class descriptions to see rules on cross-entering.</li>
-                    <li>All Riders MUST have a Day or Annual Teen Ranch H/J Membership to compete.</li>
                     <li>Hunter Classes - Flash nose bands and running or german martingales are not permitted. Leg protection may be worn on horse in warm-up and inclement weather only when approved by judge.</li>
                     <li>Champion/Reserve Champions at each show are calculated as follows: 7,5,4,3,2,1.</li>
                     <li>Year-End Awards – Must show in at least 3 shows in the division to qualify. Points are awarded to horses in hunter/jumper divisions, the rider in equitation/lead line divisions and horse/rider combinations for the beginner, rookie, and short stirrup divisions. Points are calculated as follows: 7xentries, 5xentries, 4xentries, 3xentries, 2xentries, 1xentries.</li>

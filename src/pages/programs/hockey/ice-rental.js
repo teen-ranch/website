@@ -1,5 +1,4 @@
 import React from 'react'
-import { Head } from 'react-static'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
@@ -9,11 +8,13 @@ export default () => {
 
 	return (
         <>
-            <Head>
-                <meta name='description' content={`Rent our olympic-size ice hockey arena.`} />
-                <meta name='keywords' content='ice rental, ice hockey rental, hockey arena rental, summer ice rental' />
-            </Head>
-            <Heading title='Ice rental' subtitle={<>Due to COVID-19 Teen Ranch is running a small set of temporary programs.<br/>We look forward to serving you with more activities as restrictions continue to loosen.</>} />
+            <Heading
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+                alt='Hockey skater stopping at blue line'
+				title={<>Ice rental</>} 
+                subtitle={<>Rent our olympic-size ice hockey arena.</>}
+                keywords='ice rental, ice hockey rental, hockey arena rental, summer ice rental'
+			/>
             <Container type='body'>
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/iceCorral1.jpg' name='Ice rental' swap>

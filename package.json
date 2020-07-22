@@ -1,37 +1,46 @@
 {
-  "name": "react-static-example-basic",
+  "name": "teen-ranch-website-cra",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "react-static start",
-    "stage": "react-static build --staging",
-    "build": "react-static build",
-    "analyze": "react-static build --analyze",
-    "serve": "serve dist -p 3000",
-    "deploy": "netlify deploy --dir dist",
-    "deploy-prod": "netlify deploy --dir dist --prod"
-  },
   "dependencies": {
+    "@fudohq/react-snap-sitemap": "^0.1.5",
     "@reach/router": "^1.3.4",
-    "axios": "^0.19.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
-    "react-static": "^7.4.2",
-    "react-static-plugin-google-tag-manager": "^1.2.0",
-    "react-static-plugin-reach-router": "^7.4.2",
-    "react-static-plugin-sass": "^7.3.0",
-    "react-static-plugin-sitemap": "^7.4.2",
-    "react-static-plugin-source-filesystem": "^7.4.2"
+    "react-element-to-string": "^1.0.2",
+    "react-helmet": "^6.1.0",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap",
+    "deploy": "netlify deploy --dir build",
+    "deploy-prod": "netlify deploy --dir build --prod"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.2",
-    "eslint": "^6.1.0",
-    "eslint-config-react-app": "^5.0.1",
-    "eslint-config-react-tools": "^1.1.7",
-    "eslint-plugin-flowtype": "^4.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "react-static-plugin-favicons": "^2.0.0",
-    "serve": "^11.1.0"
+    "react-snap": "^1.23.0"
   }
 }
