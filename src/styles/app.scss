@@ -85,3 +85,11 @@ img {
     overflow-x: auto;
   }
 }
+
+.covid {
+  text-align: center;
+  color: lighten($primary-light, 20);
+  p {
+      color: $primary-white;
+  }
+}
