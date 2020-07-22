@@ -26,7 +26,7 @@ function App() {
       }}
     >
       <TueriProvider replacements={[['https://teenranch.nyc3.digitaloceanspaces.com/website/assets/', 'https://cdn.tueri.io/68719476739/assets/']]}>
-          <Router>
+          <Router className='router'>
             <Route path='*'/>
           </Router>
       </TueriProvider>
