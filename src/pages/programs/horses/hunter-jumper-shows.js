@@ -13,8 +13,8 @@ export default () => {
             <Heading
                 src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse14.jpg'
                 alt='Rider and horse jumping at Teen Ranch'
-				title={<>Hunter / Jumper shows</>} 
-                subtitle={<>Professional courses and divisions for first-time competitors to those schooling before their A Shows.</>}
+				title='Hunter / Jumper shows'
+                subtitle='Professional courses and divisions for first-time competitors to those schooling before their A Shows.'
                 keywords='horse shows, schooling horse shows, horse show orangeville ontario, horse show caledon ontario, gta horse show'
 			/>
             <Container type='body'>
