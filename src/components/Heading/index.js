@@ -9,13 +9,13 @@ import { useSiteData } from 'hooks/siteData'
 
 import './heading.scss'
 
-function Heading({ title, src, alt, subtitle, description, keywords, isPortrait }) {
+function Heading({ title, src, alt, subtitle, metaTitle, metaDescription, keywords, isPortrait }) {
 
     const { pathname } = useLocation()
     const { url, title: siteTitle } = useSiteData()
-
-    const pageTitle = jsxToString(title).replace(/<\/?[^>]+(>|$)/g, " ")
-    const pageDescription = jsxToString(subtitle).replace(/<\/?[^>]+(>|$)/g, " ")
+    
+    const pageTitle = metaTitle ? metaTitle : jsxToString(title).replace(/<\/?[^>]+(>|$)/g, " ")
+    const pageDescription = metaDescription ? metaDescription : jsxToString(subtitle).replace(/<\/?[^>]+(>|$)/g, " ")
 
     const padding = isPortrait ? '177.5%' : '56.25%'
 
@@ -30,8 +30,8 @@ function Heading({ title, src, alt, subtitle, description, keywords, isPortrait 
                 <meta property='og:image:alt' content={ alt } />
                 <meta property='twitter:image:src' content={ src + '?w=1200&h=1200' } />
                 <meta property='og:url' content={ url + pathname } />
-                <meta name='description' content={ description || pageDescription  } />
-                <meta property='og:description' content={ description || pageDescription } />
+                <meta name='description' content={ pageDescription  } />
+                <meta property='og:description' content={ pageDescription } />
                 <meta name='keywords' content={ keywords } />
             </Helmet>
 
