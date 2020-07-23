@@ -14,8 +14,8 @@ export default () => {
             <Heading
                 src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse19.jpg'
                 alt='Equitation on the flat'
-				title={<>Horse programs</>} 
-                subtitle={<>Riding lessons, trail rides and hunter / jumper shows and more!</>}
+				title='Horse programs'
+                subtitle='Riding lessons, trail rides and hunter / jumper shows and more!'
                 keywords='trail rides, riding lessons, hunter jumper horse shows, schooling ring rental'
 			/>
             <Container type='body'>
