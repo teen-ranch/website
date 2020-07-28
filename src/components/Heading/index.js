@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from 'components/Container'
 import { Img } from 'components/Tueri'
-import jsxToString from 'react-element-to-string'
+// import jsxToString from 'react-element-to-string'
 import { useLocation } from '@reach/router'
 import { Helmet } from 'react-helmet'
 import { withOrientationChange } from 'react-device-detect'
