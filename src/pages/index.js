@@ -28,6 +28,8 @@ export default () => {
 				alt='Equitation on the flat'
 				title={<>A premier sports resort<br/>and retreat centre since 1967</>}
 				subtitle={<>Less than an hour from <strong>Toronto</strong> in the heart of <strong>Caledon, Ontario</strong></>}
+				metaTitle='A premier sports resort and retreat centre since 1967'
+				metaDescription='Less than an hour from Toronto in the heart of Caledon, Ontario'
 			/>
 		</>
 	)

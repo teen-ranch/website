@@ -15,6 +15,7 @@ export default function (){
 				title='404 Not found'
 				metaTitle='404 Not found'
 				subtitle="Uh-oh! Looks like the page you were looking for doesn't exist."
+				metaDescription="Uh-oh! Looks like the page you were looking for doesn't exist."
 			/>
 
 			<Container type='body'>
