@@ -14,8 +14,8 @@ function Heading({ title, src, alt, subtitle, metaTitle, metaDescription, keywor
     const { pathname } = useLocation()
     const { url, title: siteTitle } = useSiteData()
     
-    const pageTitle = metaTitle ? metaTitle : jsxToString(title).replace(/<\/?[^>]+(>|$)/g, " ")
-    const pageDescription = metaDescription ? metaDescription : jsxToString(subtitle).replace(/<\/?[^>]+(>|$)/g, " ")
+    const pageTitle = metaTitle ? metaTitle : title
+    const pageDescription = metaDescription ? metaDescription : subtitle
 
     const padding = isPortrait ? '177.5%' : '56.25%'
 

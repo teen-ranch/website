@@ -14,6 +14,8 @@ export default () => {
 				title='Ice rental'
                 subtitle='Rent our olympic-size ice hockey arena.'
                 keywords='ice rental, ice hockey rental, hockey arena rental, summer ice rental'
+                metaTitle='Ice rental'
+                metaDescription='Rent our olympic-size ice hockey arena.'
 			/>
             <Container type='body'>
 

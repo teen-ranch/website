@@ -14,6 +14,8 @@ export default () => {
 				title='Pre-season skills & skating'
                 subtitle='Develop your stick handling and skating and get ready for next season!'
                 keywords='hockey season preparation, stick handling, power skating'
+                metaTitle='Pre-season skills & skating'
+                metaDescription='Develop your stick handling and skating and get ready for next season!'
 			/>
             <Container type='body'>
 
