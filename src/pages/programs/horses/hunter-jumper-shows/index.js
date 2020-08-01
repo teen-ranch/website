@@ -4,7 +4,7 @@ import Heading from 'components/Heading'
 import Button from 'components/Button'
 import Program from 'components/Program'
 
-import './horses.scss'
+import '../horses.scss'
 
 export default () => {
 
@@ -33,6 +33,8 @@ export default () => {
                         <li>September 27 - ON-SITE</li>
                     </ul>
                     <Button target="_blank" href="https://show.teenranch.com">View 2020 season standings</Button>
+                    <br/>
+                    <Button to='/programs/horses/hunter-jumper-shows/show-photos/'>View 2020 show photos</Button>
                 </Program>
 
                 <div className="staffTable">
