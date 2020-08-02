@@ -31,14 +31,20 @@ export default () => {
                         <tbody>
                             <tr><td>July 26</td>
                             <td>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=sutherlandimages&set=a.783888605738049">Novice Hack</a><br/>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=sutherlandimages&set=a.783848199075423">Intermediate Hunters 2'3"</a><br/>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=sutherlandimages&set=a.783949665731943">Novice Equitation 2'</a><br/>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=sutherlandimages&set=a.784188912374685">Green Hunter 2'</a><br/>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=sutherlandimages&set=a.784356149024628">Short Stirrup</a>
+                            </td>
+                            <td>
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.open-hack-division-2.pactincphotography.com">Open Hack</a><br/>
                                 <a target="_blank" rel="noopener noreferrer"  href="https://www.2-hunter-division-te.pactincphotography.com">2' Hunter</a><br/>
                                 <a target="_blank" rel="noopener noreferrer"  href="https://www.23-hunter-division-t.pactincphotography.com">2'3" Hunter</a><br/>
                                 <a target="_blank" rel="noopener noreferrer"  href="https://www.open-equitation-teen.pactincphotography.com">Open Equitation</a><br/>
                                 <a target="_blank" rel="noopener noreferrer"  href="https://www.high-low-hunter-div.pactincphotography.com">High/Low Hunter</a><br/>
                                 <a target="_blank" rel="noopener noreferrer"  href="https://www.jumper-division-teen.pactincphotography.com">Jumper</a>
-                            </td>
-                            <td></td>
+                            </td>                            
                             <td></td></tr>
                         </tbody>
                     </table>
