@@ -47,8 +47,8 @@ export default () => {
                                     <a target="_blank" rel="noopener noreferrer"  href="https://www.jumper-division-teen.pactincphotography.com">Jumper</a>
                                 </td>                            
                                 <td>
-                                    <a target="_blank" rel="noopener noreferrer"  href="https://teresamaefinnerty.zenfolio.com/p964964795">Beginner</a>
-                                    <a target="_blank" rel="noopener noreferrer"  href="https://teresamaefinnerty.zenfolio.com/p301137846">Leadline</a>
+                                    <a target="_blank" rel="noopener noreferrer"  href="https://teresamaefinnerty.zenfolio.com/p964964795">Beginner</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer"  href="https://teresamaefinnerty.zenfolio.com/p301137846">Leadline</a><br/>
                                     <a target="_blank" rel="noopener noreferrer"  href="https://teresamaefinnerty.zenfolio.com/p586491027">Rookie</a>
                                 </td>
                             </tr>
