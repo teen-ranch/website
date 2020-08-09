@@ -11,9 +11,9 @@ export default () => {
             <Heading
                 src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/kids1.jpg'
                 alt='Campfire logs'
-				title='Give to Teen Ranch'
-                subtitle='Help us continue the legacy, vision and mission to spread the word of God'
-                description='Help us continue the legacy, vision and mission of Teen Ranch to spread the word of God.'
+				title='Give'
+                subtitle='Help us continue our mission, and vision to spread the word of God'
+                description='Help us continue the our mission, and vision of Teen Ranch to spread the word of God.'
                 keywords='teen ranch canada, teen ranch caledon ontario canada, give to teen ranch, donate to teen ranch, support teen ranch, teen ranch finances'
 			/>
             <Container type='body'>
