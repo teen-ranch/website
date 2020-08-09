@@ -156,6 +156,10 @@ header {
             display: block;
             width: 100%;
             // text-align: center;
+            a {
+                display: block;
+                padding: 1.2rem 0;
+            }
         }
 
         ul.subSubNav {
@@ -192,5 +196,13 @@ header {
         outline: none;
         margin-right: -1rem;
         margin-top: 1rem;
+    }
+
+    .giveLink a {
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    .ctaLink {
+        text-align: center;
     }
 }
