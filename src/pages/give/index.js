@@ -47,7 +47,9 @@ export default () => {
                             <h2>Donate to Teen Ranch Ministries</h2>
                             <h4>(Tax deductable)</h4>
 
-                            Teen Ranch Ministries is a registered charitable organization responsible for advancing the Gospel of Jesus Christ. Money donated to Teen Ranch Ministries will be used to support our call to "love Christ and radiate His love".
+                            <p>
+                                Teen Ranch Ministries is a registered charitable organization responsible for advancing the Gospel of Jesus Christ. Money donated to Teen Ranch Ministries will be used to support our call to "love Christ and radiate His love".
+                            </p>
 
                             <h5>How to donate to Teen Ranch Ministries:</h5>
                             <ul>
