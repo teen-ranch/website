@@ -14,6 +14,7 @@ import Container from 'components/Container'
 import SiteDataProvider from 'hooks/siteData';
 
 import NotFound from 'pages/404'
+import Footer from 'components/Footer';
 
 function App() {
 
@@ -46,6 +47,7 @@ function Route(props) {
       <Suspense fallback={<Container type='body' constrain={ false } style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}><Loader /></Container>}>
         { Page ? <Page /> : <NotFound /> }
       </Suspense>
+      <Footer />
     </>
   )
 }
