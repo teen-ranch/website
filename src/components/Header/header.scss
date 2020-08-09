@@ -56,6 +56,15 @@ header {
             background: darken($primary-light, 5);
         }
 
+        .giveLink a {
+            border: 1px solid $primary-red;
+            border-radius: $border-radius;
+            color: $primary-red;
+        }
+        .giveLink a:hover {
+            background-color: lighten($primary-red, 48);
+        }
+
     }
 
 }

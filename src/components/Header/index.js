@@ -50,6 +50,7 @@ export default function Header() {
                         <li><Link to="/staff/">Staff</Link></li>
                         <li><a href="https://teenranchcanada.wordpress.com/" rel='noopener noreferrer'>Blog</a></li>
                         <li><Link to="/contact/ ">Contact</Link></li>
+                        <li className='giveLink'><Link to="/give/">Give</Link></li>
                         <li><a className='ctaLink' rel="noopener noreferrer" href='https://register.trmanager.com'>Sign up</a></li>
                     </ul>
                 </nav>
