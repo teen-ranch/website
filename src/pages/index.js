@@ -32,7 +32,7 @@ export default () => {
 						<p>
 							Mel was promoted to glory at Headwaters Health Care Centre on August 8, 2020.
 						</p>
-						<a target="_blank" rel="noopener noreferrer" href="https://fawcettfuneralhome.ca/book-of-memories/4295831/Stevens-Melville/index.php">Read the full obituary at Fawcett Funeral Home</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/fawcettfuneralhome/posts/3333044543423234">Read the full obituary at Fawcett Funeral Home</a>
 
 					</div>
 
