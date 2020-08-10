@@ -2,6 +2,7 @@ import React from 'react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 // import Button from 'components/Button'
+import { Img } from 'components/Tueri'
 
 export default () => {
 	
@@ -10,14 +11,30 @@ export default () => {
 		<>			
 			<Container type='body' style={{ background: '#002146' }}>
 				
-				<div className='covid'>
-					<h3>COVID-19 Announcement</h3>
+				<div className='mel'>
+					{/* <h3>COVID-19 Announcement</h3>
 
 					<p>Teen Ranch is running a small set of temporary programs.</p>
 
-					<p>We look forward to serving you with more activities as restrictions continue to loosen.</p>
+					<p>We look forward to serving you with more activities as restrictions continue to loosen.</p> */}
 
-					{/* <Button to='/programs'>Check out our currently running programs</Button> */}
+					<div className='image'>
+						<Img src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/Mel.jpg' options={{ w: 320, h: 320 }} alt='Melville Charles Stevens' />
+					</div>
+
+					<div>
+
+						{/* <h4>March 12th, 1936 - August 8th, 2020</h4> */}
+						<h3>In Memory of Melville Charles Stevens</h3>
+						<p>
+							Mel Stevens, founder and long-time director of Teen Ranch, has gone home to be with the LORD.
+						</p>
+						<p>
+							Mel was promoted to glory at Headwaters Health Care Centre on August 8, 2020.
+						</p>
+						<a target="_blank" rel="noopener noreferrer" href="https://fawcettfuneralhome.ca/book-of-memories/4295831/Stevens-Melville/index.php">Read the full obituary at Fawcett Funeral Home</a>
+
+					</div>
 
 				</div>
 

@@ -93,3 +93,37 @@ img {
       color: $primary-white;
   }
 }
+
+.mel {
+  margin: 0 auto;
+  color: lighten($primary-light, 20);
+  text-align: center;
+  p {
+      color: $primary-white;
+  }
+  .image {
+    width: 180px; 
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .mel {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    h4 {
+      margin-bottom: -1rem;
+      font-size: 1.2rem;
+      color: lighten($primary-light, 30);
+      font-weight: normal;
+    }
+    .image {
+      margin-right: 4rem;
+    }
+  }
+}
