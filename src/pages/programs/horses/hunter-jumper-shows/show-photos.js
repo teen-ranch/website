@@ -52,6 +52,14 @@ export default () => {
                                     <a target="_blank" rel="noopener noreferrer"  href="https://teresamaefinnerty.zenfolio.com/p586491027">Rookie</a>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>August 9</td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?set=a.2471227449836794&type=3">Ring 4</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
