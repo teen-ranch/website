@@ -3,6 +3,7 @@ import Container from 'components/Container'
 import Heading from 'components/Heading'
 // import Button from 'components/Button'
 import { Img } from 'components/Tueri'
+import { Link } from '@reach/router'
 
 export default () => {
 	
@@ -32,7 +33,8 @@ export default () => {
 						<p>
 							Mel was promoted to glory at Headwaters Health Care Centre on August 8, 2020.
 						</p>
-						<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/fawcettfuneralhome/posts/3333044543423234">Read the full obituary at Fawcett Funeral Home</a>
+						{/* <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/fawcettfuneralhome/posts/3333044543423234">Read the full obituary at Fawcett Funeral Home</a> */}
+						<Link to='/in-memory-of-mel-stevens/'>Read the full obituary</Link>
 
 					</div>
 
