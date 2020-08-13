@@ -25,7 +25,7 @@ export default () => {
 
                         <p>Memorial photos at 10:00am EST. Funeral Service at 11:00am EST followed by a special video tribute from many who knew Mel.</p>
 
-                        <a target="_blank" rel="noopener noreferrer" href="https://player.castr.io/live_915f7de0dc6a11ea9498df84fa566e67"><i className='material-icons'>play_circle_filled</i>View the service live</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://player.castr.io/live_915f7de0dc6a11ea9498df84fa566e67"><i className='material-icons'>play_circle_filled</i>Watch the service live</a>
 
                     </div>
 
