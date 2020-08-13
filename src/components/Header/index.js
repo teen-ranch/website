@@ -34,6 +34,7 @@ export default function Header() {
                                 <li><Link to='/programs/hockey/'>Hockey programs</Link>
                                     <ul className='subSubNav'>
                                         <li><Link to='/programs/hockey/pre-season-skills-and-skating/'>Pre-season skills & skating</Link></li>
+                                        <li><Link to='/programs/hockey/mens-hockey-league/'>Men's hockey league</Link></li>
                                         <li><Link to='/programs/hockey/ice-rental/'>Ice rental</Link></li>
                                     </ul>
                                 </li>

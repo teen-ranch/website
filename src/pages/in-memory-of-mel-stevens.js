@@ -4,6 +4,8 @@ import Heading from 'components/Heading'
 
 import { Link } from '@reach/router'
 
+import './mel-stevens.scss'
+
 export default () => {
 
 	return (
@@ -13,11 +15,19 @@ export default () => {
                 alt='Melville Charles Stevens'
 				title='Melville Charles Stevens'
                 subtitle='March 12th, 1936 - August 8th, 2020'
-                description='Mel Stevens, founder and long-time director of Teen Ranch, has gone home to be with the LORD. Mel was promoted to glory at Headwaters Health Care Centre on August 8, 2020.'
+                metaDescription='Mel Stevens, founder and long-time director of Teen Ranch, has gone home to be with the LORD. Mel was promoted to glory at Headwaters Health Care Centre on August 8, 2020.'
                 keywords='mel stevens death, mel stevens, mel stevens died'
 			/>
             <Container type='body' constrain={false}>
                 <div style={{ maxWidth: '680px', margin: '0 auto', fontSize: '18px', color: 'rgb(41, 41, 41)', letterSpacing: '0.01em', lineHeight: '26px', padding: '0 2rem' }}>
+
+                    <div className='liveServiceLink'>
+
+                        <p>Memorial photos at 10:00am EST. Funeral Service at 11:00am EST followed by a special video tribute from many who knew Mel.</p>
+
+                        <a target="_blank" rel="noopener noreferrer" href="https://player.castr.io/live_915f7de0dc6a11ea9498df84fa566e67"><i className='material-icons'>play_circle_filled</i>View the service live</a>
+
+                    </div>
 
                     <h3>Obituary</h3>
 

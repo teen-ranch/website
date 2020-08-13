@@ -20,12 +20,86 @@ export default () => {
             <Container type='body'>
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG' name='Pre-Season skills & skating'>
-                    <ul>
-                        <li>Boys & Girls Aged 7-13</li>
-                        <li>Wednesdays 7:00 pm – 7:50 pm</li>
-                        <li>July 22 – August 26, 2020</li>
-                    </ul>
 
+                    <p>
+                    A six session program focused on the development of forward and backward skating, crossovers, tight-turns, individual shooting, stick handling, creativity, passing, as well as game situation type skills. For boys and girls ages 7-13.
+                    </p>
+
+                    <h3>Group 1: Ages 6-8</h3>
+                    <div className="staffTable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Thursday August 27, 2020</td>
+                                    <td>1:00pm - 2:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday August 28, 2020</td>
+                                    <td>1:00pm - 2:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday September 1, 2020</td>
+                                    <td>1:00pm - 2:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday September 2, 2020</td>
+                                    <td>1:00pm - 2:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday September 3, 2020</td>
+                                    <td>1:00pm - 2:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday September 4, 2020</td>
+                                    <td>1:00pm - 2:00pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Group 2: Ages 8-13</h3>
+                    <div className="staffTable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Thursday August 27, 2020</td>
+                                    <td>11:30am - 12:30pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Monday August 31, 2020</td>
+                                    <td>11:30am - 12:30pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday September 1, 2020</td>
+                                    <td>11:30am - 12:30pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday September 2, 2020</td>
+                                    <td>2:30pm - 3:30pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday September 3, 2020</td>
+                                    <td>11:30am - 12:30pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday September 4, 2020</td>
+                                    <td>11:30am - 12:30pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <Button href="https://register.trmanager.com">Book now</Button>
                 </Program>
 
