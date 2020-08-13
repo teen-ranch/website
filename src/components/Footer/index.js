@@ -9,6 +9,7 @@ export default function Footer() {
             <Container type={`footer
             `}>
                 &copy; { new Date().getFullYear() } Teen Ranch. All rights reserved.
+                <br/><br/><a target="_blank" rel="noopener noreferrer" href='https://plausible.io/teenranch.com'>View our public website analytics</a>
             </Container>
         </footer>
     )
