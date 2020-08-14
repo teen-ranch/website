@@ -23,10 +23,10 @@ export default () => {
 
                     <div className='liveServiceLink'>
 
-                        <p><strong>If you didn't get a chance, or had trouble watching the service live, the recording will be posted here later today.</strong></p>
+                        {/* <p><strong>If you didn't get a chance, or had trouble watching the service live, the recording will be posted here later today.</strong></p> */}
                         <p><i>Thank you Rob, April, Bobbi, Joe and the Fawcett Funeral Home staff for your tremendous generosity of time, effort, and service to help us honor Mel Stevens' life and the God he served, by God's grace, so well.</i></p>
 
-                        {/* <a target="_blank" rel="noopener noreferrer" href="https://player.castr.io/live_915f7de0dc6a11ea9498df84fa566e67"><i className='material-icons'>play_circle_filled</i>Watch the recorded service</a> */}
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=IV2kh5DB5HQ"><i className='material-icons'>play_circle_filled</i>Watch the service here</a>
 
                     </div>
 
