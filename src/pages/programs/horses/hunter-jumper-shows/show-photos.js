@@ -54,10 +54,14 @@ export default () => {
                             </tr>
                             <tr>
                                 <td>August 9</td>
-                                <td></td>
-                                <td></td>
                                 <td>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?set=a.2471227449836794&type=3">Ring 4</a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/PACTInc.Photography/">Ring 1 - All divisions</a>
+                                </td>
+                                <td>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sutherlandimages/">Ring 3 - All divisions</a>
+                                </td>
+                                <td>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?set=a.2471227449836794&type=3">Ring 4 - All divisions</a>
                                 </td>
                             </tr>
                         </tbody>

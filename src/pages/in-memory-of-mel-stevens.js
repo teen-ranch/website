@@ -23,9 +23,10 @@ export default () => {
 
                     <div className='liveServiceLink'>
 
-                        <p>Memorial photos at 10:00am EST. Funeral Service at 11:00am EST followed by a special video tribute from many who knew Mel.</p>
+                        <p><strong>If you didn't get a chance, or had trouble watching the service live, the recording will be posted here later today.</strong></p>
+                        <p><i>Thank you Rob, April, Bobbi, Joe and the Fawcett Funeral Home staff for your tremendous generosity of time, effort, and service to help us honor Mel Stevens' life and the God he served, by God's grace, so well.</i></p>
 
-                        <a target="_blank" rel="noopener noreferrer" href="https://player.castr.io/live_915f7de0dc6a11ea9498df84fa566e67"><i className='material-icons'>play_circle_filled</i>Watch the service live</a>
+                        {/* <a target="_blank" rel="noopener noreferrer" href="https://player.castr.io/live_915f7de0dc6a11ea9498df84fa566e67"><i className='material-icons'>play_circle_filled</i>Watch the recorded service</a> */}
 
                     </div>
 
