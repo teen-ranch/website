@@ -29,6 +29,8 @@ export default function Header() {
                 <nav className={`menu ${ expanded ? 'menu--expanded' : '' }`}>
                     <ul>
                         <li><Link to="/">Home</Link></li>
+                        {/* eslint-disable-next-line */}
+                        <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li>
                         <li><Link to="/programs/">Programs</Link>
                             <ul className='subNav'>
                                 <li><Link to='/programs/hockey/'>Hockey programs</Link>
@@ -50,7 +52,7 @@ export default function Header() {
                         </li>
                         <li><Link to="/staff/">Staff</Link></li>
                         <li><a href="https://teenranchcanada.wordpress.com/" rel='noopener noreferrer'>Blog</a></li>
-                        <li><Link to="/contact/ ">Contact</Link></li>
+                        <li><Link to="/contact/">Contact</Link></li>
                         <li className='giveLink'><Link to="/give/">Give</Link></li>
                         <li><a className='ctaLink' rel="noopener noreferrer" href='https://register.trmanager.com'>Sign up</a></li>
                     </ul>
