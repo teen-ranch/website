@@ -42,7 +42,7 @@ export default () => {
                             <tr><td>August 9</td><td>Teen Ranch</td><td>Entries closed
                             {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust92020/formperma/fix-ZJmfaJ5XxNKyDQcFagC9YvuJqqsHPuSP1L2srn0?referrername=teenranch.com">August 9th entry form</Button>     */}
                             </td></tr>
-                            <tr><td>August 23</td><td>Teen Ranch</td><td><Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust232020/formperma/nN9ZVfhnIB0ipC7CUo5wBVfTzDUrbs9qkRKQmlKW9Wk?referrername=teenranch.com">August 23rd entry form</Button></td></tr>
+                            <tr><td>August 23</td><td>Teen Ranch</td><td>Entries closed</td></tr>
                             <tr><td>September 13</td><td>Teen Ranch</td><td><Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowSeptember132020/formperma/fqYQpioHzuyYJmeEG8iq4GjCq7dqwSxXWXyfXstqq4g?referrername=teenranch.com">September 13th entry form</Button></td></tr>
                             <tr><td>September 27</td><td>Teen Ranch</td><td><Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowSeptember272020/formperma/-954t2VeE0yq-aSu_fU5RI6Qnid5lhJUWLRIWLEk_pw?referrername=teenranch.com">September 27th entry form</Button></td></tr>
                         </tbody>
