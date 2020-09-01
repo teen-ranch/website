@@ -26,7 +26,7 @@ export default function Programs() {
                         <li>Dufferin-peel skating club </li>
                     </ul>
 
-                    <Button to='/programs/hockey/'>View hockey programs</Button>
+                    <Button to='/programs/hockey-and-skating/'>View hockey & skating programs</Button>
                 </Program>
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg' name='Horse programs' swap>

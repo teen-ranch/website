@@ -24,11 +24,11 @@ export default function (){
 				
 				<div className='fourOhFourGrid'>
 					<div>
-						<h4>Hockey</h4>
+						<h4>Ice</h4>
 						<ul>
-							<li><Link to='/programs/hockey/'>Hockey programs overview</Link></li>
-							<li><Link to='/programs/hockey/pre-season-skills-and-skating/'>Pre-season skills and skating</Link></li>
-							<li><Link to='/programs/hockey/ice-rental/'>Ice rental</Link></li>
+							<li><Link to='/programs/hockey-and-skating/'>Hockey & skating programs overview</Link></li>
+							<li><Link to='/programs/hockey-and-skating/pre-season-skills-and-skating/'>Pre-season skills and skating</Link></li>
+							<li><Link to='/programs/hockey-and-skating/ice-rental/'>Ice rental</Link></li>
 						</ul>
 					</div>
 

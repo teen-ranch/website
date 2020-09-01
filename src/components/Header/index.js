@@ -33,11 +33,13 @@ export default function Header() {
                         <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li>
                         <li><Link to="/programs/">Programs</Link>
                             <ul className='subNav'>
-                                <li><Link to='/programs/hockey/'>Hockey programs</Link>
+                                <li><Link to='/programs/hockey-and-skating/'>Hockey & skating programs</Link>
                                     <ul className='subSubNav'>
-                                        <li><Link to='/programs/hockey/pre-season-skills-and-skating/'>Pre-season skills & skating</Link></li>
-                                        <li><Link to='/programs/hockey/mens-hockey-league/'>Men's hockey league</Link></li>
-                                        <li><Link to='/programs/hockey/ice-rental/'>Ice rental</Link></li>
+                                        <li><Link to='/programs/hockey-and-skating/pre-season-skills-and-skating/'>Pre-season skills & skating</Link></li>
+                                        <li><Link to='/programs/hockey-and-skating/mens-hockey-league/'>Men's hockey league</Link></li>
+                                        <li><Link to='/programs/hockey-and-skating/starskate-and-competitive-figure-skating/'>STARSkate & Competitive Figure Skating</Link></li>
+                                        <li><Link to='/programs/hockey-and-skating/learn-to-skate/'>Learn to skate</Link></li>
+                                        <li><Link to='/programs/hockey-and-skating/ice-rental/'>Ice rental</Link></li>
                                     </ul>
                                 </li>
                                 <li><Link to='/programs/horses/'>Horse programs</Link>

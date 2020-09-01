@@ -64,6 +64,16 @@ export default () => {
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?set=a.2471227449836794&type=3">Ring 4 - All divisions</a>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>August 23</td>
+                                <td>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sutherlandimages/">Ring 1 - All divisions</a>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://kiriashantz-photography.pixieset.com/teenranchhunterjumper-ring4/?fbclid=IwAR2-VhD1HgjTFKWplGO0wdns7-Wr8wbH9BoHIX-Au8rx4Hkst_9j0n8Z68Y">Ring 4 - All divisions</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
