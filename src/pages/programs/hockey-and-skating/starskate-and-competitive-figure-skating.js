@@ -46,7 +46,7 @@ export default () => {
                     <table>
                         <thead>
                             <tr>
-                                <th></th><th>Fall: Sep. 13 - Nov. 13</th><th>Holiday: Nov. 15 - Jan. 29</th><th>Winter: Jan. 31 - Apr. 1</th>
+                                <th></th><th>Fall: Sep. 13 - Nov. 13</th><th>Holiday: Nov. 15 - Jan. 29</th><th>Winter: Jan. 31 - Apr. 2</th>
                             </tr>
                         </thead>
                         <tbody>
