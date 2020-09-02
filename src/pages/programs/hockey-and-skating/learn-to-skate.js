@@ -12,19 +12,25 @@ export default () => {
                 src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/figureskating.JPG'
                 alt='Figure skaters'
 				title='Learn to skate'
-                subtitle='In association with Dufferin-Peel Skating Club'
+                subtitle='A beginner skating program for all ice sports.'
                 keywords='starskate, competitive figure skating, dufferin peel skating club'
                 metaTitle='DSTARSKATE & Competitive Figure Skating'
-                metaDescription='In association with Dufferin-Peel Skating Club'
+                metaDescription='A beginner skating program for all ice sports.'
 			/>
             <Container type='body'>
 
-                <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/figureskating.JPG' name='Dufferin-peel skating club'>
+                <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/figureskating.JPG' name='Learn to skate'>
 
                     <p>
                         <strong>
                         COVID MESSAGE: Please note that we will be practicing safe social distancing on the ice. Our
                         COVID safety practices message will be sent to skaters & parents before the first class.
+                        </strong>
+                    </p>
+
+                    <p>
+                        <strong>
+                            IMPORTANT: Due to COVID we can only accept students that DO NOT require hands-on assistance at this time.
                         </strong>
                     </p>
 

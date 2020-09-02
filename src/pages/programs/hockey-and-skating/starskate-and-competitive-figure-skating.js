@@ -131,8 +131,12 @@ export default () => {
                     FutureSTARS members skate 3-4 days per week, take Sunday Fitness Classes, goal-setting activities, take part in performances, competitions & tests and assist with Learn-to-Skate when scheduled.
                 </p>
                 <p>
+                    <i>No discounts can be applied to the FutureSTARS Enrichment Program.</i>
+                </p>
+                <p>
                     <strong>Please check with Head Coach Patty, before registering for this program to ensure it is the right fit for your skater.</strong>
                 </p>
+
 
                 <h3>
                     Other fees
