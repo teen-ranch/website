@@ -9,8 +9,9 @@ export default () => {
 	return (
         <>
             <Heading
-                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/figureskating.JPG'
-                alt='Figure skaters'
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/learn%20to%20skate.jpg'
+                imageOptions={{rotate:90}}
+                alt='Kids having fun skating on the ice'
 				title='Learn to skate'
                 subtitle='A beginner skating program for all ice sports.'
                 keywords='starskate, competitive figure skating, dufferin peel skating club'
@@ -19,7 +20,7 @@ export default () => {
 			/>
             <Container type='body'>
 
-                <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/figureskating.JPG' name='Learn to skate'>
+                <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/learn%20to%20skate.jpg' imageOptions={{rotate:90, h: 420}} name='Learn to skate'>
 
                     <p>
                         <strong>

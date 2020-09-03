@@ -9,7 +9,7 @@ import { useSiteData } from 'hooks/siteData'
 
 import './heading.scss'
 
-function Heading({ title, src, alt, subtitle, metaTitle, metaDescription, keywords, isPortrait }) {
+function Heading({ title, src, alt, subtitle, metaTitle, metaDescription, keywords, isPortrait, imageOptions }) {
 
     const { pathname } = useLocation()
     const { url, title: siteTitle } = useSiteData()
@@ -36,7 +36,7 @@ function Heading({ title, src, alt, subtitle, metaTitle, metaDescription, keywor
             </Helmet>
 
             <Container type='heading' constrain={false}>
-                <div style={{ paddingBottom: padding, height: "0" }}>{ src && <Img src={ src } alt={ alt || title } ratio='16:9' portraitRatio='4:5' /> }</div>
+                <div style={{ paddingBottom: padding, height: "0" }}>{ src && <Img src={ src } alt={ alt || title } ratio='16:9' portraitRatio='4:5' options={imageOptions} /> }</div>
                 <div className='overlayContainer'>
                     <div className='overlay'>
                         <h1>{ title }</h1>
