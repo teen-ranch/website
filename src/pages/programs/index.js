@@ -20,10 +20,13 @@ export default function Programs() {
 			/>
             <Container type='body'>
 
-                <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG' name='Hockey programs'>
+                <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG' name='Hockey & skating programs'>
                     <ul>
-                        <li>Pre-season skills and skating</li>
-                        <li>Dufferin-peel skating club </li>
+                        <li>Skating development</li>
+                        <li>Skills development</li>
+                        <li>Hockey leagues</li>
+                        <li>Public skating</li>
+                        <li>Ice rentals</li>
                     </ul>
 
                     <Button to='/programs/hockey-and-skating/'>View hockey & skating programs</Button>

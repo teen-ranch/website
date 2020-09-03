@@ -33,21 +33,43 @@ export default function Header() {
                         <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li>
                         <li><Link to="/programs/">Programs</Link>
                             <ul className='subNav'>
-                                <li><Link to='/programs/hockey-and-skating/'>Hockey & skating programs</Link>
+                                <li><Link to='/programs/hockey-and-skating/'>Hockey & skating</Link>
+                                    <div className='subNavDivider'>Skating</div>
+                                    <ul className='subSubNav'>
+                                        <li><Link to='/programs/hockey-and-skating/learn-to-skate/'>Learn to skate</Link></li>
+                                        <li><Link to='/programs/hockey-and-skating/skating-development/'>Skating development</Link></li>
+                                        <li><Link to='/programs/hockey-and-skating/starskate-and-competitive-figure-skating/'>STARSkate & Competitive Figure Skating</Link></li>
+                                    </ul>
+                                    <div className='subNavDivider'>Skills</div>
                                     <ul className='subSubNav'>
                                         <li><Link to='/programs/hockey-and-skating/pre-season-skills-and-skating/'>Pre-season skills & skating</Link></li>
+                                        <li><Link to='/programs/hockey-and-skating/skills-development/'>Skills development</Link></li>
+                                        <li><Link to='/programs/hockey-and-skating/adult-hockey-skills/'>Adult hockey skills</Link></li>
+                                    </ul>
+                                    <div className='subNavDivider'>Leagues</div>
+                                    <ul className='subSubNav'>
+                                        <li><Link to='/programs/hockey-and-skating/pond-hockey-league/'>Pond hockey league</Link></li>
                                         <li><Link to='/programs/hockey-and-skating/mens-hockey-league/'>Men's hockey league</Link></li>
-                                        <li><Link to='/programs/hockey-and-skating/starskate-and-competitive-figure-skating/'>STARSkate & Competitive Figure Skating</Link></li>
-                                        <li><Link to='/programs/hockey-and-skating/learn-to-skate/'>Learn to skate</Link></li>
+                                    </ul>
+                                    <div className='subNavDivider'>Recreation</div>
+                                    <ul className='subSubNav'>
                                         <li><Link to='/programs/hockey-and-skating/ice-rental/'>Ice rental</Link></li>
+                                        <li><Link to='/programs/hockey-and-skating/public-skating/'>Public skating</Link></li>
                                     </ul>
                                 </li>
-                                <li><Link to='/programs/horses/'>Horse programs</Link>
+                                <li><Link to='/programs/horses/'>Horses</Link>
+                                    <div className='subNavDivider'>Shows</div>
+                                    <ul className='subSubNav'>
+                                        <li><Link to='/programs/horses/hunter-jumper-shows/'>Hunter / Jumper shows</Link></li>
+                                    </ul>
+                                    <div className='subNavDivider'>Schooling</div>
+                                    <ul className='subSubNav'>
+                                        <li><Link to='/programs/horses/riding-lessons/'>Riding lessons</Link></li>
+                                        <li><Link to='/programs/horses/schooling-ring-rental/'>Schooling ring rental</Link></li>
+                                    </ul>
+                                    <div className='subNavDivider'>Recreation</div>
                                     <ul className='subSubNav'>
                                         <li><Link to='/programs/horses/trail-rides/'>Trail rides</Link></li>
-                                        <li><Link to='/programs/horses/riding-lessons/'>Riding lessons</Link></li>
-                                        <li><Link to='/programs/horses/hunter-jumper-shows/'>Hunter / Jumper shows</Link></li>
-                                        <li><Link to='/programs/horses/schooling-ring-rental/'>Schooling ring rental</Link></li>
                                     </ul>
                                 </li>
                             </ul>
