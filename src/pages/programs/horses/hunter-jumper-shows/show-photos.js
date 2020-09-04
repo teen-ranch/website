@@ -69,7 +69,13 @@ export default () => {
                                 <td>
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sutherlandimages/">Ring 1 - All divisions</a>
                                 </td>
-                                <td></td>
+                                <td>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2753253254996456">Ring 3 - Open Hack</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2753265734995208">Ring 3 - 2'3" Hunter</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2753280371660411">Ring 3 - High Low Hunter</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2753289981659450">Ring 3 - Jumper</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2753309061657542">Ring 3 - Candid Photos</a>
+                                </td>
                                 <td>
                                     <a target="_blank" rel="noopener noreferrer" href="https://kiriashantz-photography.pixieset.com/teenranchhunterjumper-ring4/?fbclid=IwAR2-VhD1HgjTFKWplGO0wdns7-Wr8wbH9BoHIX-Au8rx4Hkst_9j0n8Z68Y">Ring 4 - All divisions</a>
                                 </td>
