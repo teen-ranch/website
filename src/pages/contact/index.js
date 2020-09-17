@@ -7,9 +7,10 @@ export default () => {
 	return (
         <>
             <Heading
-				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/campFire.jpg'
-				title={<>Contact us</>} 
-                subtitle={<>Due to staffing restrictions, wait times may be longer than usual.</>}
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/campFire.jpg'
+                alt='Campfire logs'
+				title='Contact us'
+                subtitle='Due to staffing restrictions, wait times may be longer than usual.'
                 description='Get in touch! We would love to hear from you!'
                 keywords='teen ranch canada, teen ranch caledon ontario canada, summer camp caledon ontario'
 			/>

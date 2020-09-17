@@ -9,9 +9,10 @@ export default () => {
 	return (
         <>
             <Heading
-				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse5.jpg'
-				title={<>Riding lessons</>} 
-                subtitle={<>Private and semi-private riding lessons for beginner to advanced riders</>}
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse5.jpg'
+                alt='Smiling kids at horseback riding lesson'
+				title='Riding lessons'
+                subtitle='Private and semi-private riding lessons for beginner to advanced riders'
                 description='Private and semi-private riding lessons in Caledon, Ontario.'
                 keywords='riding lessons, horseback riding lessons, riding lessons caledon ontario, horseback riding caledon ontario'
 			/>

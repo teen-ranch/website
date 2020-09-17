@@ -1,5 +1,4 @@
 import React from 'react'
-import { useSiteData } from 'react-static'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
@@ -7,21 +6,20 @@ import Program from 'components/Program'
 
 export default () => {
 
-    const { covidGroupMax } = useSiteData()
-
 	return (
         <>
             <Heading
-				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse19.jpg'
-				title={<>Horse programs</>} 
-                subtitle={<>Riding lessons, trail rides and hunter / jumper shows and more!</>}
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse19.jpg'
+                alt='Equitation on the flat'
+				title='Horse programs'
+                subtitle='Riding lessons, trail rides and hunter / jumper shows and more!'
                 keywords='trail rides, riding lessons, hunter jumper horse shows, schooling ring rental'
 			/>
             <Container type='body'>
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/trailRide2.jpg' name='Trail rides'>
                     <ul>
-                        <li>Maximum { covidGroupMax } people including staff for keeping with government restrictions</li>
+                        <li>Maximum 10 people including staff for keeping with government restrictions</li>
                         <li>Ages 10+</li>
                         <li>One-hour in length</li>
                         <li>Walk/trot (if comfortable)</li>

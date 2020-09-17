@@ -1,24 +1,21 @@
 import React from 'react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
-import { Link } from 'components/Router'
+import { Link } from '@reach/router'
 
 import './404.scss'
-import { Head, useSiteData } from 'react-static'
 
 export default function (){
-	const { title } = useSiteData()
 	
 	return (
 		<>
-
-			<Head>
-				<title>404 Not found - { title }</title>
-			</Head>
 			<Heading
 				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/wham10.jpg'
-				title={<>404 Not found</>} 
-				subtitle={<>Uh-oh! Looks like the page you were looking for doesn't exist.</>}
+				alt='Upside down on the giant swing'
+				title='404 Not found'
+				metaTitle='404 Not found'
+				subtitle="Uh-oh! Looks like the page you were looking for doesn't exist."
+				metaDescription="Uh-oh! Looks like the page you were looking for doesn't exist."
 			/>
 
 			<Container type='body'>
@@ -27,11 +24,11 @@ export default function (){
 				
 				<div className='fourOhFourGrid'>
 					<div>
-						<h4>Hockey</h4>
+						<h4>Ice</h4>
 						<ul>
-							<li><Link to='/programs/hockey/'>Hockey programs overview</Link></li>
-							<li><Link to='/programs/hockey/pre-season-skills-and-skating/'>Pre-season skills and skating</Link></li>
-							<li><Link to='/programs/hockey/ice-rental/'>Ice rental</Link></li>
+							<li><Link to='/programs/hockey-and-skating/'>Hockey & skating programs overview</Link></li>
+							<li><Link to='/programs/hockey-and-skating/pre-season-skills-and-skating/'>Pre-season skills and skating</Link></li>
+							<li><Link to='/programs/hockey-and-skating/ice-rental/'>Ice rental</Link></li>
 						</ul>
 					</div>
 
@@ -69,59 +66,59 @@ export default function (){
 					<div>
 						<h4>Hockey</h4>
 						<ul>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs'>Hockey programs overview</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs/pre-tryout-skills-skating-development'>Pre-tryout skills & skating</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs/pre-season-skills-skating-development'>Pre-season skills & skating</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs/learn-to-skate'>Learn to skate</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs/skills-development'>Skills development</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs/skating-development'>Skating development</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs/pond-hockey'>Pond hockey</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs/spring-hockey-league'>Spring hockey league</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs/public-skating'>Public skating</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs/mens-hockey-league'>Men's hockey league</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs/3-on-3-hockey'>3 on 3 hockey</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/hockey-programs/adult-hockey-skills-development'>Adult hockey skills development</a></li>
-							<li><a rel="noopener noreferrer" to='https://www.sk8dpsc.ca/'>Dufferin-peel skating club</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs'>Hockey programs overview</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs/pre-tryout-skills-skating-development'>Pre-tryout skills & skating</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs/pre-season-skills-skating-development'>Pre-season skills & skating</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs/learn-to-skate'>Learn to skate</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs/skills-development'>Skills development</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs/skating-development'>Skating development</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs/pond-hockey'>Pond hockey</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs/spring-hockey-league'>Spring hockey league</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs/public-skating'>Public skating</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs/mens-hockey-league'>Men's hockey league</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs/3-on-3-hockey'>3 on 3 hockey</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/hockey-programs/adult-hockey-skills-development'>Adult hockey skills development</a></li>
+							<li><a rel="noopener noreferrer" href='https://www.sk8dpsc.ca/'>Dufferin-peel skating club</a></li>
 						</ul>
 					</div>
 
 					<div>
 						<h4>Horses</h4>
 						<ul>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/horse-programs'>Horse programs overview</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/horse-programs/hunter-jumper-horse-shows'>Hunter/Jumper horse shows</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/horse-programs/trail-rides'>Trail rides</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/horse-programs/cha-instructor-clinic'>CHA instructor clinic</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/horse-programs'>Horse programs overview</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/horse-programs/hunter-jumper-horse-shows'>Hunter/Jumper horse shows</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/horse-programs/trail-rides'>Trail rides</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/horse-programs/cha-instructor-clinic'>CHA instructor clinic</a></li>
 						</ul>
 					</div>
 
 					<div>
 						<h4>Day camps</h4>
 						<ul>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/day-camp/pa-day-camp'>PA day camp</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/day-camp/christmas-day-camp'>Christmas day camp</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/day-camp/school-closure-day-camp'>School closure day camp</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/day-camp/march-break-day-camp'>March break day camp</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/day-camp/pa-day-camp'>PA day camp</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/day-camp/christmas-day-camp'>Christmas day camp</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/day-camp/school-closure-day-camp'>School closure day camp</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/day-camp/march-break-day-camp'>March break day camp</a></li>
 						</ul>
 					</div>
 
 					<div>
 						<h4>Year-round</h4>
 						<ul>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/school-programs'>School programs</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/retreat-programs'>Retreat programs</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/school-programs'>School programs</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/retreat-programs'>Retreat programs</a></li>
 						</ul>
 					</div>
 
 					<div>
 						<h4>Events</h4>
 						<ul>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/events/family-day'>Family day</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/events/easter'>Easter round up</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/events/spring-classic-golf-tournament'>Spring classic golf tournament</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/events/camp-for-a-weekend'>March break camp for a weekend</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/events/mother-daughter-equine-escape'>Mother/daughter equine escape</a></li>
-							<li><a rel="noopener noreferrer" to='https://website.teenranch.com/events/family-camp'>Family camp</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/events/family-day'>Family day</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/events/easter'>Easter round up</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/events/spring-classic-golf-tournament'>Spring classic golf tournament</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/events/camp-for-a-weekend'>March break camp for a weekend</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/events/mother-daughter-equine-escape'>Mother/daughter equine escape</a></li>
+							<li><a rel="noopener noreferrer" href='https://website.teenranch.com/events/family-camp'>Family camp</a></li>
 						</ul>
 					</div>
 				</div>			

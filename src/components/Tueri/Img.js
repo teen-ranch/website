@@ -2,9 +2,15 @@ import React, { useState, useRef, useEffect } from 'react'
 import { useTueri } from './Provider'
 import { withOrientationChange } from 'react-device-detect'
 
-function Img({ src, ratio, options = {}, buffer = 2, alt, isPortrait }) {
+function Img({ src, ratio, portraitRatio, options = {}, buffer = 2, alt, isPortrait }) {
 
-    const { browserSupport, replacements } = useTueri()
+    // const { browserSupport, replacements } = useTueri()
+
+    const tueri = useTueri()
+    const { browserSupport, replacements } = tueri || {}
+
+    // const browserSupport = 'false'
+    // const replacements = []
 
     const [ isInViewport, setIsInViewport ] = useState(false)
     const [ params, setParams ] = useState({ width: 0, height: 0 })
@@ -147,18 +153,22 @@ function Img({ src, ratio, options = {}, buffer = 2, alt, isPortrait }) {
     // If width is specified, otherwise use auto-detected width
     options['w'] = options['w'] || width
     if (ratio) {
+        if (isPortrait && portraitRatio) {
+            const [ width, height ] = ratio.split(':')
+            options['h'] = options['w'] / width * height
+        }
         if (isPortrait) {
             const [ height, width ] = ratio.split(':')
             options['h'] = options['w'] / width * height
         }
-        else {
+        if (!isPortrait) {
             const [ width, height ] = ratio.split(':')
             options['h'] = options['w'] / width * height
         }
     }
 
     // If a format has not been specified, detect webp support
-    if (!options['fm'] && browserSupport.webp) {
+    if (!options['fm'] && (browserSupport && browserSupport.webp)) {
         options['fm'] = 'webp'
     }
 
@@ -176,8 +186,10 @@ function Img({ src, ratio, options = {}, buffer = 2, alt, isPortrait }) {
 
     let srcReplaced = src
 
-    for (let i = 0; i < replacements.length; i++) {
-        if (src.indexOf(replacements[i][0]) !== -1) srcReplaced = srcReplaced.replace(replacements[i][0], replacements[i][1])
+    if (replacements) {
+        for (let i = 0; i < replacements.length; i++) {
+            if (src.indexOf(replacements[i][0]) !== -1) srcReplaced = srcReplaced.replace(replacements[i][0], replacements[i][1])
+        }
     }
 
     return(

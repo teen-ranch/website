@@ -1,9 +1,14 @@
 @import 'styles/vars';
-
+header {
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
 .container--header {
     border-bottom: 1px solid #fafafa;
     height: 100px;
     background: #fff;
+   
     // background: $primary-dark;
 
     .logo {
@@ -51,6 +56,25 @@
             background: darken($primary-light, 5);
         }
 
+        .giveLink a {
+            border: 1px solid $primary-red;
+            border-radius: $border-radius;
+            color: $primary-red;
+        }
+        .giveLink a:hover {
+            background-color: lighten($primary-red, 48);
+        }
+
+        .subNavDivider {
+            // font-style: italic;
+            border-bottom: 1px solid #efefef;
+            margin-top: 1rem;
+            color: #999;
+            font-size: 1.2rem;
+            letter-spacing: 0.02em;
+            padding: .5rem 0;
+        }
+
     }
 
 }
@@ -58,7 +82,10 @@
 @media screen and (min-width:64em) {
     header {
 
-        position: relative;
+        // position: relative;
+        // position: sticky;
+        // top:0;
+        // z-index: 1;
         .constrain {
             display: flex;
             align-items: center;
@@ -139,8 +166,16 @@
             display: block;
             width: 100%;
             // text-align: center;
+            a {
+                display: block;
+                padding: 1.2rem 0;
+            }
         }
 
+        .subNavDivider {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
         ul.subSubNav {
             li {
                 padding-left: 2rem;
@@ -175,5 +210,13 @@
         outline: none;
         margin-right: -1rem;
         margin-top: 1rem;
+    }
+
+    .giveLink a {
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    .ctaLink {
+        text-align: center;
     }
 }

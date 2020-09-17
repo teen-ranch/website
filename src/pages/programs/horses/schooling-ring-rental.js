@@ -9,9 +9,10 @@ export default () => {
 	return (
         <>
             <Heading
-				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse19.jpg'
-				title={<>Schooling ring rental</>} 
-                subtitle={<>Outdoor horseback riding arenas for rent</>}
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse19.jpg'
+                alt='Equitation on the flat'
+				title='Schooling ring rental'
+                subtitle='Outdoor horseback riding arenas for rent'
                 keywords='riding arena rental, horseback riding facilities, horseback riding arena caledon ontario'
 			/>
             <Container type='body'>
