@@ -1,5 +1,4 @@
 import React from 'react'
-import { Head } from 'react-static'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
@@ -11,11 +10,12 @@ export default () => {
 
 	return (
         <>
-            <Head>
-                <meta name='description' content={`Professional courses and divisions offered for every level from first-time competitors to those schooling before their A Shows.`} />
-                <meta name='keywords' content='horse shows, schooling horse shows, horse show orangeville ontario, horse show caledon ontario, gta horse show' />
-            </Head>
-            <Heading title='Hunter / Jumper shows' subtitle={<>Due to COVID-19 Teen Ranch is running a small set of temporary programs.<br/>We look forward to serving you with more activities as restrictions continue to loosen.</>} />
+            <Heading
+				src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/horse14.jpg'
+				title={<>Hunter / Jumper shows</>} 
+                subtitle={<>Professional courses and divisions for first-time competitors to those schooling before their A Shows.</>}
+                keywords='horse shows, schooling horse shows, horse show orangeville ontario, horse show caledon ontario, gta horse show'
+			/>
             <Container type='body'>
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hunterJumper16.jpg' name='Hunter/Jumper shows'>

@@ -31,6 +31,30 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0"
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap && react-snap-sitemap --base-url=https://teenranch.com/ --change-frequency=always",
+    "deploy": "netlify deploy --dir build",
+    "deploy-prod": "netlify deploy --dir build --prod"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "prettier": "2.1.0"
   },
