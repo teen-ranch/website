@@ -7,7 +7,14 @@ export default () => {
 
 	return (
         <>
-            <Heading title='Our staff' subtitle="Volunteer and full-time staff positions." />
+
+            <Heading
+                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/staff2.jpg'
+                alt='Teen Ranch staff group photo'
+				title='Our staff'
+                subtitle='Volunteer and full-time staff positions.'
+                keywords='volunteer ministry opportunity, summer camp staff, christian summer camp employment'
+			/>
             <Container type='body'>
 
                 <p>We are not currently hiring. We have limited volunteer opportunities potentially available on a day-to-day basis.</p>
